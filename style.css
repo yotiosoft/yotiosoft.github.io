@@ -16,10 +16,12 @@ html, body {
   margin-left: 0;
   margin-right: 0;
 
-  overflow: hidden;
-
   height: 100%;
   margin: 0;
+}
+
+#wrap {
+  overflow: hidden;
 }
 
 /* ヘッダ */
@@ -77,7 +79,7 @@ header {
 }
 
 /* メインとなるコンテンツ */
-#wrap {
+#main_wrap {
   width: 1300px;
   min-height: 100%;
   margin: 0px auto;
