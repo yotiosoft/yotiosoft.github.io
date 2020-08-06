@@ -4,26 +4,24 @@
     <meta charset="utf8">
     <link rel="stylesheet" href="style.css">
     <title>YotioSoft</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script>
+      //共通パーツ読み込み
+      $(function() {
+       $("#header").load("header.html");
+       $("#footer").load("footer.html");
+      });
+    </script>
   </head>
 
   <body>
     <div id="wrap">
     <header>
-      <div id="header_wrap">
-
-        <div id="header_logo">
-          <font size="5">YotioSoft</font>
-        </div>
-
-        <br>
-
-        <div id="header_menu">
-          <div class="menu_button"><a href="./">Home</a></div>
-          <div class="menu_button"><a href="./about/">About</a></div>
-          <div class="menu_button"><a href="./about/">ソフトウェア</a></div>
-        </div>
-
-      </div>
+      <div id="header"></div>
     </header>
 
     <div id="main_wrap">
@@ -37,12 +35,8 @@
 
     </div>
 
-    <footer class="footer">
-      <div id="footer_wrap">
-        <div id="footer_copyright">
-          ©YotioSoft 2014-2020 All Rights Reserved.
-        </div>
-      </div>
+    <footer class="footer_class">
+      <div id="footer"></div>
     </footer>
   </div>
   </body>
