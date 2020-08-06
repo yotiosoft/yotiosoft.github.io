@@ -45,18 +45,26 @@ header {
   width: 300px;
   height: 30px;
   float: left;
+  border: dashed 1px #999;
 }
 
 #header_menu {
-  width: 1300px;
   float: left;
   display: flex;
   margin: 10px 0px 0px 0px;
+  border: dashed 1px #999;
+}
+
+#header_menu_right {
+  float: right;
+  display: flex;
+  margin: 10px 0px 0px 0px;
+  border: dashed 1px #999;
 }
 
 /* メニューボタン */
 .menu_button {
-  height: 45px;
+  height: 40px;
 
   background-color: #313131;
   -webkit-transition: all 0.3s ease;
