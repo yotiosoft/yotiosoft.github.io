@@ -42,29 +42,27 @@ header {
 }
 
 #header_logo {
-  width: 300px;
+  width: 100%;
   height: 30px;
   float: left;
-  border: dashed 1px #999;
+  margin-bottom: 10px;
 }
 
 #header_menu {
   float: left;
   display: flex;
   margin: 10px 0px 0px 0px;
-  border: dashed 1px #999;
 }
 
 #header_menu_right {
   float: right;
   display: flex;
   margin: 10px 0px 0px 0px;
-  border: dashed 1px #999;
 }
 
 /* メニューボタン */
 .menu_button {
-  height: 40px;
+  height: 45px;
 
   background-color: #313131;
   -webkit-transition: all 0.3s ease;
