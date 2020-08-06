@@ -42,13 +42,16 @@ header {
 }
 
 #header_logo {
-  width: 100%;
   height: 30px;
   float: left;
-  margin-bottom: 10px;
 }
 
-#header_menu {
+#header_menu_line {
+  width: 100%;
+  float: left;
+}
+
+#header_menu_left {
   float: left;
   display: flex;
   margin: 10px 0px 0px 0px;
