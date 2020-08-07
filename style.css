@@ -43,8 +43,11 @@ header {
 }
 
 #header_logo {
-  height: 30px;
+  height: 50px;
   float: left;
+  line-height: 50px;
+    font-size: 26px;
+    display: flex;
 }
 
 #header_menu_line {
@@ -55,13 +58,11 @@ header {
 #header_menu_left {
   float: left;
   display: flex;
-  margin: 10px 0px 0px 0px;
 }
 
 #header_menu_right {
   float: right;
   display: flex;
-  margin: 10px 0px 0px 0px;
 }
 
 /* メニューボタン */
