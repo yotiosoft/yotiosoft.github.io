@@ -73,6 +73,10 @@ header {
   display: flex;
 }
 
+#under_header {
+  margin-top: 100px;
+}
+
 /* メニューボタン */
 .menu_button {
   height: 45px;
@@ -105,6 +109,37 @@ header {
   background-color: #dadada;
 }
 
+/* パンくずリスト */
+#navibar_wrap {
+  width: 100%;
+  height: 20px;
+  background-color: #3498db;
+}
+
+#navibar {
+  width: 1300px;
+  max-width: 100%;
+  margin: 0px auto;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#navibar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumbs li::after{
+  content: '>';
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.breadcrumbs li:last-child::after{
+  display: none;
+}
+
 /* メインとなるコンテンツ */
 #main_wrap {
   width: 1300px;
@@ -112,8 +147,7 @@ header {
   min-height: 100%;
   margin: 0px auto;
   overflow: hidden;
-  margin-top: 100px;
-  margin-bottom: -180px;
+  margin-bottom: 0px;
   display: flex;
 }
 
@@ -122,6 +156,14 @@ header {
   width: 198px;
   border: dashed 1px #999;
   margin: 10px 10px 10px 0px;
+}
+
+#sidenavi_pagetitle {
+  width: 100%;
+  height: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #313131;
 }
 
 #contents {
