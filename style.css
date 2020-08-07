@@ -88,7 +88,6 @@ header {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  transiti
 
   text-align: center;
 
@@ -124,12 +123,24 @@ header {
   margin: 0px auto;
 
   color: #ffffff;
-  text-decoration: none;
+  font-size: 14px;
 }
 
 #navibar a {
-  color: #ffffff;
+  color: #6b778d;
+  font-size: 14px;
   text-decoration: none;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  line-height: 20px;
+}
+
+#navibar a:hover {
+  color: #ffffff;
 }
 
 .breadcrumbs li::after{
