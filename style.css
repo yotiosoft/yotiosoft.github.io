@@ -37,6 +37,7 @@ header {
 
 #header_wrap {
   width: 1300px;
+  max-width: 100%;
   margin: 0px auto;
   overflow: hidden;
 }
@@ -91,6 +92,7 @@ header {
 /* メインとなるコンテンツ */
 #main_wrap {
   width: 1300px;
+  max-width: 100%;
   min-height: 100%;
   margin: 0px auto;
   overflow: hidden;
@@ -127,6 +129,7 @@ header {
 
 #footer_wrap {
   width: 1300px;
+  max-width: 100%;
   margin: 0px auto;
   overflow: hidden;
 }
