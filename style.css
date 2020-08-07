@@ -108,8 +108,9 @@ header {
 }
 
 #contents {
-  float: left;
+  float: right;
   width: 1088px;
+  max-width: 100%;
   border: dashed 1px #999;
   margin: 10px 0px 10px 0px;
 }
