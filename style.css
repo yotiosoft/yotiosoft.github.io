@@ -43,16 +43,18 @@ header {
 }
 
 #header_logo {
-  height: 50px;
+  height: 32px;
   float: left;
-  line-height: 50px;
-    font-size: 26px;
-    display: flex;
+  line-height: 32px;
+  font-size: 22px;
+  display: flex;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 #header_menu_line {
   width: 100%;
   float: left;
+  margin-top: 8px;
 }
 
 #header_menu_left {
