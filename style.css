@@ -40,6 +40,7 @@ header {
   max-width: 100%;
   margin: 0px auto;
   overflow: hidden;
+  display: flex;
 }
 
 #header_logo {
@@ -98,6 +99,7 @@ header {
   overflow: hidden;
   margin-top: 100px;
   margin-bottom: -180px;
+  display: flex;
 }
 
 #sidenavi {
@@ -133,6 +135,7 @@ header {
   max-width: 100%;
   margin: 0px auto;
   overflow: hidden;
+  display: flex;
 }
 
 #footer_copyright {
