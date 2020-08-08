@@ -5,11 +5,13 @@
 }
 
 html, body {
-  font-family: "Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
+  font-family: "Hiragino Kaku Gothic ProN W4",
+    "Noto Sans JP",
+    "YuGothic", YuGothic,
     "Hiragino Sans",
-    Meiryo,
+    "メイリオ", Meiryo,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    "Nunito Sans",
     sans-serif;
 
   width: 100%;
@@ -222,6 +224,7 @@ header {
   padding: 0.5em;
   color: #ffffff;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 #content a {
