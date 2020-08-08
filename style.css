@@ -248,7 +248,7 @@ header {
 .footer_class,
 .push {
   width: 100%;
-  height: 80px;
+  height: 120px;
   background-color: #313131;
   color: white;
   text-align: center;
@@ -258,18 +258,46 @@ header {
 }
 
 #footer_wrap {
-  width: 1300px;
+  width: 1320px;
   max-width: 100%;
   margin: 0px auto;
+  padding-left: 10px;
+  padding-top: 10px;
   overflow: hidden;
+}
+
+#footer_logo {
+  height: 50px;
   display: flex;
 }
 
+#footer_logo_name_and_catchcopy {
+  height: 50px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+#footer_logo_name {
+  height: 30px;
+  font-size: 26px;
+  line-height: 30px;
+
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#footer_logo_catchcopy {
+  height: 20px;
+  font-size: 12px;
+  line-height: 30px;
+
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 #footer_copyright {
-  height: 80px;
+  height: 60px;
   float: left;
-  font-size: 14px;
-  line-height: 80px;
+  font-size: 12px;
+  line-height: 60px;
 
   font-family: 'Nunito Sans', sans-serif;
 }
