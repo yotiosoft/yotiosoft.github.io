@@ -262,7 +262,7 @@ header {
   max-width: 100%;
   margin: 0px auto;
   padding-left: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
   overflow: hidden;
 }
 
@@ -273,7 +273,7 @@ header {
 
 #footer_logo_name_and_catchcopy {
   height: 50px;
-  margin-left: 10px;
+  margin-left: 20px;
   text-align: left;
 }
 
@@ -294,10 +294,11 @@ header {
 }
 
 #footer_copyright {
-  height: 60px;
+  margin-top: 5px;
+  height: 45px;
   float: left;
   font-size: 12px;
-  line-height: 60px;
+  line-height: 45px;
 
   font-family: 'Nunito Sans', sans-serif;
 }
