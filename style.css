@@ -118,8 +118,9 @@ header {
 }
 
 #navibar {
-  width: 1300px;
+  width: 1310px;
   max-width: 100%;
+  padding-left: 10px;
   margin: 0px auto;
 
   color: #ffffff;
@@ -155,7 +156,7 @@ header {
 
 /* メインとなるコンテンツ */
 #main_wrap {
-  width: 1300px;
+  width: 1320px;
   max-width: 100%;
   min-height: 100%;
   margin: 0px auto;
@@ -165,6 +166,7 @@ header {
 
 #sidebar {
   width: 200px;
+  margin-left: 10px;
   position: relative;
 }
 
@@ -188,22 +190,52 @@ header {
   font-size: 14px;
 }
 
-#sidebar_menu a {
+#sidebar_menu li {
+  margin-top: 5px;
+  list-style: none;
+}
+
+#sidebar_menu li a {
   color: #313131;
   text-decoration: none;
+  margin-top: 100px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#sidebar_menu a:hover {
+  color: #5bd1d7;
 }
 
 #content {
   display: block;
   width: 1086px;
   max-width: 100%;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 10px 10px;
 }
 
 #content_h {
   background: #16a085;
   padding: 0.5em;
   color: #ffffff;
+  margin-right: 10px;
+}
+
+#content a {
+  color: #3498db;
+  text-decoration: none;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#content a:hover {
+  color: #5bd1d7;
 }
 
 /* フッター */
