@@ -263,11 +263,12 @@ header {
 }
 
 #footer_copyright {
-  width: 300px;
   height: 80px;
   float: left;
   font-size: 14px;
   line-height: 80px;
+
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
