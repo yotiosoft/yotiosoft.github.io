@@ -48,6 +48,7 @@ header {
   color: white;
   width: 100%;
   position: fixed;
+  z-index: 10;
 }
 
 #header_wrap {
@@ -176,6 +177,7 @@ header {
   width: 200px;
   margin-left: 10px;
   position: relative;
+  z-index: 1;
 }
 
 #sticked {
