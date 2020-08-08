@@ -266,6 +266,10 @@ header {
   padding: 20px 10px 20px 10px;
 }
 
+#content table .nowrap {
+  white-space: nowrap;
+}
+
 #content li {
   margin: 10px 0px 10px 0px;
 }
