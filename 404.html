@@ -45,18 +45,35 @@
 
       <div id="content">
         <div id="column">
-          <div style="font-size: 26px; margin-bottom: 5px;">printf("404 Not Found");</div>
-          <div style="font-size: 10px; color: #716e77">
+          <div style="font-size: 26px; margin-bottom: 5px;">
             <script>
-              const messages = [
+              const messages1 = [
+                'printf("404 Not Found");',
+                'print "404 Not Found"',
+                'echo("404 Not Found");',
+                'std::cout << "404 Not Found" << std::endl;',
+                'System.out.println("404 Not Found");',
+                'console.log("404 Not Found");',
+                'Concole.WriteLine("404 Not Found");',
+                '&lt;h1&gt;404 Not Found&lt;/h1&gt;'
+              ];
+
+              const messageNo1 = Math.floor( Math.random() * messages1.length);
+              document.write(messages1[messageNo1]);
+            </script>
+          </div>
+          <div style="font-size: 14px; color: #716e77">
+            <script>
+              const messages2 = [
                 '事実というものは存在しない。存在するのは解釈だけである。───フリードリヒ・ニーチェ（1844-1900）',
                 '思考を除いて、我々の力の中で絶対的なものなど存在しない。───ルネ・デカルト（1596-1650）',
                 'あなたの限界というのは、あなたがそう信じているものしか存在しない。───ウエイン・ダイアー（1940-2015）',
-                '毒でないものなど存在しない。 その服用量こそが毒であるか、 そうでないかを決めるのだ。───パラケルスス（1493-1541）'
+                '毒でないものなど存在しない。 その服用量こそが毒であるか、 そうでないかを決めるのだ。───パラケルスス（1493-1541）',
+                '探しものはなんですか？見つけにくいものですか？───井上陽水（1948-）'
               ];
 
-              const messageNo = Math.floor( Math.random() * messages.length);
-              document.write(messages[messageNo]);
+              const messageNo2 = Math.floor( Math.random() * messages2.length);
+              document.write(messages2[messageNo2]);
             </script>
           </div><br>
           お探しのページは存在しません。<br>
