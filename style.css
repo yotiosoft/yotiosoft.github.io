@@ -173,6 +173,18 @@ header {
   display: flex;
 }
 
+#fullcolumn {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#fullcolumn img {
+  width: 100%;
+}
+
 #sidebar {
   width: 200px;
   margin-left: 10px;
