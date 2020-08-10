@@ -210,7 +210,7 @@ header {
 
 /* メインとなるコンテンツ */
 #main_wrap {
-  width: 1320px;
+  width: 1300px;
   max-width: 100%;
   margin: 0px auto;
   display: -webkit-flex;
@@ -219,27 +219,12 @@ header {
 
 #fullcolumn {
   width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
   position: relative;
   margin-bottom: 30px;
 }
 
 #fullcolumn img {
   width: 100%;
-}
-
-figure {
-  position: relative;
-}
-
-figure figcaption {
-  color: #ffffff;
-  position: absolute;
-  top: 0;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
 }
 
 #sidebar {
