@@ -66,98 +66,102 @@
 
   <body>
     <div id="wrap">
-    <header>
-      <div id="header"></div>
-    </header>
+      <header>
+        <div id="headers">
+          <div id="fixed">
+            <div id="header"></div>
+          </div>
+        </div>
+      </header>
 
-    <div style="margin-top: 130px;"></div>
+      <div style="margin-top: 130px;"></div>
 
-    <div id="main_wrap">
-        <div id="fullcolumn" class="box-1300x390">
-          <div class="inner">
-            <p>
-              <a href="http://yotiosoft.com/citiesbox/">
-                <picture>
-                  <source type="image/webp" srcset="./img/top/cities_box_20200809.png.webp" />
-                  <img src="./img/top/cities_box_20200809.png" />
-                </picture>
-              </a>
-            </p>
+      <div id="main_wrap">
+          <div id="fullcolumn" class="box-1300x390">
+            <div class="inner">
+              <p>
+                <a href="http://yotiosoft.com/citiesbox/">
+                  <picture>
+                    <source type="image/webp" srcset="./img/top/cities_box_20200809.png.webp" />
+                    <img src="./img/top/cities_box_20200809.png" />
+                  </picture>
+                </a>
+              </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="main_wrap">
-      <div id="sidebar">
-        <div id="sticked">
-          <div id="sidebar_menu">
-            <div id="sidebar_h">
-              Home
+      <div id="main_wrap">
+        <div id="sidebar">
+          <div id="sticked">
+            <div id="sidebar_menu">
+              <div id="sidebar_h">
+                Home
+              </div>
+              <div id="sidebar_links">
+                <li><a href="#what">YotioSoftとは？</a></li>
+                <li><a href="#environment">主な開発・動作環境</a></li>
+              </div>
             </div>
-            <div id="sidebar_links">
-              <li><a href="#what">YotioSoftとは？</a></li>
-              <li><a href="#environment">主な開発・動作環境</a></li>
+          </div>
+        </div>
+
+        <div id="content">
+          <div id="column">
+            <h2>Hello World!</h2><br>
+            このサイトは現在試験運用中です。<br>
+            現行のHPは<a href="http://yotiosoft.com/">こちら</a>
+          </div>
+
+          <div id="column">
+            <a name="what"></a>
+            <div id="content_h">YotioSoftとは？</div>
+            <div id="content_main">
+              YotioSoftでは、無料かつオープンソースで、改造が可能な自作ソフトウェアを公開しています。
             </div>
           </div>
+
+          <div id="column">
+            <a name="environment"></a>
+            <div id="content_h">主な開発・動作環境</div>
+            <div id="content_main">
+              このサイトで公開しているソフトウェアは、主に以下の環境で開発しています。
+              <table>
+                <tr>
+                  <td rowspan="2" scope="rowgroup" class="nowrap">開発言語</td>
+                  <td>HSP (Hot Soup Processor)</td>
+                </tr>
+                <tr>
+                  <td>C++</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" scope="rowgroup" class="nowrap">使用ライブラリ</td>
+                  <td>OpenSiv3D</td>
+                </tr>
+                <tr>
+                  <td>OpenCV4</td>
+                </tr>
+                <tr>
+                  <td>OpenGL2</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" scope="rowgroup" class="nowrap">主な動作環境</td>
+                  <td>Windows10</td>
+                </tr>
+                <tr>
+                  <td>macOS 10.14以降</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div id="content">
-        <div id="column">
-          <h2>Hello World!</h2><br>
-          このサイトは現在試験運用中です。<br>
-          現行のHPは<a href="http://yotiosoft.com/">こちら</a>
-        </div>
-
-        <div id="column">
-          <a name="what"></a>
-          <div id="content_h">YotioSoftとは？</div>
-          <div id="content_main">
-            YotioSoftでは、無料かつオープンソースで、改造が可能な自作ソフトウェアを公開しています。
-          </div>
-        </div>
-
-        <div id="column">
-          <a name="environment"></a>
-          <div id="content_h">主な開発・動作環境</div>
-          <div id="content_main">
-            このサイトで公開しているソフトウェアは、主に以下の環境で開発しています。
-            <table>
-              <tr>
-                <td rowspan="2" scope="rowgroup" class="nowrap">開発言語</td>
-                <td>HSP (Hot Soup Processor)</td>
-              </tr>
-              <tr>
-                <td>C++</td>
-              </tr>
-              <tr>
-                <td rowspan="3" scope="rowgroup" class="nowrap">使用ライブラリ</td>
-                <td>OpenSiv3D</td>
-              </tr>
-              <tr>
-                <td>OpenCV4</td>
-              </tr>
-              <tr>
-                <td>OpenGL2</td>
-              </tr>
-              <tr>
-                <td rowspan="2" scope="rowgroup" class="nowrap">主な動作環境</td>
-                <td>Windows10</td>
-              </tr>
-              <tr>
-                <td>macOS 10.14以降</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-
-      </div>
+      <footer class="footer_class">
+        <div id="footer"></div>
+      </footer>
     </div>
-
-    <footer class="footer_class">
-      <div id="footer"></div>
-    </footer>
-  </div>
   </body>
 
 </html>

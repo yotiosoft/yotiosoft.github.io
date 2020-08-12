@@ -42,7 +42,11 @@ a.anchor{
 }
 
 /* ヘッダ */
-header {
+#headers {
+  position: relative;
+}
+
+#fixed {
   box-sizing: border-box;
   height: 100px;
   padding: 15px 30px;
@@ -50,6 +54,28 @@ header {
   color: white;
   width: 100%;
   position: fixed;
+  z-index: 10;
+}
+
+#fixed_subheader {
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu-fixed {
+  position: fixed;
+  top: 0;
+}
+
+#unfixed {
+  box-sizing: border-box;
+  height: 100px;
+  padding: 15px 30px;
+  background-color: #313131;
+  color: white;
+  width: 100%;
   z-index: 10;
 }
 

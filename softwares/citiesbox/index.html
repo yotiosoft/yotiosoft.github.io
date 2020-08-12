@@ -12,11 +12,11 @@
     </script>
 
     <meta charset="utf8">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
     <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
     <title>ソフトウェア - YotioSoft</title>
 
-    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/jquery-3.5.1.min.js"></script>
     <script>
       //共通パーツ読み込み
       $(function() {
@@ -62,33 +62,76 @@
         });
       });
     </script>
+
+    <script>
+    $(function() {
+      var submenu = $('#fixed_subheader');
+      var offset = submenu.offset();
+
+      $(window).scroll(function() {
+          if ($(window).scrollTop() > offset.top) {
+              submenu.addClass('menu-fixed');
+          } else {
+              submenu.removeClass('menu-fixed');
+          }
+      });
+    });
+    </script>
+
+    <style>
+      #fixed_subheader {
+        height: 75px;
+        background-color: #227093;
+      }
+
+      .under_menu_add {
+        margin-top: 75px;
+      }
+    </style>
   </head>
 
   <body>
     <div id="wrap">
       <header>
         <div id="headers">
-          <div id="fixed">
+          <div id="unfixed">
             <div id="header"></div>
+          </div>
+
+          <div id="fixed_subheader">
+            <div id="header_wrap">
+              <img src="./img/logo.png" />
+            </div>
           </div>
         </div>
       </header>
 
-      <div style="margin-top: 100px;" />
+      <script>
+        $(function() {
+          var under_menu = $('#navibar_wrap');
+          var offset_under_menu = under_menu.offset();
 
-      <div id="pageheader" style="background: #0fb9b1;">
-        <div id="pageheader_wrap">
-          <div id="pageheader_title">ソフトウェア</div>
-          <div id="pageheader_summary">このサイトで公開している作品について紹介します。</div>
-        </div>
-      </div>
+          var submenu = $('#fixed_subheader');
+          var offset = submenu.offset();
+
+          $(window).scroll(function() {
+              if ($(window).scrollTop() > offset.top) {
+                  under_menu.addClass('under_menu_add');
+              } else {
+                  under_menu.removeClass('under_menu_add');
+              }
+          });
+        });
+      </script>
 
       <nav>
         <div id="navibar_wrap">
           <div id="navibar">
             <a href="/">Home</a>
             <font class="arrow">></font>
-            ソフトウェア
+            <a href="/software/">ソフトウェア</a>
+            <font class="arrow">></font>
+            Cities Box
           </div>
         </div>
       </nav>
@@ -119,28 +162,48 @@
             </div>
         	</div>
 
+          <div id="column">
+            <a name="summary" class="anchor"></a>
+            <div id="content_h">概要</div>
+            <div id="content_main">
+              このサイトで公開しているソフトウェアは、すべて無料。<br>
+              オープンソースですので、安心してお使いいただけます。<br>
+              すべての作品にMITライセンスを適用していますので、改造なども可能です。
+            </div>
+        	</div>
+
+          <div id="column">
+            <a name="summary" class="anchor"></a>
+            <div id="content_h">概要</div>
+            <div id="content_main">
+              このサイトで公開しているソフトウェアは、すべて無料。<br>
+              オープンソースですので、安心してお使いいただけます。<br>
+              すべての作品にMITライセンスを適用していますので、改造なども可能です。
+            </div>
+        	</div>
+
         	<div id="column">
             <a name="games" class="anchor"></a>
             <div id="content_h">ゲーム</div>
-              <div id="content_h2">
-                <div id="content_h2_box"></div>
-                Cities Box
-              </div>
-              <div id="content_sub">
-                <table class="default_table">
-                  <tr>
-                    <td>ジャンル</td>
-                    <td>都市開発ゲーム</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2" scope="rowgroup" class="nowrap">動作環境</td>
-                    <td>Windows 10</td>
-                  </tr>
-                  <tr>
-                    <td>macOS 10.14以降</td>
-                  </tr>
-                </table>
-              </div>
+            <div id="content_h2">
+              <div id="content_h2_box"></div>
+              Cities Box
+            </div>
+            <div id="content_sub">
+              <table class="default_table">
+                <tr>
+                  <td>ジャンル</td>
+                  <td>都市開発ゲーム</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" scope="rowgroup" class="nowrap">動作環境</td>
+                  <td>Windows 10</td>
+                </tr>
+                <tr>
+                  <td>macOS 10.14以降</td>
+                </tr>
+              </table>
+            </div>
         	</div>
         </div>
       </div>
