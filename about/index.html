@@ -62,6 +62,18 @@
         });
       });
     </script>
+    <script>
+      $(function(){
+        $('a[href^="#"]').click(function(){
+          var speed = 500;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top - 110;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -119,7 +131,7 @@
 
         <div id="content">
         	<div id="column">
-                  <a name="about_here" class="anchor"></a>
+                  <div id="about_here"></div>
                   <div id="content_h">このサイトは？</div>
                   <div id="content_main">
                     このサイトは、YotioSoftの移転予定先です。移転する際はこちらのHPをyotiosoft.comからアクセスできるようにします。<br>
@@ -128,7 +140,7 @@
         	</div>
 
         	<div id="column">
-                  <a name="whats" class="anchor"></a>
+                  <div id="whats"></div>
                   <div id="content_h">YotioSoftとは</div>
                   <div id="content_main">
                     管理人が作ったしょうもないソフトウェアを無料で公開しているサイトです。<br>

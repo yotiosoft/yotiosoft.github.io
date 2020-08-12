@@ -62,6 +62,18 @@
         });
       });
     </script>
+    <script>
+      $(function(){
+        $('a[href^="#"]').click(function(){
+          var speed = 500;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top - 110;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -104,6 +116,7 @@
               </div>
               <div id="sidebar_links">
                 <li><a href="#basic">基本情報</a></li>
+                <li><a href="#hobbys">趣味</a></li>
                 <li><a href="#certification">保有資格</a></li>
                 <li><a href="#history">経歴</a></li>
               </div>
@@ -123,7 +136,7 @@
         <div id="content">
 
           <div id="column">
-            <a name="basic" class="anchor"></a>
+            <div id="basic"></div>
             <div id="content_h">基本情報</div>
             <div id="content_main">
               <table class="default_table">
@@ -144,6 +157,10 @@
                   <td>男</td>
                 </tr>
                 <tr>
+                  <td>血液型</td>
+                  <td>A型</td>
+                </tr>
+                <tr>
                   <td>職業</td>
                   <td>学生（高専生）</td>
                 </tr>
@@ -155,16 +172,68 @@
                   <td>身長</td>
                   <td>175cm</td>
                 </tr>
-                <tr>
-                  <td>体重</td>
-                  <td>49kg</td>
-                </tr>
               </table>
             </div>
           </div>
 
           <div id="column">
-            <a name="certification" class="anchor"></a>
+            <div id="hobbys"></div>
+            <div id="content_h">趣味</div>
+            <div id="content_main">
+              <ul>
+                <li>プログラミング
+                  <ul>
+                    <li>デスクトップアプリ開発 - HSPやC++など</li>
+                    <li>Web開発 - HTML、PHP、JavaScriptなど</li>
+                    <li>画像処理＆機械学習 - Python</li>
+                  </ul>
+                </li>
+                <li>地理
+                  <ul>
+                    <li>地図を眺めるのが好き</li>
+                  </ul>
+                </li>
+                <li>歴史
+                  <ul>
+                    <li>特に世界史や近代史に興味あり</li>
+                  </ul>
+                </li>
+                <li>国歌鑑賞
+                  <ul>
+                    <li>国連加盟国は全て制覇</li>
+                  </ul>
+                </li>
+                <li>電子工作
+                  <ul>
+                    <li>秋葉原で売ってるキットを組み立てる程度のことしかできない</li>
+                    <li>ラジオ（5個）、時計（3個）、FMトランスミッター（2個）など</li>
+                  </ul>
+                </li>
+                <li>ゲーム
+                  <ul>
+                    <li>地味なのしかやらない</li>
+                    <li>シムシティ</li>
+                    <li>Cities:Skylines</li>
+                  </ul>
+                </li>
+                <li>マイコン
+                  <ul>
+                    <li>Arduino UNOとRaspberry Pi Zeroを所持</li>
+                    <li>サーバーを立てようとするも、Wi-Fiに繋がらず断念</li>
+                  </ul>
+                </li>
+                <li>写真撮影
+                  <ul>
+                    <li>風景写真しか撮らない</li>
+                  </ul>
+                </li>
+              </ul>
+              など
+            </div>
+          </div>
+
+          <div id="column">
+            <div id="certification"></div>
             <div id="content_h">保有資格</div>
             <div id="content_main">
               <li>基本情報技術者試験（R01秋）</li>
@@ -174,7 +243,7 @@
           </div>
 
           <div id="column">
-            <a name="history" class="anchor"></a>
+            <div id="history"></div>
             <div id="content_h">経歴</div>
             <div id="content_main">
               <table>
@@ -195,7 +264,7 @@
                 </tr>
                 <tr>
                   <td class="nowrap">2013年</td>
-                  <td class="nowrap"4月</td>
+                  <td class="nowrap">4月</td>
                   <td>中学校に入学する</td>
                 </tr>
                 <tr>
@@ -222,12 +291,8 @@
                   <td>自作ゲーム「Cities Box」がHSPプログラムコンテスト2017でKm2Net株式会社賞を受賞</td>
                 </tr>
                 <tr>
-                  <td rowspan="3" scope="rowgroup" class="nowrap">2019年</td>
-                  <td class="nowrap">10月13日</td>
-                  <td>高専プロコンでチームとして数年ぶりに受賞する</td>
-                </tr>
-                <tr>
-                  <td class="nowrap">11月21日</td>
+                  <td rowspan="2" scope="rowgroup" class="nowrap">2019年</td>
+                  <td class="nowrap">11月</td>
                   <td>基本情報技術者試験を取得する</td>
                 </tr>
                 <tr>

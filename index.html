@@ -62,6 +62,18 @@
         });
       });
     </script>
+    <script>
+      $(function(){
+        $('a[href^="#"]').click(function(){
+          var speed = 500;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top - 110;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -114,7 +126,7 @@
           </div>
 
           <div id="column">
-            <a name="what"></a>
+            <div id="what"></div>
             <div id="content_h">YotioSoftとは？</div>
             <div id="content_main">
               YotioSoftでは、無料かつオープンソースで、改造が可能な自作ソフトウェアを公開しています。
@@ -122,7 +134,7 @@
           </div>
 
           <div id="column">
-            <a name="environment"></a>
+            <div id="environment"></div>
             <div id="content_h">主な開発・動作環境</div>
             <div id="content_main">
               このサイトで公開しているソフトウェアは、主に以下の環境で開発しています。
