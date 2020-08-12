@@ -28,68 +28,72 @@
 
   <body>
     <div id="wrap">
-    <header>
-      <div id="header"></div>
-    </header>
-
-    <div style="margin-top: 130px;"></div>
-
-    <div id="main_wrap">
-      <div id="sidebar">
-        <div id="sticked">
-          <div id="sidebar_pagetitle">
-
+      <header>
+        <div id="headers">
+          <div id="fixed">
+            <div id="header"></div>
           </div>
+        </div>
+      </header>
+
+      <div style="margin-top: 130px;"></div>
+
+      <div id="main_wrap">
+        <div id="sidebar">
+          <div id="sticked">
+            <div id="sidebar_pagetitle">
+
+            </div>
+          </div>
+        </div>
+
+        <div id="content">
+          <div id="column">
+            <div style="font-size: 26px; margin-bottom: 5px;">
+              <script>
+                const messages1 = [
+                  'printf("<b>404 Not Found</b>");',
+                  'print (\'<b>404 Not Found</b>\')',
+                  'mes "<b>404 Not Found</b>"',
+                  'echo("<b>404 Not Found</b>");',
+                  'std::cout << "<b>404 Not Found</b>" << std::endl;',
+                  'System.out.println("<b>404 Not Found</b>");',
+                  'console.log("<b>404 Not Found</b>");',
+                  'Concole.WriteLine("<b>404 Not Found</b>");',
+                  '&lt;h1&gt;<b>404 Not Found</b>&lt;/h1&gt;'
+                ];
+
+                const messageNo1 = Math.floor( Math.random() * messages1.length);
+                document.write(messages1[messageNo1]);
+              </script>
+            </div>
+            <div style="font-size: 14px; color: #716e77">
+              <script>
+                const messages2 = [
+                  '事実というものは<b>存在しない。</b>存在するのは解釈だけである。───フリードリヒ・ニーチェ（1844-1900）',
+                  '思考を除いて、我々の力の中で絶対的なものなど<b>存在しない。</b>───ルネ・デカルト（1596-1650）',
+                  'あなたの限界というのは、あなたがそう信じているものしか<b>存在しない。</b>───ウエイン・ダイアー（1940-2015）',
+                  '毒でないものなど<b>存在しない。</b>その服用量こそが毒であるか、 そうでないかを決めるのだ。───パラケルスス（1493-1541）',
+                  '生きる意味や価値を考え始めると、我々は気がおかしくなってしまう。生きる意味など、<b>存在しない</b>のだから。───ジークムント・フロイト（1856-1939）',
+                  '何をするにも時間は<b>見つからない</b>だろう。時間が欲しければ自分で作ることだ。───チャールズ・バクストン（1822-1871）',
+                  '欠点のない友人を見つけようとしても、決して<b>見つからない。</b>───トーマス・フラー（1608-1661）'
+                ];
+
+                const messageNo2 = Math.floor( Math.random() * messages2.length);
+                document.write(messages2[messageNo2]);
+              </script>
+            </div><br>
+            お探しのページは存在しません。<br>
+            <a href="/">トップページへ戻る</a>
+          </div>
+
         </div>
       </div>
 
-      <div id="content">
-        <div id="column">
-          <div style="font-size: 26px; margin-bottom: 5px;">
-            <script>
-              const messages1 = [
-                'printf("<b>404 Not Found</b>");',
-                'print (\'<b>404 Not Found</b>\')',
-                'mes "<b>404 Not Found</b>"',
-                'echo("<b>404 Not Found</b>");',
-                'std::cout << "<b>404 Not Found</b>" << std::endl;',
-                'System.out.println("<b>404 Not Found</b>");',
-                'console.log("<b>404 Not Found</b>");',
-                'Concole.WriteLine("<b>404 Not Found</b>");',
-                '&lt;h1&gt;<b>404 Not Found</b>&lt;/h1&gt;'
-              ];
-
-              const messageNo1 = Math.floor( Math.random() * messages1.length);
-              document.write(messages1[messageNo1]);
-            </script>
-          </div>
-          <div style="font-size: 14px; color: #716e77">
-            <script>
-              const messages2 = [
-                '事実というものは<b>存在しない。</b>存在するのは解釈だけである。───フリードリヒ・ニーチェ（1844-1900）',
-                '思考を除いて、我々の力の中で絶対的なものなど<b>存在しない。</b>───ルネ・デカルト（1596-1650）',
-                'あなたの限界というのは、あなたがそう信じているものしか<b>存在しない。</b>───ウエイン・ダイアー（1940-2015）',
-                '毒でないものなど<b>存在しない。</b>その服用量こそが毒であるか、 そうでないかを決めるのだ。───パラケルスス（1493-1541）',
-                '生きる意味や価値を考え始めると、我々は気がおかしくなってしまう。生きる意味など、<b>存在しない</b>のだから。───ジークムント・フロイト（1856-1939）',
-                '何をするにも時間は<b>見つからない</b>だろう。時間が欲しければ自分で作ることだ。───チャールズ・バクストン（1822-1871）',
-                '欠点のない友人を見つけようとしても、決して<b>見つからない。</b>───トーマス・フラー（1608-1661）'
-              ];
-
-              const messageNo2 = Math.floor( Math.random() * messages2.length);
-              document.write(messages2[messageNo2]);
-            </script>
-          </div><br>
-          お探しのページは存在しません。<br>
-          <a href="/">トップページへ戻る</a>
-        </div>
-
-      </div>
+      <footer class="footer_class">
+        <div id="footer"></div>
+      </footer>
     </div>
-
-    <footer class="footer_class">
-      <div id="footer"></div>
-    </footer>
-  </div>
   </body>
 
 </html>
