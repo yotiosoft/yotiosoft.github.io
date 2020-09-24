@@ -158,6 +158,10 @@ a.anchor{
   background-color: #dadada;
 }
 
+#menu_icon {
+  height: 45px;
+}
+
 /* パンくずリスト */
 #navibar_wrap {
   width: 100%;
