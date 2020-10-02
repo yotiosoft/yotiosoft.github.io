@@ -1,0 +1,12 @@
+{
+	"articles": [
+		{
+			"year": 2020,
+			"month": 10,
+			"day": 1,
+			"title": "テスト記事"
+			"summary": "これはテストです。"
+			"link": "/articles/2020/10/これはテストです.html"
+		}
+	]
+}

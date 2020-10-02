@@ -172,8 +172,8 @@ a.anchor{
   color:	#FFFFFF;
   font-size: 16px;
 
-  -webkit-transition:	all 0.4s ease;
-	transition:	all 0.4s ease;
+  -webkit-transition:	all 0.3s ease;
+	transition:	all 0.3s ease;
 
   margin: 0px 5px 0px 5px;
 }
@@ -181,8 +181,8 @@ a.anchor{
   width:	100px;
   background-color:	rgb(0, 162, 232);
 
-  -webkit-transition:	all 0.4s ease;
-	transition:	all 0.4s ease;
+  -webkit-transition:	all 0.3s ease;
+	transition:	all 0.3s ease;
 }
 .menu_right_button .mask {
 	width: 50%;	/* 画像の半分の大きさにする */
@@ -192,15 +192,15 @@ a.anchor{
 	left:	0;
 	margin-left:	100%;	/* 枠の左に置いて表示させない */
 	background-color:	rgba(0,162,232,0.4);
-	-webkit-transition:	all 0.4s ease;
-	transition:	all 0.4s ease;
+	-webkit-transition:	all 0.3s ease;
+	transition:	all 0.3s ease;
 }
 .menu_right_button:hover .mask {
 	margin-left: 40px;	/* 右にずらして表示する */
 }
 .menu_right_button img {
-  -webkit-transition:	all 0.4s ease;
-	transition:	all 0.4s ease;
+  -webkit-transition:	all 0.3s ease;
+	transition:	all 0.3s ease;
 
   position: absolute;
   top: 6px;
