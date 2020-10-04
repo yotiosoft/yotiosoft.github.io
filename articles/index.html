@@ -36,8 +36,8 @@
 
       <div id="pageheader" style="background: #e67e22;">
         <div id="pageheader_wrap">
-          <div id="pageheader_title">About</div>
-          <div id="pageheader_summary">このサイトについてご紹介します。</div>
+          <div id="pageheader_title">お知らせ</div>
+          <div id="pageheader_summary">YotioSoftからのお知らせなど。</div>
         </div>
       </div>
 
@@ -46,7 +46,7 @@
           <div id="navibar">
             <a href="/">Home</a>
             <font class="arrow">></font>
-            About
+            お知らせ
           </div>
         </div>
       </nav>
@@ -56,20 +56,10 @@
           <div id="sticked">
             <div id="sidebar_menu">
               <div id="sidebar_h">
-                About
+                お知らせ
               </div>
               <div id="sidebar_links">
-                <li><a href="#about_here">このサイトは？</a></li>
-                <li><a href="#whats">YotioSoftとは</a></li>
-              </div>
-            </div>
-
-            <div id="sidebar_menu">
-              <div id="sidebar_h">
-                関連ページ
-              </div>
-              <div id="sidebar_links">
-                <li><a href="./profile/">プロフィール</a></li>
+                <li><a href="#articles">最近の投稿</a></li>
               </div>
             </div>
           </div>
@@ -77,11 +67,34 @@
 
         <div id="content">
         	<div id="column">
-                  <div id="about_here"></div>
-                  <div id="content_h">このサイトは？</div>
-                  <div id="content_main">
-                    このサイトは、YotioSoftの移転予定先です。移転する際はこちらのHPをyotiosoft.comからアクセスできるようにします。<br>
-                    随時更新しますので、完成までの間、しばし制作途中の醜い姿をお楽しみください。
+                  <div id="articles"></div>
+                  <div id="content_h">最近の投稿</div>
+
+                  <script>
+                    url = './articles.json';
+
+                    $.getJSON(url, (data) => {
+                      document.write(`id=${data.year}, name=${data.month}, email=${data.day}`);
+                    });
+                  </script>
+
+                  <div class="card4">
+                    <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="image4">
+                    <div class="card_absolute">
+                      <p class="title4">テスト記事</p>
+                      <p class="content4">
+                        <script>
+                        url = './articles.json';
+
+                        $.getJSON(url, (data) => {
+                          document.write(${data.articles.year});
+                        });
+                      </script>
+                    </p>
+                    </div>
+                    <div class="box4">
+                        <button class="continue4">続きを読む</button>
+                    </div>
                   </div>
         	</div>
 
