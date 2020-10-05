@@ -499,7 +499,10 @@ a.anchor{
 .card_absolute {
   height: 200px;
   background: rgba(255,255,255,0.7);
+  border-radius: 5px;
   position:sticky;
+
+  color: #444;
 
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -511,8 +514,11 @@ a.anchor{
 .card_absolute:hover {
   margin-top: -250px;
   height: 450px;
-  background: rgba(255,255,255,0.7);
+  background: rgba(50,50,50,0.7);
+  border-radius: 5px;
   position:sticky;
+
+  color: #FFF;
 
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -524,11 +530,9 @@ a.anchor{
 .title4 {
   font-size: 120%;
   margin: 10px 10px 0px 10px;
-  color: #444;
 }
 .content4 {
   padding: 10px;
-  color: #666;
 }
 .box4 {
   display: flex;
