@@ -76,13 +76,14 @@
                       <p class="title4">テスト記事</p>
                       <p class="content4">
                         <script>
-                        url = './articles.json';
-
-                        $.getJSON(url, (data) => {
-                          document.write(${data.articles.year});
-                        });
-                      </script>
-                    </p>
+                          console.log(`id`);
+                          url = 'articles.json';
+                          
+                          $.getJSON(url, (data) => {
+                            console.log(`id=${data.articles[0].year} ${data.articles.length}`);
+                          });
+                        </script>
+                      </p>
                     </div>
                   </div>
         	</div>
