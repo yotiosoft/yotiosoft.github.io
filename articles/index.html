@@ -77,8 +77,11 @@
                 <p class="title4">テスト記事</p>
                 <p class="content4">
                   <script>
-                    console.log(getArticleSummary(0));
+                    $.getJSON("articles.json", function(data){
+                      document.getElementById("article_summary").innerHTML = data[0].summary;
+                    });
                   </script>
+                  <p id="article_summary"></p>
                 </p>
               </div>
             </div>
