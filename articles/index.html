@@ -75,23 +75,25 @@
                     <div class="card_absolute">
                       <p class="title4">テスト記事</p>
                       <p class="content4">
-                        <script>
-                          document.write("A");
-                          document.write("B");
-                          const fs = require('fs');
-
-                          const jsonObject = JSON.parse(fs.readFileSync('./articles.json', 'utf8'));
-                          const result = {};
-
-                          jsonObject.articles.forEach((obj) => {
-                              result[obj.date] = obj;
-                              document.write("A");
-                              document.write(obj.year);
-                          });
-                        </script>
+                        
                       </p>
                     </div>
                   </div>
+
+                  <script>
+                    document.write("A");
+                    document.write("B");
+                    const fs = require('fs');
+
+                    const jsonObject = JSON.parse(fs.readFileSync('./articles.json', 'utf8'));
+                    const result = {};
+
+                    jsonObject.articles.forEach((obj) => {
+                        result[obj.date] = obj;
+                        document.write("A");
+                        document.write(obj.year);
+                    });
+                  </script>
         	</div>
 
         	<div id="column">
