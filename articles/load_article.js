@@ -1,5 +1,5 @@
-function getArticleSummary(num_from_latest) {
+jQuery(function getArticleSummary(num) {
     $.getJSON("articles.json", function(data){
-        $("#article_index").text(data[num_from_latest].summary);
+        $("#article_summary").html(data[num].summary);
     });
-};
+});
