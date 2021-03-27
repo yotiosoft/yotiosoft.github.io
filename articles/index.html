@@ -75,14 +75,14 @@
               <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="image4">
               <div class="card_absolute">
                 <p class="title4">テスト記事</p>
-                <p class="content4">
-                  <script>
-                    $.getJSON("articles.json", function(data){
-                      document.getElementById("article_summary").innerHTML = data[0].summary;
-                    });
-                  </script>
-                  <p id="article_summary"></p>
-                </p>
+
+                <script>
+                  $.getJSON("articles.json", function(data){
+                    document.getElementById("article_summary").innerHTML = data[0].summary;
+                  });
+                </script>
+
+                <p class="content4" id="article_summary"></p>
               </div>
             </div>
         	</div>
