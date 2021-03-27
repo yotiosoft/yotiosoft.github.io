@@ -32,7 +32,7 @@
         </div>
       </header>
 
-      <div style="margin-top: 100px;" />
+      <div style="margin-top: 100px;"></div>
 
       <div id="pageheader" style="background: #e67e22;">
         <div id="pageheader_wrap">
@@ -67,59 +67,32 @@
 
         <div id="content">
         	<div id="column">
-                  <div id="articles"></div>
-                  <div id="content_h">最近の投稿</div>
+            <div id="articles"></div>
+            <div id="content_h">最近の投稿</div>
 
-                  <div class="card4">
-                    <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="image4">
-                    <div class="card_absolute">
-                      <p class="title4">テスト記事</p>
-                      <p class="content4">
-                        
-                      </p>
-                    </div>
-                  </div>
-
-                  <script>
-                    document.write("A");
-                    document.write("B");
-
-                    //FileReaderの作成
-                    var reader = new FileReader();
-                    //テキスト形式で読み込む
-                    reader.readAsText('https://yotiosoft.github.io/articles/articles.json');
-                    
-                    //読込終了後の処理
-                    reader.onload = function(ev){
-                      //テキストエリアに表示する
-                      document.write(reader.result);
-                    }
-                    
-                    const fs = require('fs');
-
-                    const jsonObject = JSON.parse(fs.readFileSync('https://yotiosoft.github.io/articles/articles.json', 'utf8'));
-                    const result = {};
-
-                    $.getJSON("https://yotiosoft.github.io/articles/articles.json", function(data){
-                      console.log('data : ', data);
-                    });
-
-                    jsonObject.articles.forEach((obj) => {
-                        result[obj.date] = obj;
-                        document.write("A");
-                        document.write(obj.year);
-                    });
-                  </script>
+            <div class="card4">
+              <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="image4">
+              <div class="card_absolute">
+                <p class="title4">テスト記事</p>
+                <p class="content4">
+                  
+                </p>
+              </div>
+            </div>
         	</div>
 
+          <script src="./load_article.js"></script>
+          <p id="read_text"></p>
+          <p id="read_text2"></p>
+
         	<div id="column">
-                  <div id="whats"></div>
-                  <div id="content_h">YotioSoftとは</div>
-                  <div id="content_main">
-                    管理人が作ったしょうもないソフトウェアを無料で公開しているサイトです。<br>
-                    現行のHPはこちら↓<br>
-                    <a href="http://yotiosoft.com">http://yotiosoft.com</a>
-                  </div>
+            <div id="whats"></div>
+            <div id="content_h">YotioSoftとは</div>
+            <div id="content_main">
+              管理人が作ったしょうもないソフトウェアを無料で公開しているサイトです。<br>
+              現行のHPはこちら↓<br>
+              <a href="http://yotiosoft.com">http://yotiosoft.com</a>
+            </div>
         	</div>
         </div>
       </div>
