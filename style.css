@@ -622,6 +622,32 @@ a.anchor{
   background-color: transparent;
 }
 
+.catches {
+  display: flex;
+}
+.catch_circle-1,
+.catch_circle-2,
+.catch_circle-3 {
+  color: #fff;
+  padding: 5%;
+  width: 180px;
+  height: 180px;
+  margin: 0 -15px;
+  mix-blend-mode: multiply;
+}
+.catch_circle-1 {
+  background: #f66;
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+}
+.catch_circle-2 {
+  background: #f92;
+  border-radius: 80% 30% 50% 50%/50%;
+}
+.catch_circle-3 {
+  background: #fc2;
+  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+}
+
 /* フッター */
 .footer_class,
 .push {
