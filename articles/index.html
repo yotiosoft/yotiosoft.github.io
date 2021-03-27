@@ -77,8 +77,13 @@
                 <p class="title4">テスト記事</p>
 
                 <script>
+                  const formatter = new Intl.NumberFormat('ja', {
+                    minimumIntegerDigits: 2, 
+                    useGrouping: false
+                  });
+
                   $.getJSON("articles.json", function(data){
-                    document.getElementById("article_summary").innerHTML = data[0].summary;
+                    document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"+data[0].summary;
                   });
                 </script>
 
