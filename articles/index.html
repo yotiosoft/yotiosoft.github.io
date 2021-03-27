@@ -20,6 +20,7 @@
     <script src="../js/common.js"></script>
     <script src="../js/side.js"></script>
     <script src="../js/jump.js"></script>
+    <script src="./load_article.js"></script>
   </head>
 
   <body>
@@ -75,16 +76,15 @@
               <div class="card_absolute">
                 <p class="title4">テスト記事</p>
                 <p class="content4">
-                  
+                  <script>
+                    $.getJSON("articles.json", function(data){
+                      document.write(data[0].summary);
+                    });
+                  </script>
                 </p>
               </div>
             </div>
         	</div>
-
-          <script src="./load_article.js"></script>
-          <p id="read_text"></p>
-          <p id="read_text2"></p>
-          <p id="article_index"></p>
 
         	<div id="column">
             <div id="whats"></div>
