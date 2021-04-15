@@ -84,16 +84,15 @@
                 target.href = data[0].link;
 
                 link = data[0].link;
-              });
 
-              const doc = fetch(link)
+                const doc = fetch(link)
                 .then((res) => res.text())
                 .then((text) => {
-                  // テキストをDOMに変換する
-                  return new DOMParser().parseFromString(text, "text/html");
-                }
-              );
-              document.getElementById("article_title").innerHTML = doc.title;
+                    return new DOMParser().parseFromString(text, "text/html");
+                  }
+                );
+                document.getElementById("article_title").innerHTML = doc.title;
+              });
             </script>
             
             <div class="card4">
