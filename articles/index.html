@@ -70,32 +70,32 @@
         	<div id="column">
             <div id="articles"></div>
             <div id="content_h">最近の投稿</div>
+
+            <script>
+              const formatter = new Intl.NumberFormat('ja', {
+                minimumIntegerDigits: 2, 
+                useGrouping: false
+              });
+  
+              $.getJSON("articles.json", function(data){
+                document.getElementById("article_title").innerHTML = data[0].title;
+                document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"+data[0].summary;
+  
+                const target = document.getElementById("card_link");
+                target.href = data[0].link;
+              });
+            </script>
             
             <div class="card4">
-              <a id="card_link"></a>
+              <a id="card_link">
                 <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="image4">
                 <div class="card_absolute">
                   <p class="title4" id="article_title"></p>
                   <p class="content4" id="article_summary"></p>
                 </div>
-              </div>
+              </a>
             </div>
-        	</a>
-
-          <script>
-            const formatter = new Intl.NumberFormat('ja', {
-              minimumIntegerDigits: 2, 
-              useGrouping: false
-            });
-
-            $.getJSON("articles.json", function(data){
-              document.getElementById("article_title").innerHTML = data[0].title;
-              document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"+data[0].summary;
-
-              const target = document.getElementById("card_link");
-              target.href = data[0].link;
-            });
-          </script>
+        	</div>
 
         	<div id="column">
             <div id="whats"></div>
