@@ -78,12 +78,22 @@
               });
   
               $.getJSON("articles.json", function(data){
-                document.getElementById("article_title").innerHTML = data[0].title;
                 document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"+data[0].summary;
   
                 const target = document.getElementById("card_link");
                 target.href = data[0].link;
+
+                link = data[0].link;
               });
+
+              const doc = fetch(link)
+                .then((res) => res.text())
+                .then((text) => {
+                  // テキストをDOMに変換する
+                  return new DOMParser().parseFromString(text, "text/html");
+                }
+              );
+              document.getElementById("article_title").innerHTML = doc.title;
             </script>
             
             <div class="card4">
