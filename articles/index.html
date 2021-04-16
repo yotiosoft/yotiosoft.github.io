@@ -88,7 +88,9 @@
                 .then((text) => {
                     return new DOMParser().parseFromString(text, "text/html");
                   })
-                .then((dom) => document.getElementById("article_title").innerHTML = dom.title);
+                .then((dom) => doc = dom);
+
+                document.getElementById("article_title").innerHTML((doc.title).split(' - ')[0]);
               });
             </script>
             
