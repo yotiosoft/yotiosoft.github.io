@@ -82,6 +82,7 @@
   
                 const target = document.getElementById("card_link");
                 target.href = data[0].link;
+                document.getElementById("article_title").innerHTML = data[0].title;
 
                 const doc = fetch(data[0].link)
                 .then((res) => res.text())
@@ -89,7 +90,7 @@
                     return new DOMParser().parseFromString(text, "text/html");
                   })
                 .then((dom) =>
-                  document.getElementById("article_title").innerHTML = (dom.title).split(' - ')[0]
+                  document.getElementById("article_title").innerHTML = dom.body.replace(/<("[^"]*"|'[^']*'|[^'">])*>/g,'')
                 );
               });
             </script>
