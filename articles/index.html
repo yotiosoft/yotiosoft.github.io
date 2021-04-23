@@ -89,7 +89,7 @@
                   })
                 .then((dom) =>
                   document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"
-                    +dom.body.wrap.main_wrap.innerHTML
+                    +dom.getElementById("article_content").innerText
                 );
               });
             </script>
