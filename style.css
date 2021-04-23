@@ -26,7 +26,7 @@ html, body {
   background-color: #eeeeee;
 }
 
-#wrap {
+.wrap {
   overflow: hidden;
 
   min-height: 100vh;
@@ -42,11 +42,11 @@ a.anchor{
 }
 
 /* ヘッダ */
-#headers {
+.headers {
   position: relative;
 }
 
-#fixed {
+.fixed {
   box-sizing: border-box;
   height: 100px;
   padding: 15px 30px;
@@ -57,7 +57,7 @@ a.anchor{
   z-index: 10;
 }
 
-#fixed_subheader {
+.fixed_subheader {
   box-sizing: border-box;
   color: white;
   width: 100%;
@@ -69,7 +69,7 @@ a.anchor{
   top: 0;
 }
 
-#unfixed {
+.unfixed {
   box-sizing: border-box;
   height: 100px;
   padding: 15px 30px;
@@ -79,7 +79,7 @@ a.anchor{
   z-index: 10;
 }
 
-#unfixed_mini {
+.unfixed_mini {
   box-sizing: border-box;
   height: 62px;
   padding: 15px 30px;
@@ -89,14 +89,14 @@ a.anchor{
   z-index: 10;
 }
 
-#header_wrap {
+.header_wrap {
   width: 1300px;
   max-width: 100%;
   margin: 0px auto;
   overflow: hidden;
 }
 
-#header_logo {
+.header_logo {
   height: 32px;
   float: left;
   line-height: 32px;
@@ -107,7 +107,7 @@ a.anchor{
   text-decoration: none;
 }
 
-#header_menu_line {
+.header_menu_line {
   width: 100%;
   float: left;
   margin-top: 8px;
@@ -117,12 +117,12 @@ a.anchor{
   text-decoration: none;
 }
 
-#header_menu_left {
+.header_menu_left {
   float: left;
   display: flex;
 }
 
-#header_menu_right {
+.header_menu_right {
   float: right;
   display: flex;
 }
@@ -158,7 +158,7 @@ a.anchor{
   background-color: #dadada;
 }
 
-#menu_icon {
+.menu_icon {
   height: 45px;
 }
 
@@ -207,14 +207,14 @@ a.anchor{
 }
 
 /* パンくずリスト */
-#navibar_wrap {
+.navibar_wrap {
   width: 100%;
   height: 20px;
   background-color: #dfe6e9;
   margin-bottom: 30px;
 }
 
-#navibar {
+.navibar {
   width: 1310px;
   max-width: 100%;
   padding-left: 10px;
@@ -224,7 +224,7 @@ a.anchor{
   font-size: 14px;
 }
 
-#navibar a {
+.navibar a {
   color: #b2bec3;
   font-size: 14px;
   text-decoration: none;
@@ -237,7 +237,7 @@ a.anchor{
   line-height: 20px;
 }
 
-#navibar a:hover {
+.navibar a:hover {
   color: #313131;
 }
 
@@ -257,14 +257,14 @@ a.anchor{
 }
 
 /* ページのタイトルと説明 */
-#pageheader {
+.pageheader {
   width: 100%;
   height: 80px;
 
   text-shadow: 1px 2px 10px #808080;
 }
 
-#pageheader_wrap {
+.pageheader_wrap {
   width: 1310px;
   max-width: 100%;
   height: 70px;
@@ -278,7 +278,7 @@ a.anchor{
   top: 10px;
 }
 
-#pageheader_title {
+.pageheader_title {
   color: #FFFFFF;
   font-size: 26px;
   height: 40px;
@@ -287,7 +287,7 @@ a.anchor{
   font-weight: bold;
 }
 
-#pageheader_summary {
+.pageheader_summary {
   color: #FFFFFF;
   font-size: 18px;
   height: 30px;
@@ -295,7 +295,7 @@ a.anchor{
 }
 
 /* メインとなるコンテンツ */
-#main_wrap {
+.main_wrap {
   width: 1300px;
   max-width: 100%;
   margin: 0px auto;
@@ -303,7 +303,7 @@ a.anchor{
   display: flex;
 }
 
-#fullcolumn {
+.fullcolumn {
   position: relative;
   width: 100%;
   height: auto;
@@ -328,29 +328,29 @@ a.anchor{
   line-height:1.5em;
 }
 
-#fullcolumn img {
+.fullcolumn img {
   width: 100%;
 }
 
-#sidebar {
+.sidebar {
   width: 200px;
   margin-left: 10px;
   position: relative;
   z-index: 1;
 }
 
-#sticked {
+.sticked {
   width: 100%;
   /*border: dashed 1px #999;*/
 }
 
-#sidebar_menu {
+.sidebar_menu {
   width: 100%;
   color: #313131;
   margin-bottom: 10px;
 }
 
-#sidebar_h {
+.sidebar_h {
   height: 20px;
   font-size: 16px;
   font-weight: bold;
@@ -358,18 +358,18 @@ a.anchor{
   margin-bottom: 5px;
 }
 
-#sidebar_links {
+.sidebar_links {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 14px;
 }
 
-#sidebar_menu li {
+.sidebar_menu li {
   margin-top: 5px;
   list-style: none;
 }
 
-#sidebar_menu li a {
+.sidebar_menu li a {
   color: #313131;
   text-decoration: none;
 
@@ -379,7 +379,7 @@ a.anchor{
   transition: all 0.3s ease;
 }
 
-#sidebar_menu a:hover {
+.sidebar_menu a:hover {
   color: #5bd1d7;
 }
 
@@ -423,35 +423,35 @@ a.anchor{
   font-size: 18px;
 }
 
-#article_title {
+.article_title {
   font-size: 30px;
 }
 
-#article_info {
+.article_info {
   font-size: 14px;
   margin-left: 2px;
   color: #888888;
   margin-bottom: 20px;
 }
 
-#content_main {
+.content_main {
   margin-left: 5px;
 }
 
-#content_main img {
+.content_main img {
   max-width: 49%;
   padding: 5px 0px 5px 0px;
 }
 
-#content_sub {
+.content_sub {
   margin-left: 30px;
 }
 
-#content_sub2 {
+.content_sub2 {
   margin-left: 15px;
 }
 
-#show_requirements {
+.show_requirements {
   font-size: 10px;
   margin-bottom: 15px;
 }
@@ -513,7 +513,7 @@ a.anchor{
   font-weight: bold;
 }
 
-#content a {
+.content a {
   color: #3498db;
   text-decoration: none;
 
@@ -523,33 +523,33 @@ a.anchor{
   transition: all 0.3s ease;
 }
 
-#content a:hover {
+.content a:hover {
   color: #5bd1d7;
 }
 
-#content table {
+.content table {
   border-collapse: collapse;
   margin: 30px 0px 30px 0px;
 }
 
-#content tr {
+.content tr {
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
 }
 
-#content td {
+.content td {
   padding: 15px 15px 15px 15px;
 }
 
-#content table .nowrap {
+.content table .nowrap {
   white-space: nowrap;
 }
 
-#content li {
+.content li {
   margin: 10px 0px 10px 0px;
 }
 
-#content ul {
+.content ul {
   margin-left: 20px;
 }
 
@@ -662,7 +662,7 @@ a.anchor{
   z-index: 10;
 }
 
-#footer_wrap {
+.footer_wrap {
   width: 1320px;
   max-width: 100%;
   margin: 0px auto;
@@ -671,18 +671,18 @@ a.anchor{
   overflow: hidden;
 }
 
-#footer_logo {
+.footer_logo {
   height: 50px;
   display: flex;
 }
 
-#footer_logo_name_and_catchcopy {
+.footer_logo_name_and_catchcopy {
   height: 50px;
   margin-left: 20px;
   text-align: left;
 }
 
-#footer_logo_name {
+.footer_logo_name {
   height: 30px;
   font-size: 26px;
   line-height: 30px;
@@ -690,7 +690,7 @@ a.anchor{
   font-family: 'Nunito Sans', sans-serif;
 }
 
-#footer_logo_catchcopy {
+.footer_logo_catchcopy {
   height: 20px;
   font-size: 12px;
   line-height: 30px;
@@ -698,7 +698,7 @@ a.anchor{
   font-family: 'Nunito Sans', sans-serif;
 }
 
-#footer_copyright {
+.footer_copyright {
   margin-top: 5px;
   height: 45px;
   float: left;
