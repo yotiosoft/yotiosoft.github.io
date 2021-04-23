@@ -513,7 +513,7 @@ a.anchor{
   font-weight: bold;
 }
 
-#content a {
+.content a {
   color: #3498db;
   text-decoration: none;
 
@@ -523,33 +523,33 @@ a.anchor{
   transition: all 0.3s ease;
 }
 
-#content a:hover {
+.content a:hover {
   color: #5bd1d7;
 }
 
-#content table {
+.content table {
   border-collapse: collapse;
   margin: 30px 0px 30px 0px;
 }
 
-#content tr {
+.content tr {
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
 }
 
-#content td {
+.content td {
   padding: 15px 15px 15px 15px;
 }
 
-#content table .nowrap {
+.content table .nowrap {
   white-space: nowrap;
 }
 
-#content li {
+.content li {
   margin: 10px 0px 10px 0px;
 }
 
-#content ul {
+.content ul {
   margin-left: 20px;
 }
 
