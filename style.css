@@ -26,7 +26,7 @@ html, body {
   background-color: #eeeeee;
 }
 
-#wrap {
+.wrap {
   overflow: hidden;
 
   min-height: 100vh;
@@ -158,10 +158,6 @@ a.anchor{
   background-color: #dadada;
 }
 
-#menu_icon {
-  height: 45px;
-}
-
 .menu_right_button {
 	width:	32px;
   height: 45px;
@@ -207,14 +203,14 @@ a.anchor{
 }
 
 /* パンくずリスト */
-#navibar_wrap {
+.navibar_wrap {
   width: 100%;
   height: 20px;
   background-color: #dfe6e9;
   margin-bottom: 30px;
 }
 
-#navibar {
+.navibar {
   width: 1310px;
   max-width: 100%;
   padding-left: 10px;
@@ -224,7 +220,7 @@ a.anchor{
   font-size: 14px;
 }
 
-#navibar a {
+.navibar a {
   color: #b2bec3;
   font-size: 14px;
   text-decoration: none;
@@ -237,7 +233,7 @@ a.anchor{
   line-height: 20px;
 }
 
-#navibar a:hover {
+.navibar a:hover {
   color: #313131;
 }
 
@@ -257,14 +253,14 @@ a.anchor{
 }
 
 /* ページのタイトルと説明 */
-#pageheader {
+.pageheader {
   width: 100%;
   height: 80px;
 
   text-shadow: 1px 2px 10px #808080;
 }
 
-#pageheader_wrap {
+.pageheader_wrap {
   width: 1310px;
   max-width: 100%;
   height: 70px;
@@ -278,7 +274,7 @@ a.anchor{
   top: 10px;
 }
 
-#pageheader_title {
+.pageheader_title {
   color: #FFFFFF;
   font-size: 26px;
   height: 40px;
@@ -287,7 +283,7 @@ a.anchor{
   font-weight: bold;
 }
 
-#pageheader_summary {
+.pageheader_summary {
   color: #FFFFFF;
   font-size: 18px;
   height: 30px;
@@ -295,7 +291,7 @@ a.anchor{
 }
 
 /* メインとなるコンテンツ */
-#main_wrap {
+.main_wrap {
   width: 1300px;
   max-width: 100%;
   margin: 0px auto;
@@ -303,7 +299,7 @@ a.anchor{
   display: flex;
 }
 
-#fullcolumn {
+.fullcolumn {
   position: relative;
   width: 100%;
   height: auto;
@@ -328,7 +324,7 @@ a.anchor{
   line-height:1.5em;
 }
 
-#fullcolumn img {
+.fullcolumn img {
   width: 100%;
 }
 
@@ -553,7 +549,7 @@ a.anchor{
   margin-left: 20px;
 }
 
-#column {
+.column {
   margin-bottom: 30px;
 }
 
