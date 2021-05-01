@@ -299,7 +299,7 @@ a.anchor{
   display: flex;
 }
 
-.fullcolumn {
+#fullcolumn {
   position: relative;
   width: 100%;
   height: auto;
@@ -320,11 +320,11 @@ a.anchor{
   height: 100%;
 }
 
-.fullcolumn p {
+#fullcolumn p {
   line-height:1.5em;
 }
 
-.fullcolumn img {
+#fullcolumn img {
   width: 100%;
 }
 
