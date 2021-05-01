@@ -203,7 +203,7 @@ a.anchor{
 }
 
 /* パンくずリスト */
-.#avibar_wrap {
+.navibar_wrap {
   width: 100%;
   height: 20px;
   background-color: #dfe6e9;
@@ -299,7 +299,7 @@ a.anchor{
   display: flex;
 }
 
-#div class="fullcolumn {
+.fullcolumn {
   position: relative;
   width: 100%;
   height: auto;
@@ -320,11 +320,11 @@ a.anchor{
   height: 100%;
 }
 
-#div class="fullcolumn p {
+.fullcolumn p {
   line-height:1.5em;
 }
 
-#div class="fullcolumn img {
+.fullcolumn img {
   width: 100%;
 }
 
