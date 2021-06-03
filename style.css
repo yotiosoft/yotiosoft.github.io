@@ -174,7 +174,7 @@ a.anchor{
   margin: 0px 5px 0px 5px;
 }
 .menu_right_button:hover {
-  width:	100px;
+  width:	160px;
   background-color:	rgb(0, 162, 232);
 
   -webkit-transition:	all 0.3s ease;
@@ -192,7 +192,7 @@ a.anchor{
 	transition:	all 0.3s ease;
 }
 .menu_right_button:hover .mask {
-	margin-left: 40px;	/* 右にずらして表示する */
+	margin-left: 35px;	/* 右にずらして表示する */
 }
 .menu_right_button img {
   -webkit-transition:	all 0.3s ease;
