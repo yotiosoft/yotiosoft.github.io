@@ -1,0 +1,28 @@
+/* インライン要素の見出し */
+.inline-heading-wrap {
+    height: 60px;
+}
+
+.inline-heading-en {
+    float: left;
+    max-width: 100px;
+    height: 40px;
+    margin: 10px 10px 10px 0px;
+
+    font-size: 26px;
+    line-height: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: green;
+    letter-spacing: 3px;
+}
+
+.inline-heading-jp {
+    float: left;
+    height: 40px;
+    margin: 10px 10px 10px 0px;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
