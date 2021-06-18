@@ -5,13 +5,13 @@
 
 .inline-heading-en {
     float: left;
-    max-width: 100px;
+    max-width: 500px;
     height: 40px;
     margin: 10px 10px 10px 0px;
 
-    font-size: 26px;
+    font-size: 36px;
     line-height: 40px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Spartan', sans-serif;
     color: green;
     letter-spacing: 3px;
 }
@@ -20,9 +20,12 @@
     float: left;
     height: 40px;
     margin: 10px 10px 10px 0px;
+
     border-left: 1px solid gray;
     padding-left: 10px;
+    
     font-size: 18px;
+    color: #666666;
     line-height: 40px;
 }
 
