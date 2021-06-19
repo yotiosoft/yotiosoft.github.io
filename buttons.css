@@ -1,0 +1,35 @@
+.readmore_button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    outline: none;
+
+    background-color: #008811;
+    color: #fff;
+
+    border-radius: 100vh;
+}
+
+.readmore_button::before,
+.readmore_button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.readmore_button,
+.readmore_button::before,
+.readmore_button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.readmore_button:hover {
+    background-color: #59b1eb;
+}

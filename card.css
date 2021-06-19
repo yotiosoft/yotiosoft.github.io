@@ -1,0 +1,107 @@
+.blockcard {
+    width: 350px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #ccc;
+}
+.blockcard_image_wrap {
+    text-align: center;
+    background-color: gray;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.blockcard_image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.blockcard_absolute {
+    height: 230px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    position:sticky;
+  
+    color: #444;
+  
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  
+    overflow: hidden;
+}
+.blockcard_absolute:hover {
+    margin-top: -250px;
+    height: 480px;
+    background: rgba(50,50,50,0.7);
+    border-radius: 5px;
+    position:sticky;
+  
+    color: #FFF;
+  
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  
+    overflow: hidden;
+}
+.blockcard_title {
+    font-size: 120%;
+    margin: 10px 10px 0px 10px;
+}
+.blockcard_content {
+    padding: 10px 10px 10px 10px;
+}
+.blockcard_content_product {
+    padding: 0px 10px 0px 10px;
+}
+.blockcard_box {
+    display: flex;
+    justify-content: flex-end;
+}
+.blockcard_continue {
+    font-size: 80%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #08f;
+    color: #08f;
+    background-color: transparent;
+}
+.blockcard_button {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+
+    /*width: 100%;*/
+
+    padding: 0px 10px 10px 0px;
+
+    z-index: 2;
+
+    color: #fff;
+    /*
+    background: rgba(255, 255, 255, 1);
+
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1), #FFF);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1), #FFF);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), #FFF);
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;*/
+}
+/*
+.blockcard_absolute:hover
+.blockcard_button {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+    background: rgba(0, 0, 0, 0);
+}*/

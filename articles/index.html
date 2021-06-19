@@ -13,7 +13,8 @@
 
     <meta charset="utf8">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../../headings.css">
+    <link rel="stylesheet" href="../headings.css">
+    <link rel="stylesheet" href="../card.css">
     <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
     <title>About - YotioSoft</title>
 
@@ -83,7 +84,7 @@
               });
   
               $.getJSON("articles.json", function(data){
-                const target = document.getElementById("card_link");
+                const target = document.getElementById("article_link");
                 target.href = data[0].link;
                 document.getElementById("article_title").innerHTML = data[0].title;
 
@@ -99,13 +100,15 @@
               });
             </script>
             
-            <div class="card4">
-              <a id="card_link">
-                <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="image4">
+            <div class="blockcard">
+              <a id="article_link">
+                <div class="blockcard_image_wrap">
+                  <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="blockcard_image">
+                </div>
               </a>
-              <div class="card_absolute">
-                <p class="title4" id="article_title"></p>
-                <p class="content4" id="article_summary"></p>
+              <div class="blockcard_absolute">
+                <p class="blockcard_title" id="article_title"></p>
+                <p class="blockcard_content" id="article_summary"></p>
               </div>
             </div>
         	</div>
