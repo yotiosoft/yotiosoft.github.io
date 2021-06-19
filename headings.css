@@ -5,13 +5,13 @@
 
 .inline-heading-en {
     float: left;
-    max-width: 500px;
     height: 40px;
     margin: 10px 10px 10px 0px;
 
     font-size: 36px;
     line-height: 40px;
     font-family: 'Spartan', sans-serif;
+    letter-spacing: 1px;
 }
 
 .inline-heading-jp {
@@ -25,5 +25,6 @@
     font-size: 18px;
     color: #666666;
     line-height: 40px;
+    letter-spacing: 1px;
 }
 
