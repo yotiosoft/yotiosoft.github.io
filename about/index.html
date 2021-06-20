@@ -368,6 +368,7 @@
                     window.addEventListener('resize', function(){
                     let content_w = document.getElementById('content').clientWidth;
                     let cards_w = document.getElementById('blockcards_id').clientWidth;
+                    document.getElementById('blockcards_id').style.width = (content_w-25) - (content_w-25) % 350;
                     });
                   });
                 </script>
