@@ -71,3 +71,15 @@
     font-size: 12px;
     font-weight: bold;
   }
+
+  .badge-yellowgreen{
+    margin-right: 3px;
+    border-radius: 4px;
+    background: #00cc55;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+    padding: 4px 8px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }
