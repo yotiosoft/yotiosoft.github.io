@@ -186,7 +186,7 @@
                 ゲーム
               </div>
               <div id="content_sub">
-                <div class="blockcards_wrap">
+                <div class="blockcards_wrap" id="blockcards_id">
                   <div class="blockcard">
                     <a href="/softwares/mitsudesmas/">
                       <div class="blockcard_image_wrap">
@@ -362,6 +362,16 @@
                     <a class="readmore_round_button" style="color: #fff;" href="/softwares/#games">もっと見る</a>
                   </div>
                 </div>
+
+                <script>
+                  window.addEventListener('DOMContentLoaded', function(){
+                    window.addEventListener('resize', function(){
+                    let content_w = document.getElementById('content').clientWidth;
+                    let cards_w = document.getElementById('blockcards_id').clientWidth;
+                    });
+                  });
+                </script>
+                
               </div>  
             </div>
           </div>
