@@ -1,4 +1,19 @@
-.readmore_button {
+.readmore_button_orange {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    outline: none;
+
+    background-color: #e67e22;;
+    color: #fff;
+
+    border-radius: 100vh;
+}
+
+.readmore_button_green {
     display: inline-block;
     width: 150px;
     height: 40px;
@@ -13,16 +28,21 @@
     border-radius: 100vh;
 }
 
-.readmore_button::before,
-.readmore_button::after {
+.readmore_button_orange::before,
+.readmore_button_orange::after,
+.readmore_button_green::before,
+.readmore_button_green::after {
   position: absolute;
   z-index: -1;
   display: block;
   content: '';
 }
-.readmore_button,
-.readmore_button::before,
-.readmore_button::after {
+.readmore_button_orange,
+.readmore_button_orange::before,
+.readmore_button_orange::after,
+.readmore_button_green,
+.readmore_button_green::before,
+.readmore_button_green::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -30,6 +50,10 @@
   transition: all .3s;
 }
 
-.readmore_button:hover {
+.readmore_button_orange:hover {
+    background-color: #59b1eb;
+}
+
+.readmore_button_green:hover {
     background-color: #59b1eb;
 }

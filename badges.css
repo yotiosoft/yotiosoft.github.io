@@ -1,0 +1,61 @@
+#show_requirements {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .badge-group {
+    margin: 2px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .badge-blue {
+    margin-right: 3px;
+    border-radius: 4px;
+    background: #4B96F5;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+    padding: 4px 8px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .badge-gray {
+    margin-right: 3px;
+    border-radius: 4px;
+    background: #646464;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+    padding: 4px 8px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .badge-orange {
+    margin-right: 3px;
+    border-radius: 4px;
+    background: #FFA500;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+    padding: 4px 8px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .badge-bleuet{
+    margin-right: 3px;
+    border-radius: 4px;
+    background: #004E87;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+    padding: 4px 8px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }

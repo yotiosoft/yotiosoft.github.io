@@ -1,0 +1,18 @@
+.blur {
+	position: relative;
+}
+.blur:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+	background: inherit;
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+}
+.blur .content {
+	position: absolute;
+	background: rgba(255,255,255,0.4);
+	border: 1px solid rgba(255,255,255,0.4);
+}
