@@ -1,4 +1,5 @@
-.readmore_button_orange {
+/* 「詳しく見る」ボタン */
+.readmore_button {
     display: inline-block;
     width: 100px;
     height: 40px;
@@ -11,36 +12,16 @@
     color: #fff;
 }
 
-.readmore_button_green {
-    display: inline-block;
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    text-decoration: none;
-    line-height: 40px;
-    outline: none;
-
-    background-color: #008811;
-    color: #fff;
-
-    border-radius: 100vh;
-}
-
-.readmore_button_orange::before,
-.readmore_button_orange::after,
-.readmore_button_green::before,
-.readmore_button_green::after {
+.readmore_button::before,
+.readmore_button::after {
   position: absolute;
   z-index: -1;
   display: block;
   content: '';
 }
-.readmore_button_orange,
-.readmore_button_orange::before,
-.readmore_button_orange::after,
-.readmore_button_green,
-.readmore_button_green::before,
-.readmore_button_green::after {
+.readmore_button,
+.readmore_button::before,
+.readmore_button::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -48,10 +29,43 @@
   transition: all .3s;
 }
 
-.readmore_button_orange:hover {
+.readmore_button:hover {
     background-color: #59b1eb;
 }
 
-.readmore_button_green:hover {
+/* 「さらに見る」ボタン */
+.readmore_round_button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    outline: none;
+
+    background-color: #666;;
+    color: #fff;
+
+    border-radius: 100vh;
+}
+
+.readmore_round_button::before,
+.readmore_round_button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.readmore_round_button,
+.readmore_round_button::before,
+.readmore_round_button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.readmore_round_button:hover {
     background-color: #59b1eb;
 }
