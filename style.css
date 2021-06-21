@@ -26,6 +26,10 @@ html, body {
   background-color: #eeeeee;
 }
 
+ol {
+  margin-left: 20px;
+}
+
 #wrap {
   overflow: hidden;
 
@@ -504,7 +508,7 @@ a.anchor{
 }
 
 .column {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 /* フッター */
