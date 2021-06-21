@@ -19,7 +19,7 @@ $(function($){
       if ((scrollTop > sticked_original_top) && (scrollTop < content_bottom - sticked_height)){
           // 現在位置が、初期位置より下で、メインコンテンツ最後尾より上なら、画面上部にサイドバーを固定
           sticked.css({'position': 'fixed',
-              'top': 130,
+              'top': document.getElementById('pegeheader_id').style.height + 50,
               'width': sidebar.width()
           });
       } else if(scrollTop >= content_bottom - sticked_height){
