@@ -94,7 +94,7 @@
                 .then((text) => {
                     return new DOMParser().parseFromString(text, "text/html");
                   })
-                .then((dom) =>
+                .then((doc) =>
                   document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"
                     +dom.getElementById("summary").innerText
                 );
