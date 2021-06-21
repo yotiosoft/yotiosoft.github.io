@@ -12,7 +12,7 @@ $(function($){
 
   $(window).on('scroll resize', function(){ // スクロールかリサイズ時
       // 現在の位置
-      var scrollTop = $(document).scrollTop() + 130;
+      var scrollTop = $(document).scrollTop() + document.getElementById('pegeheader_id').style.height + 50;
       // メインコンテンツ最後尾
       var content_bottom = content.offset().top + content.height();
 
