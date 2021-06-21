@@ -12,14 +12,14 @@ $(function($){
 
   $(window).on('scroll resize', function(){ // スクロールかリサイズ時
       // 現在の位置
-      var scrollTop = $(document).scrollTop() + document.getElementById('pegeheader_id').style.height + 50;
+      var scrollTop = $(document).scrollTop() + 130;
       // メインコンテンツ最後尾
       var content_bottom = content.offset().top + content.height();
 
       if ((scrollTop > sticked_original_top) && (scrollTop < content_bottom - sticked_height)){
           // 現在位置が、初期位置より下で、メインコンテンツ最後尾より上なら、画面上部にサイドバーを固定
           sticked.css({'position': 'fixed',
-              'top': document.getElementById('pegeheader_id').style.height + 50,
+              'top': 130,
               'width': sidebar.width()
           });
       } else if(scrollTop >= content_bottom - sticked_height){
