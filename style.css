@@ -442,6 +442,7 @@ a.anchor{
 }
 
 #content_sub {
+  margin-top: 10px;
   margin-left: 15px;
 }
 
@@ -555,4 +556,15 @@ a.anchor{
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
+}
+
+.icontxt img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.icontxt .txt {
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
 }
