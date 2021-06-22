@@ -595,3 +595,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .imgtxt img {
   margin-right: 10px;
 }
+
+.bottom-space {
+  margin-bottom: 100px;
+}
