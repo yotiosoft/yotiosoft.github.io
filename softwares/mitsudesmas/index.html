@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../card.css">
     <link rel="stylesheet" href="../../badges.css">
     <link rel="stylesheet" href="../../buttons.css">
+    <link rel="stylesheet" href="../../cube.css">
     <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
     <title>ミツデスマス - YotioSoft</title>
 
@@ -246,22 +247,30 @@
               <div class="inline-heading-jp">動作環境</div>
             </div>
 
+            <h5>
+              下のボックス上にマウスカーソルを移動すると詳細が表示されます。<br>
+              スマートフォンやタブレット端末をお使いの方はタップしてご覧ください。
+            </h5>
+
             <div id="content_main">
-              <table>
-                <tr>
-                  <td rowspan="3" scope="rowgroup" class="nowrap">
-                    OS
-                  </td>
-                  <td>
-                    Windows 10
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    macOS 10.15 Catalina 以降
-                  </td>
-                </tr>
-              </table>
+              <div class="cubes_wrap">
+                <div class="cube" style="background-color: #4B96F5; color: #fff; font-size: 24px;">
+                  Windows
+                  <div class="mask" style="font-size: 14px">
+                    OS: Windows 10<br>
+                    メモリ: 4GB以上<br>
+                    CPU: IntelまたはAMD
+                  </div>
+                </div>
+                <div class="cube" style="background-color: #646464; color: #fff; font-size: 24px;">
+                  macOS
+                  <div class="mask" style="font-size: 14px">
+                    OS: macOS 10.14以降<br>
+                    メモリ: 4GB以上<br>
+                    CPU: IntelまたはApple Silicon(Rosetta2を使用)
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

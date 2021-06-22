@@ -1,0 +1,42 @@
+.cubes_wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cube {
+	width:			160px;
+	height:			160px;
+	overflow:		hidden;
+	margin:			0px 8px 10px 0px;
+	position:		relative;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cube .caption {
+	font-size:		130%;
+	text-align: 	center;
+	padding-top:	80px;
+	color:			#fff;
+}
+.cube .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	opacity:		0;
+	background-color:	rgba(0,0,0,0.7);
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cube:hover .mask {
+	opacity:		1;
+}

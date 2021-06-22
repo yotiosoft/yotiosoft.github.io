@@ -593,7 +593,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   align-items: center;
 }
 .imgtxt img {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .bottom-space {
