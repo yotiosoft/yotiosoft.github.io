@@ -16,10 +16,10 @@ $(function($){
       // メインコンテンツ最後尾
       var content_bottom = content.offset().top + content.height();
 
-      if ((scrollTop > sticked_original_top) && (scrollTop < content_bottom - sticked_height)){
+      if ((scrollTop >= sticked_original_top) && (scrollTop < content_bottom - sticked_height)){
           // 現在位置が、初期位置より下で、メインコンテンツ最後尾より上なら、画面上部にサイドバーを固定
           sticked.css({'position': 'fixed',
-              'top': 130,
+              'top': document.getElementById('header_fixed').clientHeight + 30,
               'width': sidebar.width()
           });
       } else if(scrollTop >= content_bottom - sticked_height){
