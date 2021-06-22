@@ -50,7 +50,7 @@ a.anchor{
   position: relative;
 }
 
-#fixed {
+#header_fixed {
   box-sizing: border-box;
   height: 100px;
   padding: 15px 30px;
@@ -370,7 +370,7 @@ a.anchor{
   font-size: 16px;
   font-weight: bold;
   color: #313131;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #sidebar_links {
@@ -381,6 +381,7 @@ a.anchor{
 
 #sidebar_menu li {
   margin-top: 5px;
+  margin-left: 1px;
   list-style: none;
 }
 
