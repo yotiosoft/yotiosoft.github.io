@@ -4,11 +4,11 @@
 
 .faq-q {
     display: flex;
-    line-height: 36px;
+    line-height: 26px;
 }
 
 .faq-qq {
-    font-size: 36px;
+    font-size: 26px;
     color: #cc0000;
     margin-right: 5px;
 }
@@ -16,11 +16,11 @@
 .faq-a {
     display: flex;
     line-height: 26px;
-    margin: 10px 0px 10px 5px;
+    margin: 10px 0px 10px 0px;
 }
 
 .faq-aa {
     font-size: 26px;
     color: #0088dd;
-    margin-right: 10px;
+    margin-right: 5px;
 }
