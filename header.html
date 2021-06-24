@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf8">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Spartan&display=swap" rel="stylesheet">
 </head>
@@ -16,12 +17,53 @@
 
   <div id="header_menu_line">
     <div id="header_menu_left">
-      <a class="link" href="/" style="text-decoration: none;"><div class="menu_button" href="/"><div class="menu_button_font">Home</div></div></a>
-      <a class="link" href="/about/" style="text-decoration: none;"><div class="menu_button"><div class="menu_button_font">About</div></div></a>
-      <a class="link" href="/softwares/" style="text-decoration: none;"><div class="menu_button"><div class="menu_button_font">ソフトウェア</div></div></a>
-      <a class="link" href="/articles/" style="text-decoration: none;"><div class="menu_button"><div class="menu_button_font">お知らせ</div></div></a>
-      <a class="link" href="/links/" style="text-decoration: none;"><div class="menu_button"><div class="menu_button_font">リンク</div></div></a>
-      <a class="link" href="/contact/" style="text-decoration: none;"><div class="menu_button"><div class="menu_button_font">お問い合わせ</div></div></a>
+      <a class="link" href="/" style="text-decoration: none;">
+        <div class="menu_button" href="/">
+          <div class="menu_button_font">Home</div>
+        </div>
+      </a>
+      <div class="menu_button_wrap">
+        <a class="link" href="/about/" style="text-decoration: none;">
+          <div class="menu_button">
+            <div class="menu_button_font">About</div>
+          </div>
+        </a>
+
+        <div class="header-submenu" style="width: 300px;">
+          <a class="link" href="/about/faq/" style="text-decoration: none;">
+            <div class="submenu-button"><p>Q&A</p></div>
+          </a>
+          <a class="link" href="/about/profile/" style="text-decoration: none;">
+            <div class="submenu-button"><p>プロフィール</p></div>
+          </a>
+          <a class="link" href="/about/history/" style="text-decoration: none;">
+            <div class="submenu-button"><p>YotioSoftの歴史</p></div>
+          </a>
+          <a class="link" href="/about/this_site/" style="text-decoration: none;">
+            <div class="submenu-button"><p>このサイトについて</p></div>
+          </a>
+        </div>
+      </div>
+      <a class="link" href="/softwares/" style="text-decoration: none;">
+        <div class="menu_button">
+          <div class="menu_button_font">ソフトウェア</div>
+        </div>
+      </a>
+      <a class="link" href="/articles/" style="text-decoration: none;">
+        <div class="menu_button">
+          <div class="menu_button_font">お知らせ</div>
+        </div>
+      </a>
+      <a class="link" href="/links/" style="text-decoration: none;">
+        <div class="menu_button">
+          <div class="menu_button_font">リンク</div>
+        </div>
+      </a>
+      <a class="link" href="/contact/" style="text-decoration: none;">
+        <div class="menu_button">
+          <div class="menu_button_font">お問い合わせ</div>
+        </div>
+      </a>
     </div>
 
     <div id="header_menu_right">
