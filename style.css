@@ -431,6 +431,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   flex-wrap: wrap;
   align-items: center;
 }
+.imgtxt picture {
+  margin-right: 20px;
+}
 .imgtxt img {
   margin-right: 20px;
 }
