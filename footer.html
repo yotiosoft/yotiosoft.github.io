@@ -5,13 +5,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 
+<script>
+  $(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top - 110;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+</script>
+
 <footer class="footer_class">
-  <div style="display: flex; justify-content: center;
-  align-items: center; margin-top: 10px;">
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
     <div id="footer_wrap">
       <div style="width: 100%;">
         <div id="footer_logo">
-          <img src="/img/logo/yotiosoft50.png" />
+          <img src="./img/logo/yotiosoft50.png" />
     
           <div id="footer_logo_name_and_catchcopy">
             <div id="footer_logo_name">
@@ -30,12 +42,7 @@
 
       <div id="footer_up">
         <a class="link" href="#" style="text-decoration: none;">
-          <div class="footer-right-button">
-            <div class="mask">
-              <div class="caption">ページの一番上へ</div>
-            </div>
-            <img src="/img/icons/up.png" alt="ページの一番上へ" style="width: 32px; height: 32px;" />
-          </div>
+          <img src="./img/icons/up.png" alt="ページの一番上へ" style="width: 48px; height: 48px;" />
         </a>
       </div>
     </div>

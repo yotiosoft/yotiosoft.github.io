@@ -374,16 +374,19 @@ a.anchor{
   padding-left: 10px;
   padding-right: 10px;
   overflow: hidden;
+
+  justify-content: center;
+  align-items: center;
 }
 
 #footer_logo {
-  width: 50%;
   height: 50px;
+  display: flex;
 }
 
 #footer_logo_name_and_catchcopy {
   height: 50px;
-  margin-left: 20px;
+  margin-left: 10px;
   text-align: left;
 }
 
@@ -404,7 +407,7 @@ a.anchor{
 }
 
 #footer_copyright {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 12px;
   line-height: 20px;
 
