@@ -1,6 +1,6 @@
 //共通パーツ読み込み
 $(function() {
-    if (screen.width > 768) {
+    if (window.innerWidth > 768) {
         $("#header").load("/header.html");
         $("#footer").load("/footer.html");
     }
