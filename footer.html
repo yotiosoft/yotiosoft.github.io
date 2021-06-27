@@ -11,7 +11,7 @@
     var speed = 500;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top - 110;
+    var position = target.offset().top;
     $("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
   });
@@ -22,19 +22,6 @@
   <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
     <div id="footer_wrap">
       <div style="width: 100%;">
-        <div id="footer_logo">
-          <img src="/img/logo/yotiosoft50.png" />
-    
-          <div id="footer_logo_name_and_catchcopy">
-            <div id="footer_logo_name">
-              YotioSoft
-            </div>
-            <div id="footer_logo_catchcopy">
-              Apps change Your Life
-            </div>
-          </div>
-        </div>
-    
         <div id="footer_copyright">
           © 2014-2021 YotioSoft
         </div>
