@@ -7,9 +7,9 @@
 
 <script>
   $(function(){
-  $('a[href^="#"]').click(function(){
+  document.getElementById("goto_top").click(function(){
     var speed = 500;
-    var href= $(this).attr("href");
+    var href= "#";
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top;
     $("html, body").animate({scrollTop:position}, speed, "swing");
@@ -28,9 +28,7 @@
       </div>
 
       <div id="footer_up">
-        <a class="link" href="#" style="text-decoration: none;">
-          <img src="/img/icons/up.png" alt="ページの一番上へ" style="width: 48px; height: 48px;" />
-        </a>
+        <img id="goto_top" src="/img/icons/up.png" alt="ページの一番上へ" style="width: 48px; height: 48px;" />
       </div>
     </div>
   </div>
