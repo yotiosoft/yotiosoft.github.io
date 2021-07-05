@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../../buttons.css">
     <link rel="stylesheet" href="../../cube.css">
     <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
-    <title>ミツデスマス - YotioSoft</title>
+    <title>猪突猛進 - YotioSoft</title>
 
     <script src="../../js/jquery-3.5.1.min.js"></script>
     <script src="../../js/common.js"></script>
@@ -40,9 +40,12 @@
 
       <div style="margin-top: 100px;" />
 
-      <div class="pageheader" id="pegeheader_id" style="background: #0fb9b1; height: 128px;">
+      <div class="pageheader" id="pegeheader_id" style="background: #0fb9b1; height: 270px;">
         <div class="pageheader_logo_wrap">
-          <img src="../../img/apps/logos/mitsudesmas.png">
+          <picture>
+            <source type="image/webp" srcset="../../img/apps/logos/chototsu-moushin.webp" />
+            <img src="../../img/apps/logos/chototsu-moushin.png" />
+          </picture>
         </div>
       </div>
 
@@ -53,7 +56,7 @@
             <font class="arrow">></font>
             <a href="/softwares">ソフトウェア</a>
             <font class="arrow">></font>
-            ミツデスマス
+            猪突猛進
           </div>
         </div>
       </nav>
@@ -63,14 +66,12 @@
           <div id="sticked">
             <div id="sidebar_menu">
               <div id="sidebar_h">
-                ミツデスマス
+                
               </div>
               <div id="sidebar_links">
                 <li><a href="#synopsis">あらすじ</a></li>
                 <li><a href="#rule">ルール</a></li>
                 <li><a href="#howtoplay">あそびかた</a></li>
-                <li><a href="#stages">ステージ</a></li>
-                <li><a href="#movie">プレイ動画</a></li>
                 <li><a href="#requirements">動作環境</a></li>
                 <li><a href="#license">ライセンスについて</a></li>
                 <li><a href="#download">ダウンロード</a></li>
@@ -91,13 +92,12 @@
             <div id="content_main">
               <div class="imgtxt">
                 <picture style="max-width: 40%;">
-                  <source type="image/webp" srcset="../../img/apps/catches/mitsudesmas.webp" style="width: 100%;" />
-                  <img src="../../img/apps/catches/mitsudesmas.png" style="width: 100%;" />
+                  <source type="image/webp" srcset="../../img/apps/chototsu-moushin/image.webp" style="width: 100%;" />
+                  <img src="../../img/apps/chototsu-moushin/image.png" style="width: 100%;" />
                 </picture>
                 <p>
-                  年の瀬も押し迫る、モテない男女にとって孤独が強調される辛い時期。<br>
-                  周りを見渡すと、密になったカップルがいっぱい！<br>
-                  街中にいるカップル「密です」と叫び、間を空けてもらおう。
+                  猛進してくるイノシシを止めよう！<br>
+                  スペースキーを連打するだけの簡単なお仕事です。
                 </p>
               </div>
             </div>
@@ -112,11 +112,8 @@
             </div>
 
             <div id="content_main">
-              時間内にすべての密になったカップルに「密です」と叫び、間を空けてもらおう。<br>
-              ただし、既に間を空けているカップルや、一人ぼっちの人に「密です」と叫ぶと怒られます。<br>
-              4回怒られたらMPが0になってゲームオーバーです。<br>
-              また、プレイヤーが歩くとHPが減ります。<br>
-              HPが0になるとプレイヤーはゆっくり歩くことしかできなくなります。
+              画面右側から向かってくるイノシシを全力で止めます。<br>
+              崖から落ちるまでに止められたら成功です。
             </div>
         	</div>
 
@@ -130,48 +127,26 @@
 
             <div id="content_main">
               <ul>
-                <li>
-                  Windowsの場合
-                  <ol>
-                    <li>ミツデスマス.exeを起動します。</li>
-                    <li>起動したら、「はじめる」を選びます。</li>
-                    <li>ステージを選びます。</li>
-                  </ol>
-
-                  <a href="../support/windows-defender" style="color: #000;">
-                    <div class="rounded-corner-frame-button" style="border-color: #0fb9b1;" onMouseOut="this.style.background=''" onMouseOver="this.style.background='#0fb9b1'">
-                      <div class="icontxt">
-                        <img src="../../img/icons/question.png" style="height: 16px;">
-                        「WindowsによってPCが保護されました」と表示される場合
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  macOSの場合
-                  <ol>
-                    <li>Mitsudesmas.appをアプリケーションフォルダに移します。</li>
-                    <li>Mitsudesmas.appを起動します。</li>
-                    <li>起動したら、「はじめる」を選びます。</li>
-                    <li>ステージを選びます。</li>
-                  </ol>
-                </li>
+                <ol>
+                  <li>猪突猛進.exeを起動します。</li>
+                  <li>「はじめる」を選択します。</li>
+                  <li>ゲームが開始します。</li>
+                </ol>
               </ul>
+              
+              <a href="../support/windows-defender" style="color: #000;">
+                <div class="rounded-corner-frame-button" style="border-color: #0fb9b1;" onMouseOut="this.style.background=''" onMouseOver="this.style.background='#0fb9b1'">
+                  <div class="icontxt">
+                    <img src="../../img/icons/question.png" style="height: 16px;">
+                    「WindowsによってPCが保護されました」と表示される場合
+                  </div>
+                </div>
+              </a><br>
+              
               <br>
 
               ゲームの操作方法は以下のとおりです。
               <table>
-                <tr>
-                  <td>
-                    <div class="icontxt">
-                      <img src="../../img/icons/directions.png" style="height: 24px;">
-                      十字キー
-                    </div>
-                  </td>
-                  <td>
-                    キャラクターの移動
-                  </td>
-                </tr>
                 <tr>
                   <td>
                     <div class="icontxt">
@@ -180,75 +155,12 @@
                     </div>
                   </td>
                   <td>
-                    「密です」と叫ぶ
+                    イノシシを減速させる
                   </td>
                 </tr>
               </table>
-            </div>
-        	</div>
 
-          <div class="column">
-            <div id="stages"></div>
-            
-            <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">Stages</div>
-              <div class="inline-heading-jp">ステージ</div>
-            </div>
-
-            <div id="content_main">
-              ステージは全部で3つあります。<br>
-
-              <table>
-                <tr>
-                  <td>
-                    Stage1
-                  </td>
-                  <td>
-                    大きな公園
-                  </td>
-                  <td>
-                    最も簡単なステージ。マップ面積は狭め。<br>
-                    制限時間は90秒で、カップルは20組。
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Stage2
-                  </td>
-                  <td>
-                    山中の平野
-                  </td>
-                  <td>
-                    中級ステージ。マップ面積は広い。<br>
-                    制限時間は240秒で、カップルは20組。
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Stage3
-                  </td>
-                  <td>
-                    雪の降る街
-                  </td>
-                  <td>
-                    上級ステージ。マップ面積はかなり広い。<br>
-                    制限時間は600秒で、カップルは40組。
-                  </td>
-                </tr>
-              </table>
-            </div>
-        	</div>
-
-          <div class="column">
-            <div id="movie"></div>
-            
-            <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">Movie</div>
-              <div class="inline-heading-jp">プレイ動画</div>
-            </div>
-
-            <div id="content_main">
-              <video src="../../movies/softwares/mitsudesmas.mp4" style="width: 50%;" controls></video>
+              <p style="color: #ccc">ちなみにスペースキーを押し続けると一瞬にしてイノシシを止められるバグがあります。</p>
             </div>
         	</div>
 
@@ -274,40 +186,6 @@
                   </p>
                 </div>
               </div>
-  
-              <div class="round-box" style="width: 600px; height: 120px;">
-                <div class="round-box-inner" style="background-color: #646464; color: #fff; width: 40%; font-size: 26px;">
-                  macOS
-                </div>
-                <div class="round-box-inner-nocenter" style="background-color: #ddd; color: #000; width: 60%;">
-                  <p style="margin-left: 20px;">
-                    OS: macOS 10.14以降<br>
-                    RAM: 8GB以上<br>
-                    CPU: Intel 2.0GHz以上 またはApple Silicon<br>
-                    ※Apple SiliconではRosetta 2必須
-                  </p>
-                </div> 
-              </div>
-              <!--
-              <div class="cubes_wrap">
-                <div class="cube" style="background-color: #4B96F5; color: #fff; font-size: 24px;">
-                  Windows
-                  <div class="mask" style="font-size: 14px">
-                    OS: Windows 10<br>
-                    メモリ: 4GB以上<br>
-                    CPU: IntelまたはAMD
-                  </div>
-                </div>
-                <div class="cube" style="background-color: #646464; color: #fff; font-size: 24px;">
-                  macOS
-                  <div class="mask" style="font-size: 14px">
-                    OS: macOS 10.14以降<br>
-                    メモリ: 4GB以上<br>
-                    CPU: IntelまたはApple Silicon(Rosetta2を使用)
-                  </div>
-                </div>
-              </div>
-              -->
             </div>
           </div>
 
@@ -321,7 +199,7 @@
 
             <div id="content_main">
               このソフトウェアにはMITライセンスが適用されています。<br>
-              ライセンス条文は<a href="https://github.com/YotioSoft/Mitsudesmas/blob/master/LICENSE" target="_blank">こちら</a>
+              ライセンス条文は<a href="https://github.com/YotioSoft/chototsu-moushin/blob/master/LICENSE" target="_blank">こちら</a>
               <table>
                 <tr>
                   <td>
@@ -427,6 +305,7 @@
                   </td>
                 </tr>
               </table>
+              ※ReadMe.txtには異なるライセンスが記述されていますが、2021年10月1日以降はMITライセンスが適用されます。
             </div>
         	</div>
 
@@ -445,16 +324,10 @@
                     <b>ver.1.0（最新版）</b>
                   </td>
                   <td>
-                    2020/12/25
+                    2019/01/01
                   </td>
                   <td>
-                    <a href="https://github.com/YotioSoft/Mitsudesmas/releases/download/65106be/Mitsudesmas_win.zip">Windows</a>
-                  </td>
-                  <td>
-                    <a href="https://github.com/YotioSoft/Mitsudesmas/releases/download/65106be/Mitsudesmas_mac.app.zip">macOS</a>
-                  </td>
-                  <td>
-                    <a href="https://github.com/YotioSoft/Mitsudesmas/archive/refs/tags/65106be.zip">ソースコード</a>
+                    <a href="https://github.com/YotioSoft/chototsu-moushin/archive/refs/tags/ver.1.0.zip">ダウンロード</a>
                   </td>
                 </tr>
               </table>

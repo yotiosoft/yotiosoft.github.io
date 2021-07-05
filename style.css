@@ -430,6 +430,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
+  margin-top: -3px;
 }
 .icontxt .txt {
   display: inline-block;

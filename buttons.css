@@ -43,7 +43,7 @@
     line-height: 50px;
     outline: none;
 
-    background-color: #666;;
+    background-color: #666;
     color: #fff;
 
     border-radius: 100vh;
@@ -67,5 +67,13 @@
 }
 
 .readmore_round_button:hover {
-    background-color: #59b1eb;
+  background-color: #59b1eb;
+}
+
+/* 角丸枠付きボタン */
+.rounded-corner-frame-button {
+  border: solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  display: inline-block;
 }
