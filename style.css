@@ -438,6 +438,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 250px;
 }
 
+.icontxt-nomargin img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.icontxt-nomargin .txt {
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
+}
+
 .imgtxt {
   display: flex;
   flex-wrap: wrap;
