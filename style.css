@@ -483,4 +483,5 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 10px 10px 10px 10px;
   color: #fff;
   display: inline;
+  top: 10px;
 }

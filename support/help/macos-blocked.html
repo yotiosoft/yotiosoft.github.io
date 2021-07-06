@@ -81,7 +81,10 @@
 
           <p id="article_content" style="max-width: 900px;">
             <div class="column">
-              <img src="../../img/support/macos-blocked/mac-blocked.png" style="width: 500px; max-width: 100%; margin-bottom: 50px;"><br>
+              <picture style="width: 500px;">
+                <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked.webp" style="width: 500px; max-width: 100%;" />
+                <img src="../../img/support/macos-blocked/mac-blocked.png" style="width: 500px; max-width: 100%;" />
+              </picture><br>
               macOS 10.15 Catalina以降では、セキュリティの強化に伴いApp Storeからダウンロードされたアプリケーション、
               およびAppleによって開発元が認証されたアプリケーション以外の、いわゆる「野良アプリ」は原則として起動しない仕様になりました。<br>
               <br>
@@ -99,28 +102,39 @@
                 <ol>
                   <li>
                     ゴミ箱に入れずに、「キャンセル」を選択します。<br>
-                    <img src="../../img/support/macos-blocked/mac-blocked_1.png" style="width: 500px; max-width: 100%;"><br>
-                    <br>
+                    <picture style="width: 500px;">
+                      <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked_1.webp" style="width: 500px; max-width: 100%;" />
+                      <img src="../../img/support/macos-blocked/mac-blocked_1.png" style="width: 500px; max-width: 100%;" />
+                    </picture><br>
                   </li>
                   <li>
                     ターミナルを起動します。<br>
-                    <img src="../../img/support/macos-blocked/mac-blocked_2.png" style="width: 500px; max-width: 100%;"><br>
+                    <picture style="width: 500px;">
+                      <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked_2.webp" style="width: 500px; max-width: 100%;" />
+                      <img src="../../img/support/macos-blocked/mac-blocked_2.png" style="width: 500px; max-width: 100%;" />
+                    </picture><br>
                     ターミナル.appは<span class="mini-box">LaunchPad > その他</span>にあります。<br>
                     <br>
                   </li>
                   <li>
                     xattrコマンドを実行します。<br>
-                    ターミナルに次のコマンドを入力してください：
-                    <div class="mini-box-black-wide">xattr -rc [appファイルのファイルパス]</div><br>
+                    ターミナルに次のコマンドを入力してください：<br>
+                    <div class="mini-box-black-wide" style="line-height: 50px;">xattr -rc [appファイルのファイルパス]</div><br>
                     <br>
                     [appファイルのファイルパス]にはappファイルのファイルパスが入ります。<br>
                     例）ダウンロードフォルダにあるMitsudesmas.appを起動<br>
-                    <img src="../../img/support/macos-blocked/mac-blocked_3.png" style="width: 500px; max-width: 100%;"><br>
+                    <picture style="width: 500px;">
+                      <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked_3.webp" style="width: 500px; max-width: 100%;" />
+                      <img src="../../img/support/macos-blocked/mac-blocked_3.png" style="width: 500px; max-width: 100%;" />
+                    </picture><br>
                     <br>
                   </li>
                   <li>
                     アプリケーションが起動可能になります。<br>
-                    <img src="../../img/support/macos-blocked/mac-blocked_4.png" style="width: 500px; max-width: 100%;"><br>
+                    <picture style="width: 500px;">
+                      <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked_4.webp" style="width: 500px; max-width: 100%;" />
+                      <img src="../../img/support/macos-blocked/mac-blocked_4.png" style="width: 500px; max-width: 100%;" />
+                    </picture><br>
                   </li>
                 </ol>
                 <br>
