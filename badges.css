@@ -5,9 +5,8 @@
   
   .badge-group {
     margin: 2px;
-    width: 100%;
     height: auto;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     align-items: flex-start;
   }
