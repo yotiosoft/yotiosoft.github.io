@@ -1,0 +1,140 @@
+<!DOCUTYPE HTML>
+<html lang="ja">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174934210-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-174934210-1');
+    </script>
+
+    <meta charset="utf8">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../header.css">
+    <link rel="stylesheet" href="../../badges.css">
+    <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
+    <title>テスト記事 - YotioSoft</title>
+
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/side.js"></script>
+    <script src="../../js/jump.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="headers">
+          <div id="header_fixed">
+            <div id="header"></div>
+          </div>
+        </div>
+      </header>
+
+      <div style="margin-top: 100px;" />
+
+      <nav>
+        <div class="navibar_wrap">
+          <div class="navibar">
+            <a href="/">Home</a>
+            <font class="arrow">></font>
+            <a href="../">サポート</a>
+            <font class="arrow">></font>
+            「"〇〇.app"は壊れているため開けません。」と表示される
+          </div>
+        </div>
+      </nav>
+
+      <div class="main_wrap">
+        <div id="sidebar">
+          <div id="sticked">
+            <div id="sidebar_menu">
+              <div id="sidebar_h">
+                目次
+              </div>
+              <div id="sidebar_links">
+                <li><a href="#solution">解決手順</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content">
+          <div id="about_here"></div>
+          <div id="article_title">
+            <div class="icontxt-nomargin">
+              <img src="../../img/icons/question.png" style="width: 36px; margin-right: -5px;">
+              「"〇〇.app"は壊れているため開けません。」と表示される
+            </div>
+          </div>
+          <div id="article_info">
+            <span id="show_requirements">
+              <span class="badge-group">
+                <span class="badge-gray">macOS</span>
+              </span>
+            </span>
+            公開日：2021年7月6日
+          </div>
+
+          <p id="article_content" style="max-width: 900px;">
+            <div class="column">
+              <img src="../../img/support/macos-blocked/mac-blocked.png" style="width: 500px; max-width: 100%; margin-bottom: 50px;"><br>
+              macOS 10.15 Catalina以降では、セキュリティの強化に伴いApple Storeからダウンロードされたアプリケーション、
+              およびAppleによって開発元が認証されたアプリケーション以外の、いわゆる「野良アプリ」は原則として起動しない仕様になりました。<br>
+              <br>
+              「壊れているため」と表示されていますが、実際にファイルが壊れているわけではありません。<br>
+              ターミナルでxattrコマンドを用いることで、アプリケーションの実行が可能になります。<br>
+            </div>
+
+            <div class="column" id="solution">
+              <div id="content_h">解決手順</div>
+              <div id="content_main">
+                以下、ミツデスマス（Mitsudesmas.app）を実行する例を示しております。<br>
+                なお、画面はmacOS 10.15 Catalinaですが、macOS Big Sur以降でも同様です。<br>
+                <br>
+                <ol>
+                  <li>
+                    ゴミ箱に入れずに、「キャンセル」を選択します。<br>
+                    <img src="../../img/support/macos-blocked/mac-blocked_1.png" style="width: 500px; max-width: 100%;"><br>
+                    <br>
+                  </li>
+                  <li>
+                    ターミナルを起動します。<br>
+                    <img src="../../img/support/macos-blocked/mac-blocked_2.png" style="width: 500px; max-width: 100%;"><br>
+                    ターミナル.appは<span class="mini-box">LaunchPad > その他</span>にあります。<br>
+                    <br>
+                  </li>
+                  <li>
+                    xattrコマンドを実行します。<br>
+                    ターミナルに次のコマンドを入力してください：
+                    <div class="mini-box-black-wide">xattr -rc [appファイルのファイルパス]</div><br>
+                    <br>
+                    [appファイルのファイルパス]にはappファイルのファイルパスが入ります。<br>
+                    例）ダウンロードフォルダにあるMitsudesmas.appを起動<br>
+                    <img src="../../img/support/macos-blocked/mac-blocked_3.png" style="width: 500px; max-width: 100%;"><br>
+                    <br>
+                  </li>
+                  <li>
+                    アプリケーションが起動可能になります。<br>
+                    <img src="../../img/support/macos-blocked/mac-blocked_4.png" style="width: 500px; max-width: 100%;"><br>
+                  </li>
+                </ol>
+                <br>
+                なお、長期間起動しないまま経過すると再び起動できなくなる場合があります。<br>
+                その際は、再度上記の手順で設定してください。
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+
+      <footer class="footer_class">
+        <div id="footer"></div>
+      </footer>
+    </div>
+  </body>
+
+</html>

@@ -470,3 +470,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: flex;
   flex-wrap: wrap;
 }
+
+.mini-box {
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  display: inline;
+}
+.mini-box-black-wide {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  display: inline;
+}
