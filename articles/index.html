@@ -98,9 +98,9 @@
                   })
                 .then((doc) => {
                   document.getElementById("blockcard_content_id").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"
-                    +doc.getElementById("summary").innerText;
+                    +doc.getElementById("article_summary").innerText;
                   document.getElementById("blockcard_tags_id").innerHTML = doc.getElementById("article_tags").innerHTML;
-                  document.getElementById("blockcard_title_id").innerHTML = doc.getElementById("blockcard_title").innerText;
+                  document.getElementById("blockcard_title_id").innerHTML = doc.getElementById("article_title").innerText;
                 }
                 );
               });
