@@ -89,9 +89,13 @@
               $.getJSON("articles.json", function(data){
                 document.getElementById("article_link").href = data[0].link;
                 document.getElementById("article_read_button").href = data[0].link;
-                document.getElementById("article_title").innerHTML = data[0].title;
+                document.getElementById("article_summary").href = "読み込み中...";
 
                 const doc = fetch(data[0].link)
+                .then((res) => res.text())
+                .then((text) => {
+                    return new DOMParser().parseFromString(text, "text/html");
+                  })
                 .then((doc) => {
                   document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"
                     +doc.getElementById("summary").innerText
