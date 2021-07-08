@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../card.css">
     <link rel="stylesheet" href="../badges.css">
     <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
-    <title>About - YotioSoft</title>
+    <title>お知らせ - YotioSoft</title>
 
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/common.js"></script>
@@ -86,8 +86,8 @@
               });
   
               $.getJSON("articles.json", function(data){
-                const target = document.getElementById("article_link");
-                target.href = data[0].link;
+                document.getElementById("article_link").href = data[0].link;
+                document.getElementById("article_read_button").href = data[0].link;
                 document.getElementById("article_title").innerHTML = data[0].title;
 
                 const doc = fetch(data[0].link)
@@ -113,6 +113,12 @@
               <div class="blockcard_absolute">
                 <p class="blockcard_title" id="article_title"></p>
                 <p class="blockcard_content" id="article_summary"></p>
+
+                <span class="blockcard_button_wrap">
+                  <span class="blockcard_button">
+                    <a class="readmore_button" style="color:#fff;" id="article_read_button">詳しく見る</a>
+                  </span>
+                </span>
               </div>
             </div>
         	</div>
