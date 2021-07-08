@@ -95,9 +95,11 @@
                 .then((text) => {
                     return new DOMParser().parseFromString(text, "text/html");
                   })
-                .then((doc) =>
+                .then((doc) => {
                   document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"
-                    +dom.getElementById("summary").innerText
+                    +doc.getElementById("summary").innerText
+                  document.getElementById("article_title").innerHTML = doc.getElementById("article_title").innerText
+                }
                 );
               });
             </script>
