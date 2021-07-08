@@ -135,3 +135,11 @@
 
     background: rgba(0, 0, 0, 0);
 }*/
+
+.blockcard_title {
+    font-size: 30px;
+}
+
+.blockcard_tags {
+    margin-left: 10px;
+}
