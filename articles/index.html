@@ -87,9 +87,9 @@
               });
   
               $.getJSON("articles.json", function(data){
-                document.getElementById("article_link").href = data[0].link;
-                document.getElementById("article_read_button").href = data[0].link;
-                document.getElementById("article_summary").href = "読み込み中...";
+                document.getElementById("blockcard_link").href = data[0].link;
+                document.getElementById("blockcard_read_button").href = data[0].link;
+                document.getElementById("blockcard_content_id").href = "読み込み中...";
 
                 const doc = fetch(data[0].link)
                 .then((res) => res.text())
@@ -97,7 +97,7 @@
                     return new DOMParser().parseFromString(text, "text/html");
                   })
                 .then((doc) => {
-                  document.getElementById("article_content_id").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"
+                  document.getElementById("blockcard_content_id").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"
                     +doc.getElementById("summary").innerText;
                   document.getElementById("blockcard_tags_id").innerHTML = doc.getElementById("article_tags").innerHTML;
                   document.getElementById("blockcard_title_id").innerHTML = doc.getElementById("blockcard_title").innerText;
@@ -107,7 +107,7 @@
             </script>
             
             <div class="blockcard">
-              <a id="article_link">
+              <a id="blockcard_link">
                 <div class="blockcard_image_wrap">
                   <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="blockcard_image">
                 </div>
@@ -115,11 +115,11 @@
               <div class="blockcard_absolute">
                 <p class="blockcard_title" id="blockcard_title_id"></p>
                 <p class="blockcard_tags" id="blockcard_tags_id"></p>
-                <p class="blockcard_content_id" id="article_summary"></p>
+                <p class="blockcard_content" id="blockcard_content_id"></p>
 
                 <span class="blockcard_button_wrap">
                   <span class="blockcard_button">
-                    <a class="readmore_button" style="color:#fff;" id="article_read_button">詳しく見る</a>
+                    <a class="readmore_button" style="color:#fff;" id="blockcard_read_button">詳しく見る</a>
                   </span>
                 </span>
               </div>
