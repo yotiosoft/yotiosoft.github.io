@@ -98,8 +98,9 @@
                   })
                 .then((doc) => {
                   document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"
-                    +doc.getElementById("summary").innerText
-                  document.getElementById("article_title").innerHTML = doc.getElementById("article_title").innerText
+                    +doc.getElementById("summary").innerText;
+                  document.getElementById("article_tags").innerHTML = doc.getElementById("article_tags").innerHTML;
+                  document.getElementById("article_title").innerHTML = doc.getElementById("article_title").innerText;
                 }
                 );
               });
@@ -113,6 +114,7 @@
               </a>
               <div class="blockcard_absolute">
                 <p class="blockcard_title" id="article_title"></p>
+                <p id="article_tags"></p>
                 <p class="blockcard_content" id="article_summary"></p>
 
                 <span class="blockcard_button_wrap">
