@@ -13,6 +13,7 @@
 
     <meta charset="utf8">
     <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../article.css">
     <link rel="stylesheet" href="../../../header.css">
     <link rel="stylesheet" href="../../../badges.css">
     <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
@@ -40,9 +41,9 @@
         <div class="navibar_wrap">
           <div class="navibar">
             <a href="/">Home</a>
-            <font class="arrow">></font>
+            <span class="arrow">></span>
             <a href="/articles">お知らせ</a>
-            <font class="arrow">></font>
+            <span class="arrow">></span>
             テスト記事
           </div>
         </div>
@@ -65,15 +66,18 @@
 
         <div id="content">
           <div id="about_here"></div>
-          <div id="article_title">これはテストです</div>
-          <div id="article_info">
-            2020年10月3日
-          </div>
+          <div class="article_head">
+            <div id="article_title">これはテストです</div>
 
-          <div class="article_badges" id="article_tags">
-            <div class="badge-group">
-              <div class="badge-blue">お知らせ</div>
-            </div>
+            <span class="article_badges" id="article_tags">
+              <div class="badge-group">
+                <div class="badge-whitegray">お知らせ</div>
+              </div>
+            </span>
+
+            <span id="article_info">
+              公開日：2020年10月3日
+            </span>
           </div>
 
           <p id="article_content">

@@ -1,0 +1,19 @@
+#article_title {
+    font-size: 30px;
+}
+
+#article_info {
+    font-size: 14px;
+    margin-left: 2px;
+    color: #888888;
+}
+
+.article_badges {
+    font-size: 10px;
+    margin: 10px 0px 10px 0px;
+    display: inline-flex;
+}
+
+.article_head {
+    margin-bottom: 20px;
+}

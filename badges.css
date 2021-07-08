@@ -3,12 +3,6 @@
   margin-bottom: 10px;
 }
 
-.article_badges {
-  font-size: 10px;
-  margin: 10px 0px 10px 0px;
-  display: inline-flex;
-}
-
 .badge-group {
   margin: 2px;
   height: auto;
@@ -97,6 +91,18 @@
   padding: 4px 8px;
   overflow: hidden;
   color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-whitegray{
+  margin-right: 3px;
+  border-radius: 4px;
+  background: #ddd;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+  padding: 4px 8px;
+  overflow: hidden;
+  color: #000;
   font-size: 12px;
   font-weight: bold;
 }
