@@ -13,6 +13,7 @@
 
     <meta charset="utf8">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../buttons.css">
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../headings.css">
     <link rel="stylesheet" href="../card.css">
@@ -91,10 +92,6 @@
                 document.getElementById("article_title").innerHTML = data[0].title;
 
                 const doc = fetch(data[0].link)
-                .then((res) => res.text())
-                .then((text) => {
-                    return new DOMParser().parseFromString(text, "text/html");
-                  })
                 .then((doc) => {
                   document.getElementById("article_summary").innerHTML = data[0].year+"."+formatter.format(data[0].month)+"."+formatter.format(data[0].day)+"<br>"
                     +doc.getElementById("summary").innerText
