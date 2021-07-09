@@ -99,6 +99,10 @@
 
                   var e_blockcard_image_wrap = document.createElement('blockcard_image_wrap');
                   e_blockcard_image_wrap.className = 'blockcard_image_wrap';
+
+                  var e_blockcard_image = document.createElement('img');
+                  e_blockcard_image.className = 'blockcard_image';
+                  e_blockcard_image_wrap.appendChild(e_blockcard_image);
                   e_blockcard_link.appendChild(e_blockcard_image_wrap);
                   e_blockcard.appendChild(e_blockcard_link);
 
@@ -162,6 +166,7 @@
                   /* データ代入 */
                   e_blockcard_link.href = data[i].link;
                   e_readmore_button.href = data[i].link;
+                  e_blockcard_image.src = data[i].image;
                   e_blockcard_content.textContent = "読み込み中...";
 
                   const doc = fetch(data[i].link)
