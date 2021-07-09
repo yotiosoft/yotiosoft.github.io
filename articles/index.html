@@ -80,7 +80,7 @@
               <div class="inline-heading-jp">最近の投稿</div>
             </div>
             
-            <div id="articles" class="blockcards_wrap">
+            <div id="articles_wrap" class="blockcards_wrap">
 
             </div>
 
@@ -90,7 +90,7 @@
                 useGrouping: false
               });
               
-              var articles = document.getElementById("articles");
+              var articles_wrap = document.getElementById("articles_wrap");
 
               $.getJSON("articles.json", function(data){
                 for (let i=0; i<data.length; i++) {
@@ -143,7 +143,7 @@
                   e_blockcard_absolute.appendChild(e_blockcard_button_wrap);
                   e_blockcard.appendChild(e_blockcard_absolute);
 
-                  articles.appendChild(e_blockcard);
+                  articles_wrap.appendChild(e_blockcard);
 
 /*
                   articles.insertAdjacentHTML('beforeend', '\
