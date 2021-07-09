@@ -1,4 +1,4 @@
-(function() {
+$(function() {
     var articles_wrap = document.getElementById("articles_wrap");
 
     $.getJSON("articles.json", function(data){
