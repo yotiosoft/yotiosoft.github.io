@@ -88,6 +88,11 @@ function put_cards() {
 }
 
 function get_data(data, arg_blockcard_content, arg_blockcard_tags, arg_blockcard_title) {
+    const formatter = new Intl.NumberFormat('ja', {
+        minimumIntegerDigits: 2, 
+        useGrouping: false
+    });
+
     const doc = fetch(data.link)
     .then((res) => res.text())
     .then((text) => {
