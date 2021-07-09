@@ -1,6 +1,6 @@
-$(function() {
+function put_cards() {
     var articles_wrap = document.getElementById("articles_wrap");
-
+    
     $.getJSON("articles.json", function(data){
         for (let i=0; i<data.length; i++) {
             /* カードを追加 */
@@ -85,7 +85,7 @@ $(function() {
             get_data(data[i], e_blockcard_content, e_blockcard_tags, e_blockcard_title);
         }
     });
-});
+}
 
 function get_data(data, arg_blockcard_content, arg_blockcard_tags, arg_blockcard_title) {
     const doc = fetch(data.link)
