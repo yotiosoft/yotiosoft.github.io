@@ -1,7 +1,7 @@
 function put_cards() {
     var articles_wrap = document.getElementById("articles_wrap");
     
-    $.getJSON("articles.json", function(data){
+    $.getJSON("/articles/articles.json", function(data){
         for (let i=0; i<data.length; i++) {
             /* カードを追加 */
             var e_blockcard = document.createElement('div');
