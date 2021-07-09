@@ -135,8 +135,6 @@
                   e_blockcard_absolute.appendChild(e_blockcard_button_wrap);
                   e_blockcard.appendChild(e_blockcard_absolute);
 
-                  articles.insertAdjacentHTML('beforeend', e_blockcard);
-
 /*
                   articles.insertAdjacentHTML('beforeend', '\
                   <div class="blockcard"> \
@@ -174,15 +172,15 @@
                       +doc.getElementById("article_summary").innerText;
                     e_blockcard.getElementById("blockcard_tags_id").innerHTML = doc.getElementById("article_tags").innerHTML;
                     e_blockcard.getElementById("blockcard_title_id").innerHTML = doc.getElementById("article_title").innerText;
+
+                    articles.insertAdjacentHTML('beforeend', e_blockcard);
                   }
                   );
                 }
               });
-
-              test.insertAdjacentHTML('beforeend', '<div>BeforeEnd</div>');
             </script>
             
-            <div id="articles">
+            <div id="articles" class="blockcards_wrap">
 
             </div>
             <!--
