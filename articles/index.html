@@ -173,20 +173,24 @@
                   e_blockcard_image.src = data[i].image;
                   e_blockcard_content.textContent = "読み込み中...";
 
-                  const doc = fetch(data[i].link)
-                  .then((res) => res.text())
-                  .then((text) => {
-                      return new DOMParser().parseFromString(text, "text/html");
-                    })
-                  .then((doc) => {
-                    e_blockcard_content.innerHTML = data[i].year+"."+formatter.format(data[i].month)+"."+formatter.format(data[i].day)+"<br>"
-                      +doc.getElementById("article_summary").innerText;
-                    e_blockcard_tags.innerHTML = doc.getElementById("article_tags").innerHTML;
-                    e_blockcard_title.innerHTML = doc.getElementById("article_title").innerText;
-                  }
-                  );
+                  await get_data(data[i], e_blockcard_content, e_blockcard_tags, e_blockcard_title);
                 }
               });
+
+              async function get_data(data, arg_blockcard_content, arg_blockcard_tags, arg_blockcard_title) {
+                const doc = fetch(data.link)
+                .then((res) => res.text())
+                .then((text) => {
+                    return new DOMParser().parseFromString(text, "text/html");
+                  })
+                .then((doc) => {
+                  arg_blockcard_content.innerHTML = data.year+"."+formatter.format(data.month)+"."+formatter.format(data.day)+"<br>"
+                    +doc.getElementById("article_summary").innerText;
+                  arg_blockcard_tags.innerHTML = doc.getElementById("article_tags").innerHTML;
+                  arg_blockcard_title.innerHTML = doc.getElementById("article_title").innerText;
+                }
+                );
+              }
             </script>
             <!--
             <div class="blockcard">
