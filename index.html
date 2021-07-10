@@ -95,15 +95,16 @@
             </div>
 
             <div id="content_main">
-              <div id="articles_wrap" class="blockcards_wrap"></div>
+              <div id="blockcards_wrap" class="blockcards_wrap">
+                <div id="articles_wrap"></div>
+                <div style="text-align: center; width :100%;">
+                  <a class="readmore_round_button" style="color: #fff;" href="/articles/">もっと見る</a>
+                </div>
+              </div>
               <script>
                 put_cards(3);
               </script>
             </div>
-          </div>
-
-          <div style="text-align: center; width :100%;">
-            <a class="readmore_round_button" style="color: #fff;" href="/articles/">もっと見る</a>
           </div>
         </div>
       </div>
@@ -112,8 +113,8 @@
         window.addEventListener('DOMContentLoaded', function(){
           window.addEventListener('resize', function(){
           let content_w = document.getElementById('content').clientWidth;
-          let cards_w = document.getElementById('articles_wrap').clientWidth;
-          document.getElementById('articles_wrap').style.width = (content_w-25) - (content_w-25) % 350;
+          let cards_w = document.getElementById('blockcards_wrap').clientWidth;
+          document.getElementById('blockcards_wrap').style.width = (content_w-25) - (content_w-25) % 350;
           });
         });
       </script>
