@@ -102,8 +102,21 @@
             </div>
           </div>
 
+          <div style="text-align: center; width :100%;">
+            <a class="readmore_round_button" style="color: #fff;" href="/articles/">もっと見る</a>
+          </div>
         </div>
       </div>
+
+      <script>
+        window.addEventListener('DOMContentLoaded', function(){
+          window.addEventListener('resize', function(){
+          let content_w = document.getElementById('content').clientWidth;
+          let cards_w = document.getElementById('articles_wrap').clientWidth;
+          document.getElementById('articles_wrap').style.width = (content_w-25) - (content_w-25) % 350;
+          });
+        });
+      </script>
 
       <footer class="footer_class">
         <div id="footer"></div>
