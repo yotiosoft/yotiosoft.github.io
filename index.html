@@ -102,7 +102,17 @@
                 </div>
               </div>
               <script>
-                put_cards(3);
+                let content_w = document.getElementById('content').clientWidth;
+                let cards_w = document.getElementById('blockcards_wrap_wrap').clientWidth;
+                let row = (content_w-25) / 350;
+
+                if (row <= 2) {
+                  put_cards(row*2);
+                }
+                else {
+                  put_cards(row);
+                }
+                
               </script>
             </div>
           </div>
@@ -112,9 +122,7 @@
       <script>
         window.addEventListener('DOMContentLoaded', function(){
           window.addEventListener('resize', function(){
-          let content_w = document.getElementById('content').clientWidth;
-          let cards_w = document.getElementById('blockcards_wrap_wrap').clientWidth;
-          document.getElementById('blockcards_wrap_wrap').style.width = (content_w-25) - (content_w-25) % 350;
+            document.getElementById('blockcards_wrap_wrap').style.width = (content_w-25) - (content_w-25) % 350;
           });
         });
       </script>
