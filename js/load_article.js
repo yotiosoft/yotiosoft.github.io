@@ -95,23 +95,26 @@ function make_articles_table(start, total) {
 
     $.getJSON("/articles/articles.json", function(data){
         for (let i=start; i<Math.min(data.length, start+total); i++) {
-            var e_a = document.createElement('a');
-            e_a.href = data[i].link;
-
             var e_tr = document.createElement('tr');
             
             var e_td1 = document.createElement('td');
             e_td1.textContent = "読み込み中...";
 
             var e_td2 = document.createElement('td');
-            e_td2.textContent = data.year+"."+formatter.format(data.month)+"."+formatter.format(data.day);
+            e_td2.textContent = data[i].year+"."+formatter.format(data[i].month)+"."+formatter.format(data[i].day);
+
+            var e_a = document.createElement('a');
+            e_a.href = data[i].link;
+
+            var e_td3 = document.createElement('td');
+            e_td3.textContent = "詳しく見る";
+            e_td3.appendChild(e_a);
 
             e_tr.appendChild(e_td1);
             e_tr.appendChild(e_td2);
+            e_tr.appendChild(e_td3);
 
-            e_a.appendChild(e_tr);
-
-            articles_table.appendChild(e_a);
+            articles_table.appendChild(e_tr);
 
             get_data_for_table(data[i], e_td1);
         }
