@@ -111,7 +111,9 @@ function make_articles_table(start, total) {
 
             e_a.appendChild(e_tr);
 
+            articles_table.appendChild(e_a);
 
+            get_data_for_table(data[i], e_td1);
         }
     });
 }
