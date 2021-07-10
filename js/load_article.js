@@ -2,7 +2,7 @@ function put_cards(max_articles) {
     var articles_wrap = document.getElementById("articles_wrap");
     
     $.getJSON("/articles/articles.json", function(data){
-        for (let i=0; i<Math.max(data.length, max_articles); i++) {
+        for (let i=0; i<Math.min(data.length, max_articles); i++) {
             /* カードを追加 */
             var e_blockcard = document.createElement('div');
             e_blockcard.className = 'blockcard';
