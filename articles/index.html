@@ -66,6 +66,7 @@
               </div>
               <div id="sidebar_links">
                 <li><a href="#articles">最近の投稿</a></li>
+                <li><a href="#all_articles">すべての投稿</a></li>
               </div>
             </div>
           </div>
@@ -106,6 +107,22 @@
             </div>
             -->
         	</div>
+        </div>
+      </div>
+
+      <div id="content">
+        <div class="column">
+          <div id="all_articles"></div>
+          
+          <div class="inline-heading-wrap">
+            <div class="inline-heading-en" style="color:#e67e22;">Recently Posts</div>
+            <div class="inline-heading-jp">すべての投稿</div>
+          </div>
+
+          <table id="articles_table"></table>
+          <script>
+            make_articles_table(0, 10);
+          </script>
         </div>
       </div>
 

@@ -51,30 +51,8 @@ function put_cards(max_articles) {
             e_blockcard_button_wrap.appendChild(e_blockcard_button);
             e_blockcard_absolute.appendChild(e_blockcard_button_wrap);
             e_blockcard.appendChild(e_blockcard_absolute);
-    
+            
             articles_wrap.appendChild(e_blockcard);
-    
-        /*
-            articles.insertAdjacentHTML('beforeend', '\
-            <div class="blockcard"> \
-            <a id="blockcard_link"> \
-                <div class="blockcard_image_wrap"> \
-                <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="blockcard_image"> \
-                </div> \
-            </a> \
-            <div class="blockcard_absolute"> \
-                <p class="blockcard_title" id="blockcard_title_id"></p> \
-                <p class="blockcard_tags" id="blockcard_tags_id"></p> \
-                <p class="blockcard_content" id="blockcard_content_id"></p> \
-                \
-                <span class="blockcard_button_wrap"> \
-                <span class="blockcard_button"> \
-                    <a class="readmore_button" style="color:#fff;" id="blockcard_read_button">詳しく見る</a> \
-                </span> \
-                </span> \
-            </div> \
-            </div> \
-            ');*/
     
             /* データ代入 */
             e_blockcard_link.href = data[i].link;
@@ -82,12 +60,12 @@ function put_cards(max_articles) {
             e_blockcard_image.src = data[i].image;
             e_blockcard_content.textContent = "読み込み中...";
     
-            get_data(data[i], e_blockcard_content, e_blockcard_tags, e_blockcard_title);
+            get_data_for_card(data[i], e_blockcard_content, e_blockcard_tags, e_blockcard_title);
         }
     });
 }
 
-function get_data(data, arg_blockcard_content, arg_blockcard_tags, arg_blockcard_title) {
+function get_data_for_card(data, arg_blockcard_content, arg_blockcard_tags, arg_blockcard_title) {
     const formatter = new Intl.NumberFormat('ja', {
         minimumIntegerDigits: 2, 
         useGrouping: false
@@ -106,3 +84,45 @@ function get_data(data, arg_blockcard_content, arg_blockcard_tags, arg_blockcard
     }
     );
 }
+
+function make_articles_table(start, total) {
+    const formatter = new Intl.NumberFormat('ja', {
+        minimumIntegerDigits: 2, 
+        useGrouping: false
+    });
+
+    var articles_table = document.getElementById("articles_table");
+
+    $.getJSON("/articles/articles.json", function(data){
+        for (let i=start; i<Math.min(data.length, start+total); i++) {
+            var e_a = document.createElement('a');
+            e_a.href = data[i].link;
+
+            var e_tr = document.createElement('tr');
+            
+            var e_td1 = document.createElement('td');
+            e_td1.textContent = "読み込み中...";
+
+            var e_td2 = document.createElement('td');
+            e_td2.textContent = data.year+"."+formatter.format(data.month)+"."+formatter.format(data.day);
+
+            e_tr.appendChild(e_td1);
+            e_tr.appendChild(e_td2);
+
+            e_a.appendChild(e_tr);
+
+
+        }
+    });
+}
+
+function get_data_for_table(data, e_td1) {
+    const doc = fetch(data.link)
+    .then((res) => res.text())
+    .then((text) => {
+        return new DOMParser().parseFromString(text, "text/html");
+        })
+    .then((doc) => {
+        e_td1.innerHTML = doc.getElementById("article_title").innerText;
+    }
+);}
