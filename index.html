@@ -104,7 +104,7 @@
               <script>
                 let content_w = document.getElementById('content').clientWidth;
                 let cards_w = document.getElementById('blockcards_wrap_wrap').clientWidth;
-                let row = (int)((content_w-25) / 350);
+                let row = parseInt((content_w-25) / 350);
 
                 if (row <= 2) {
                   put_cards(row*2);
