@@ -101,18 +101,18 @@ function make_articles_table(start, total) {
             e_td1.textContent = "読み込み中...";
 
             var e_td2 = document.createElement('td');
-            e_td2.textContent = data[i].year+"."+formatter.format(data[i].month)+"."+formatter.format(data[i].day);
-
-            var e_a = document.createElement('a');
-            e_a.href = data[i].link;
+            e_td2.textContent = data[i].year+"/"+formatter.format(data[i].month)+"/"+formatter.format(data[i].day);
 
             var e_td3 = document.createElement('td');
             e_td3.textContent = "詳しく見る";
-            e_td3.appendChild(e_a);
+
+            var e_a = document.createElement('a');
+            e_a.href = data[i].link;
+            e_a.appendChild(e_td3);
 
             e_tr.appendChild(e_td1);
             e_tr.appendChild(e_td2);
-            e_tr.appendChild(e_td3);
+            e_tr.appendChild(e_a);
 
             articles_table.appendChild(e_tr);
 
