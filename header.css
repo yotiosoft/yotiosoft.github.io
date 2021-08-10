@@ -180,11 +180,18 @@
   color: #fff;
 }
 
-.menu_button_wrap:hover
-.header-submenu {
-  display: block;
+@media (hover: hover) {
+  .menu_button_wrap:hover
+  .header-submenu {
+    display: block;
+  }
 }
-
+@media (hover: none) {
+  .menu_button_wrap:hover
+  {
+    /* 何もしない（タッチ画面ではサブメニューを表示しない） */ 
+  }
+}
 .submenu-button {
   background-color: #bbbbbb;
 }
