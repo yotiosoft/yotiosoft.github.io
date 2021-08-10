@@ -2,12 +2,7 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "../Sandbox"
-		},
-		{
-			"path": "../gamutbox-hp"
 		}
-	]
+	],
+	"settings": {}
 }
