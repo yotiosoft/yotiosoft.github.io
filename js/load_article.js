@@ -62,8 +62,8 @@ function put_cards(max_articles) {
             /* データ代入 */
             e_blockcard_link.href = data[i].link;
             e_readmore_button.href = data[i].link;
-            e_blockcard_image.source.srcset = data[i].image_webp;
-            e_blockcard_image.img.src = data[i].image;
+            e_blockcard_image_source.srcset = data[i].image_webp;
+            e_blockcard_image_img.src = data[i].image;
             e_blockcard_content.textContent = "読み込み中...";
     
             get_data_for_card(data[i], e_blockcard_content, e_blockcard_tags, e_blockcard_title);
