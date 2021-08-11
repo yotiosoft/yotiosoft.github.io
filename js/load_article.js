@@ -12,9 +12,14 @@ function put_cards(max_articles) {
     
             var e_blockcard_image_wrap = document.createElement('blockcard_image_wrap');
             e_blockcard_image_wrap.className = 'blockcard_image_wrap';
-    
-            var e_blockcard_image = document.createElement('img');
-            e_blockcard_image.className = 'blockcard_image';
+
+            var e_blockcard_image = document.createElement('picture');
+            var e_blockcard_image_source = document.createElement('source');
+            e_blockcard_image_source.className = 'blockcard_image';
+            e_blockcard_image.append(e_blockcard_image_source);
+            var e_blockcard_image_img = document.createElement('img');
+            e_blockcard_image_img.className = 'blockcard_image';
+            e_blockcard_image.append(e_blockcard_image_img);
             e_blockcard_image_wrap.appendChild(e_blockcard_image);
             e_blockcard_link.appendChild(e_blockcard_image_wrap);
             e_blockcard.appendChild(e_blockcard_link);
@@ -57,7 +62,8 @@ function put_cards(max_articles) {
             /* データ代入 */
             e_blockcard_link.href = data[i].link;
             e_readmore_button.href = data[i].link;
-            e_blockcard_image.src = data[i].image;
+            e_blockcard_image.source.srcset = data[i].image_webp;
+            e_blockcard_image.img.src = data[i].image;
             e_blockcard_content.textContent = "読み込み中...";
     
             get_data_for_card(data[i], e_blockcard_content, e_blockcard_tags, e_blockcard_title);
