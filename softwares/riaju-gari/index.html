@@ -72,7 +72,6 @@
                 <li><a href="#synopsis">あらすじ</a></li>
                 <li><a href="#rule">ルール</a></li>
                 <li><a href="#howtoplay">あそびかた</a></li>
-                <li><a href="#creative_mode">クリエイティブモード</a></li>
                 <li><a href="#movie">プレイ動画</a></li>
                 <li><a href="#requirements">動作環境</a></li>
                 <li><a href="#license">ライセンスについて</a></li>
@@ -118,14 +117,20 @@
             </div>
 
             <div id="content_main">
-              街なかにいるカップルを家に帰らせましょう。<br>
+              街なかにいるすべてのカップルを家に帰らせましょう。<br>
               リア充を家に帰らせる手段は以下の2通り。
               <li>手榴弾を使って画面内にいるリア充を怪我しない程度に爆発させる</li>
               <li>クリスマスツリーをチェーンソーやノコギリで切り倒す</li>
               <picture style="max-width: 40%;">
-                <source type="image/webp" srcset="../../img/apps/riaju-gari/shuryudan.webp" style="max-width: 50%;" />
-                <img src="../../img/apps/riaju-gari/shuryudan.png" style="max-width: 50%;" />
+                <source type="image/webp" srcset="../../img/apps/riaju-gari/town.webp" style="max-width: 50%;" />
+                <img src="../../img/apps/riaju-gari/town.png" style="max-width: 50%;" />
               </picture><br>
+              <br>
+              ただし、主人公がカップルに近づくと、主人公のMPが減ってしまいます。<br>
+              MPが0になったらゲームオーバーです。カップルを避けて移動しましょう。<br>
+              また、HPが低いと主人公は何もできません。まずは店を探して食べ物を手に入れましょう。<br>
+              <br>
+              すべてのカップルを家に帰らせることができたらゲームクリアです。
             </div>
         	</div>
 
@@ -136,144 +141,152 @@
               <div class="inline-heading-en" style="color:#0fb9b1;">How to play</div>
               <div class="inline-heading-jp">あそびかた</div>
             </div>
+            
 
             <div id="content_main">
-              <ol>
-                <li>
-                  <div class="mini-box" style="line-height: 40px;">Game.exe</div>を開きます。<br>
-                  <picture style="max-width: 40%;">
-                    <source type="image/webp" srcset="../../img/apps/riaju-gari/file.webp" style="max-width: 50%;" />
-                    <img src="../../img/apps/riaju-gari/file.png" style="max-width: 50%;" />
-                  </picture><br>
-                  <a href="../../support/help/windows-defender.html" style="color: #000;">
-                    <div class="rounded-corner-frame-button" style="border-color: #0fb9b1;"
-                          onMouseOut="this.style.background=''" onMouseOver="this.style.background='#0fb9b1'">
-                      <div class="icontxt-nomargin">
-                        <img src="../../img/icons/question.png" style="height: 20px;">
-                        「WindowsによってPCが保護されました」と表示される場合
-                      </div>
-                    </div>
-                  </a><br>
-                  <br>
-                </li>
-                <li>
-                  「スタート」を選ぶとゲームが開始します。<br>
-                  <picture style="max-width: 40%;">
-                    <source type="image/webp" srcset="../../img/apps/riaju-gari/title.webp" style="max-width: 50%;" />
-                    <img src="../../img/apps/riaju-gari/title.png" style="max-width: 50%;" />
-                  </picture><br>
-                </li>
-              </ol>
-              <br>
-
-              ゲームの操作方法は以下のとおりです。
-              <table>
-                <tr>
-                  <td>
-                    <div class="icontxt">
-                      <img src="../../img/icons/directions.png" style="height: 24px;">
-                      十字キー
-                    </div>
-                  </td>
-                  <td>
-                    主人公の移動、およびメニューの選択
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="icontxt">
-                      <img src="../../img/icons/space.png" style="height: 24px;">
-                      Escキー
-                    </div>
-                  </td>
-                  <td>
-                    メニューを開く（アイテムの使用など）<br>
+              <div id="content_h2">
+                <div id="content_h2_box" style="background-color: #0fb9b1;"></div>
+                起動方法
+              </div>
+              <div id="content_sub">
+                <ol>
+                  <li>
+                    <div class="mini-box" style="line-height: 40px;">Game.exe</div>を開きます。<br>
                     <picture style="max-width: 40%;">
-                      <source type="image/webp" srcset="../../img/apps/riaju-gari/menu1.webp" style="max-width: 50%;" />
-                      <img src="../../img/apps/riaju-gari/menu1.png" style="max-width: 50%;" />
+                      <source type="image/webp" srcset="../../img/apps/riaju-gari/file.webp" style="max-width: 50%;" />
+                      <img src="../../img/apps/riaju-gari/file.png" style="max-width: 50%;" />
                     </picture><br>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="icontxt">
-                      <img src="../../img/icons/space.png" style="height: 24px;">
-                      Enterキー
-                    </div>
-                  </td>
-                  <td>
-                    選択の確定（メニューなど）
-                  </td>
-                </tr>
-              </table>
+                    <a href="../../support/help/windows-defender.html" style="color: #000;">
+                      <div class="rounded-corner-frame-button" style="border-color: #0fb9b1;"
+                            onMouseOut="this.style.background=''" onMouseOver="this.style.background='#0fb9b1'">
+                        <div class="icontxt-nomargin">
+                          <img src="../../img/icons/question.png" style="height: 20px;">
+                          「WindowsによってPCが保護されました」と表示される場合
+                        </div>
+                      </div>
+                    </a><br>
+                    <br>
+                  </li>
+                  <li>
+                    「スタート」を選ぶとゲームが開始します。<br>
+                    <picture style="max-width: 40%;">
+                      <source type="image/webp" srcset="../../img/apps/riaju-gari/title.webp" style="max-width: 50%;" />
+                      <img src="../../img/apps/riaju-gari/title.png" style="max-width: 50%;" />
+                    </picture><br>
+                  </li>
+                </ol>
+              </div>
+
+              <div id="content_h2">
+                <div id="content_h2_box" style="background-color: #0fb9b1;"></div>
+                手榴弾について
+              </div>
+              <div id="content_sub">
+                手榴弾は武器屋で手に入ります。<br>
+                マップを散策して、武器屋を探しましょう。<br>
+                <picture style="max-width: 40%;">
+                  <source type="image/webp" srcset="../../img/apps/riaju-gari/bukiya.webp" style="max-width: 50%;" />
+                  <img src="../../img/apps/riaju-gari/bukiya.png" style="max-width: 50%;" />
+                </picture><br>
+                手榴弾を手に入れたら、カップルが集まっている場所に移動して手榴弾を投げつけましょう。<br>
+                <picture style="max-width: 40%;">
+                  <source type="image/webp" srcset="../../img/apps/riaju-gari/shuryudan.webp" style="max-width: 50%;" />
+                  <img src="../../img/apps/riaju-gari/shuryudan.png" style="max-width: 50%;" />
+                </picture><br>
+                するとカップル達は主人公を不審者であると認識し、危険を察知して家に帰ってくれます。<br>
+                <picture style="max-width: 40%;">
+                  <source type="image/webp" srcset="../../img/apps/riaju-gari/shuryudan2.webp" style="max-width: 50%;" />
+                  <img src="../../img/apps/riaju-gari/shuryudan2.png" style="max-width: 50%;" />
+                </picture><br>
+              </div>
+
+              <div id="content_h2">
+                <div id="content_h2_box" style="background-color: #0fb9b1;"></div>
+                クリスマスツリーを切り倒す
+              </div>
+              <div id="content_sub">
+                クリスマスツリーはチェーンソーまたはノコギリで切り倒せます。<br>
+                チェーンソーなら1個、ノコギリなら5個必要です。<br>
+                まずは道具を手に入れましょう。<br>
+                <picture style="max-width: 40%;">
+                  <source type="image/webp" srcset="../../img/apps/riaju-gari/bukiya.webp" style="max-width: 50%;" />
+                  <img src="../../img/apps/riaju-gari/bukiya.png" style="max-width: 50%;" />
+                </picture><br>
+                道具を手に入れたら、クリスマスツリーの前に移動し道具を使います。<br>
+                <picture style="max-width: 40%;">
+                  <source type="image/webp" srcset="../../img/apps/riaju-gari/tree1.webp" style="max-width: 50%;" />
+                  <img src="../../img/apps/riaju-gari/tree1.png" style="max-width: 50%;" />
+                </picture><br>
+                <picture style="max-width: 40%;">
+                  <source type="image/webp" srcset="../../img/apps/riaju-gari/tree2.webp" style="max-width: 50%;" />
+                  <img src="../../img/apps/riaju-gari/tree2.png" style="max-width: 50%;" />
+                </picture><br>
+                このとき、主人公のHPが低いと切り倒せません。<br>
+                その場合は、食品店を探し食料を手に入れましょう。<br>
+                <picture style="max-width: 40%;">
+                  <source type="image/webp" srcset="../../img/apps/riaju-gari/tree3.webp" style="max-width: 50%;" />
+                  <img src="../../img/apps/riaju-gari/tree3.png" style="max-width: 50%;" />
+                </picture><br>
+                HPが十分に残っていれば、ツリーを切り倒せます。<br>
+                <picture style="max-width: 40%;">
+                  <source type="image/webp" srcset="../../img/apps/riaju-gari/tree4.webp" style="max-width: 50%;" />
+                  <img src="../../img/apps/riaju-gari/tree4.png" style="max-width: 50%;" />
+                </picture><br>
+                すると、カップルたちは主人公の奇怪な行動にドン引きし、家に帰ってくれます。<br>
+                <picture style="max-width: 40%;">
+                  <source type="image/webp" srcset="../../img/apps/riaju-gari/tree5.webp" style="max-width: 50%;" />
+                  <img src="../../img/apps/riaju-gari/tree5.png" style="max-width: 50%;" />
+                </picture><br>
+              </div>
+
+              <div id="content_h2">
+                <div id="content_h2_box" style="background-color: #0fb9b1;"></div>
+                操作方法
+              </div>
+              <div id="content_sub">
+                ゲームの操作方法は以下のとおりです。
+                <table>
+                  <tr>
+                    <td>
+                      <div class="icontxt">
+                        <img src="../../img/icons/directions.png" style="height: 24px;">
+                        十字キー
+                      </div>
+                    </td>
+                    <td>
+                      主人公の移動、およびメニューの選択
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="icontxt">
+                        <img src="../../img/icons/space.png" style="height: 24px;">
+                        Escキー
+                      </div>
+                    </td>
+                    <td>
+                      メニューを開く（アイテムの使用など）<br>
+                      <picture style="max-width: 40%;">
+                        <source type="image/webp" srcset="../../img/apps/riaju-gari/menu1.webp" style="max-width: 50%;" />
+                        <img src="../../img/apps/riaju-gari/menu1.png" style="max-width: 50%;" />
+                      </picture><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="icontxt">
+                        <img src="../../img/icons/space.png" style="height: 24px;">
+                        Enterキー
+                      </div>
+                    </td>
+                    <td>
+                      選択の確定（メニューなど）
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
         	</div>
-
-          <div class="column">
-            <div id="creative_mode"></div>
-
-            <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">Creative Mode</div>
-              <div class="inline-heading-jp">クリエイティブモード</div>
-            </div>
-
-            <div id="content_main">
-              クリエイティブモードでは、マップの作成が行なえます。<br>
-              手順は以下のとおりです。<br>
-              <br>
-              <ol>
-                <li>
-                  タイトル画面で「CREATIVE MODE」を選びます。<br>
-                  ※メニュー上の選択移動は十字キーで行います。<br>
-                  <picture style="max-width: 40%;">
-                    <source type="image/webp" srcset="../../img/apps/tamagotori/title.webp" style="max-width: 50%;" />
-                    <img src="../../img/apps/tamagotori/title.png" style="max-width: 50%;" />
-                  </picture><br>
-                </li>
-
-                <li>
-                  「NEW MAP」を選びます。<br>
-                  ※既に保存したマップを編集するには「OPEN MAP」を選びます。<br>
-                  <picture style="max-width: 40%;">
-                    <source type="image/webp" srcset="../../img/apps/tamagotori/c1.webp" style="max-width: 50%;" />
-                    <img src="../../img/apps/tamagotori/c1.png" style="max-width: 50%;" />
-                  </picture><br>
-                </li>
-
-                <li>
-                  背景部分（緑色の部分）を左クリックし、背景の文字（薄緑色の部分）を描きます。<br>
-                  <picture style="max-width: 40%;">
-                    <source type="image/webp" srcset="../../img/apps/tamagotori/c2.webp" style="max-width: 50%;" />
-                    <img src="../../img/apps/tamagotori/c2.png" style="max-width: 50%;" />
-                  </picture><br>
-                </li>
-
-                <li>
-                  隠しメッセージを入れたい箇所を右クリックすることで、その箇所に入れる文字（1文字）を設定できます。<br>
-                  <picture style="max-width: 40%;">
-                    <source type="image/webp" srcset="../../img/apps/tamagotori/c3.webp" style="max-width: 50%;" />
-                    <img src="../../img/apps/tamagotori/c3.png" style="max-width: 50%;" />
-                  </picture><br>
-                </li>
-
-                <li>
-                  「Save」でマップを保存できます。<br>
-                  <picture style="max-width: 40%;">
-                    <source type="image/webp" srcset="../../img/apps/tamagotori/c4.webp" style="max-width: 50%;" />
-                    <img src="../../img/apps/tamagotori/c4.png" style="max-width: 50%;" />
-                  </picture><br>
-                </li>
-
-                <li>
-                  保存したマップは「USER MAP GAME」を選ぶことで遊べます。<br>
-                  <picture style="max-width: 40%;">
-                    <source type="image/webp" srcset="../../img/apps/tamagotori/title2.webp" style="max-width: 50%;" />
-                    <img src="../../img/apps/tamagotori/title2.png" style="max-width: 50%;" />
-                  </picture><br>
-                </li>
-              </ol>
-            </div>
-          </div>
 
           <div class="column">
             <div id="movie"></div>
@@ -284,7 +297,7 @@
             </div>
 
             <div id="content_main">
-              <video src="../../movies/softwares/tamagotori.mp4" style="width: 50%;" controls></video>
+              <video src="../../movies/softwares/riaju-gari.mp4" style="width: 50%;" controls></video>
             </div>
         	</div>
 
@@ -322,8 +335,8 @@
             </div>
 
             <div id="content_main">
-              このソフトウェアにはMITライセンスが適用されています。<br>
-              ライセンス条文は<a href="https://github.com/YotioSoft/tamagotori/blob/master/LICENSE" target="_blank">こちら</a>
+              このソフトウェアは個人利用のみ許可されています。<br>
+              エディタを同梱していないため改造はできません。また、再配布等はできませんのでご了承ください。
               <table>
                 <tr>
                   <td>
@@ -348,13 +361,9 @@
                   </td>
                   <td>
                     <div class="icontxt">
-                      <img src="../../img/icons/check.png" style="height: 16px;">
-                      可能
+                      <img src="../../img/icons/x.png" style="height: 16px;">
+                      不可能
                     </div>
-                  </td>
-                  <td rowspan="3" scope="rowgroup" class="nowrap">
-                    著作権とライセンス全文の表示を行うこと。<br>
-                    できれば事前にご連絡いただけると嬉しいです。<br>
                   </td>
                 </tr>
                 <tr>
@@ -366,8 +375,8 @@
                   </td>
                   <td>
                     <div class="icontxt">
-                      <img src="../../img/icons/check.png" style="height: 16px;">
-                      可能
+                      <img src="../../img/icons/x.png" style="height: 16px;">
+                      不可能
                     </div>
                   </td>
                 </tr>
@@ -380,8 +389,8 @@
                   </td>
                   <td>
                     <div class="icontxt">
-                      <img src="../../img/icons/check.png" style="height: 16px;">
-                      可能
+                      <img src="../../img/icons/x.png" style="height: 16px;">
+                      不可能
                     </div>
                   </td>
                 </tr>
@@ -397,9 +406,6 @@
                       <img src="../../img/icons/x.png" style="height: 16px;">
                       不可能
                     </div>
-                  </td>
-                  <td>
-                    ライセンスの改変を行うことはできません。
                   </td>
                 </tr>
                 <tr>
@@ -447,17 +453,13 @@
               </div>
               <ul style="margin-left: 30px;">
                 <li>
-                  イラストわんパグ<br>
-                  <a href="http://www.wanpug.com/" target="_blank">http://www.wanpug.com/</a>
-                </li>
-                <li>
-                  フリークリップアート動物素材<br>
-                  <a href="http://clipart-animal.com/" target="_blank">http://clipart-animal.com/</a>
+                  WOLF RPGエディター 標準素材<br>
+                  <a href="https://www.silversecond.com/WolfRPGEditor/" target="_blank">https://www.silversecond.com/WolfRPGEditor/</a>
                 </li>
                 <li>
                   ロゴ作成<br>
-                  Cool Text<br>
-                  <a href="http://ja.cooltext.com/" target="_blank">http://ja.cooltext.com/</a>
+                  はがないジェネレーター
+                  <a href="http://hgn.ai/" target="_blank">http://hgn.ai/</a>
                 </li>
               </ul>
               
@@ -467,10 +469,29 @@
               </div>
               <ul style="margin-left: 30px;">
                 <li>
-                  ys067<br>
-                  ys169<br>
-                  oo39.com<br>
-                  <a href="http://oo39.com/" target="_blank">http://oo39.com/</a>
+                  冬なんて嫌いさ<br>
+                  GANO / DOVA-SYNDROME<br>
+                  <a href="https://dova-s.jp/bgm/play3879.html" target="_blank">https://dova-s.jp/bgm/play3879.html</a>
+                </li>
+                <li>
+                  ふりかけ<br>
+                  かずち / DOVA-SYNDROME<br>
+                  <a href="https://dova-s.jp/bgm/play5411.html" target="_blank">https://dova-s.jp/bgm/play5411.html</a>
+                </li>
+                <li>
+                  白<br>
+                  チョコミント / DOVA-SYNDROME<br>
+                  <a href="https://dova-s.jp/bgm/play5542.html" target="_blank">https://dova-s.jp/bgm/play5542.html</a>
+                </li>
+                <li>
+                  Deck the Halls (Jazz)<br>
+                  E's Jammy Jams / Youtube Audio Library<br>
+                  <a href="https://www.youtube.com/audiolibrary" target="_blank">https://www.youtube.com/audiolibrary</a>
+                </li>
+                <li>
+                  効果音<br>
+                  WOLF RPGエディター 標準素材<br>
+                  <a href="https://www.silversecond.com/WolfRPGEditor/" target="_blank">https://www.silversecond.com/WolfRPGEditor/</a>
                 </li>
               </ul>
             </div>
@@ -488,13 +509,13 @@
               <table>
                 <tr>
                   <td>
-                    <b>ver.1.0修正版（最新版）</b>
+                    <b>ver.1.0（最新版）</b>
                   </td>
                   <td>
-                    2017/01/06
+                    2016/12/24
                   </td>
                   <td>
-                    <a href="https://github.com/YotioSoft/tamagotori/archive/refs/tags/ver.1.0.zip">ダウンロード</a>
+                    <a href="https://github.com/YotioSoft/Riaju-Gari/archive/refs/tags/ver.1.0.zip">ダウンロード</a>
                   </td>
                 </tr>
               </table>
