@@ -1,4 +1,5 @@
 function put_cards(max_articles) {
+    console.log(max_articles);
     var articles_wrap = document.getElementById("articles_wrap");
     
     $.getJSON("/articles/articles.json", function(data){
