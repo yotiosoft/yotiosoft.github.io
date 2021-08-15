@@ -241,6 +241,7 @@ a.anchor{
   display: block;
   max-width: 100%;
   margin: 10px 0px 10px 10px;
+  padding-right: 10px;
 }
 
 #content_h {
