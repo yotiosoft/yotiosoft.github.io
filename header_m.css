@@ -47,7 +47,8 @@
   }
   
   #header_wrap {
-    max-width: 100%;
+    width: 100%;
+    min-width: 370px;
     margin: 0px auto;
     overflow: hidden;
   }

@@ -18,6 +18,7 @@ html, body {
     sans-serif;
 
   width: 100%;
+  min-width: 370px;
   margin-left: 0;
   margin-right: 0;
 
@@ -48,6 +49,7 @@ a.anchor{
 /* パンくずリスト */
 .navibar_wrap {
   width: 100%;
+  min-width: 370px;
   height: 20px;
   background-color: #dfe6e9;
   margin-bottom: 30px;
@@ -55,6 +57,7 @@ a.anchor{
 
 .navibar {
   max-width: 100%;
+  min-width: 370px;
   padding-left: 10px;
   margin: 0px auto;
 
@@ -102,7 +105,8 @@ a.anchor{
 }
 
 .pageheader_wrap {
-  max-width: 100%;
+  width: 100%;
+  min-width: 370px;
   height: 70px;
 
   position: relative;
@@ -116,7 +120,8 @@ a.anchor{
 }
 
 .pageheader_logo_wrap {
-  max-width: 100%;
+  width: 100%;
+  min-width: 370px;
 
   text-align: center;
 
@@ -147,7 +152,8 @@ a.anchor{
 
 /* メインとなるコンテンツ */
 .main_wrap {
-  max-width: 100%;
+  width: 100%;
+  min-width: 370px;
   margin: 0px auto;
   display: -webkit-flex;
   display: flex;
