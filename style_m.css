@@ -187,10 +187,7 @@ a.anchor{
 }
 
 #sidebar {
-  width: 200px;
-  margin-left: 10px;
-  position: relative;
-  z-index: 1;
+  display: none;
 }
 
 #sticked {
@@ -240,7 +237,7 @@ a.anchor{
 
 #content {
   display: block;
-  width: 1086px;
+  width: 740px;
   max-width: 100%;
   margin: 10px 0px 10px 10px;
 }
