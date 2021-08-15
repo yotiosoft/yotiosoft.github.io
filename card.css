@@ -5,8 +5,8 @@
 }
 
 .blockcard {
-    width: 95%;
-    max-width: 340px;
+    width: 340px;
+    width: calc(100%-10px);
     margin: 20px 0px 20px 10px;
     border-radius: 5px;
     background-color: #fff;
