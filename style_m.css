@@ -153,10 +153,8 @@ a.anchor{
 /* メインとなるコンテンツ */
 .main_wrap {
   width: 100%;
-  min-width: 370px;
   margin: 0px auto;
   display: -webkit-flex;
-  display: flex;
 }
 
 #fullcolumn {
