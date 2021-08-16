@@ -5,7 +5,7 @@
   
   #header_fixed {
     box-sizing: border-box;
-    height: 80px;
+    height: 70px;
     padding: 15px 30px;
     background-color: #313131;
     color: white;
@@ -372,4 +372,8 @@
 }
 #menu-btn-check:checked ~ .menu-content {
     left: 0px;/*メニューを画面内へ*/
+}
+
+#under-header {
+  margin-top: 70px;
 }
