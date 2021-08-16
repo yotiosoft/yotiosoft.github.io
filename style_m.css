@@ -197,14 +197,14 @@ a.anchor{
 }
 
 #sidebar_menu {
-  width: 100%;
+  width: calc(100%-10px);
   color: #313131;
   margin-bottom: 30px;
   margin-right: 10px;
 
-  padding: 10px;
-  background-color: #aaaaaa;
-  border-radius: 10px;
+  padding: 20px;
+  background-color: #cccccc;
+  border-radius: 5px;
 }
 
 #sidebar_h {
