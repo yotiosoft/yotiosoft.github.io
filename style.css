@@ -5,7 +5,7 @@
 }
 
 html, body {
-  font-family: "ヒラギノ角ゴシック W2","Hiragino Kaku Gothic W4","ヒラギノ角ゴシック","Hiragino Kaku Gothic",
+  font-family: "ヒラギノ角ゴシック","Hiragino Kaku Gothic",
     "Noto Sans CJK JP",
     "YuGothic", YuGothic,
     "Hiragino Sans",
@@ -16,6 +16,7 @@ html, body {
     "ＭＳ Ｐゴシック", "MS PGothic",
     "Nunito Sans",
     sans-serif;
+  font-weight: 200;
 
   width: 100%;
   margin-left: 0;
