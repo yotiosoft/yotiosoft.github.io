@@ -33,7 +33,7 @@ ol {
 
 table {
   display: block;
-  overflow-x: scroll;
+  overflow: scroll;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
