@@ -2,13 +2,13 @@
 .inline-heading-wrap {
     width: 100%;
     min-height: 60px;
-    display: inline;
 }
 
 .inline-heading-en {
     float: left;
     height: 40px;
     margin: 10px 10px 10px 0px;
+    display: inline;
 
     font-size: 36px;
     line-height: 40px;
@@ -20,6 +20,7 @@
     float: left;
     height: 40px;
     margin: 10px 10px 10px 0px;
+    display: inline;
 
     border-left: 1px solid gray;
     padding-left: 10px;
