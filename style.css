@@ -31,6 +31,13 @@ ol {
   margin-left: 20px;
 }
 
+table {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
 #wrap {
   overflow: hidden;
 
@@ -446,6 +453,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .imgtxt picture {
   margin-right: 20px;
+  max-width: 40%;
 }
 .imgtxt img {
   margin-right: 20px;
@@ -478,4 +486,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .link-column {
   margin: 0px 0px 50px 0px;
+}
+
+.content-img {
+  max-width: 50%;
 }
