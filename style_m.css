@@ -134,7 +134,6 @@ a.anchor{
 .pageheader_title {
   color: #FFFFFF;
   font-size: 26px;
-  height: 40px;
   line-height: 30px;
 
   font-weight: bold;
@@ -145,7 +144,6 @@ a.anchor{
 .pageheader_summary {
   color: #FFFFFF;
   font-size: 18px;
-  height: 30px;
   line-height: 20px;
 }
 
