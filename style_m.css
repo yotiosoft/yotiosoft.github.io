@@ -200,6 +200,10 @@ a.anchor{
   width: 100%;
   color: #313131;
   margin-bottom: 30px;
+
+  padding: 10px;
+  background-color: #aaaaaa;
+  border-radius: 10px;
 }
 
 #sidebar_h {
