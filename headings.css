@@ -1,6 +1,7 @@
 /* インライン要素の見出し */
 .inline-heading-wrap {
     min-height: 60px;
+    display: inline;
 }
 
 .inline-heading-en {
