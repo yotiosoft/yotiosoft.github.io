@@ -2,10 +2,6 @@
 * {
   margin: 0px;
   padding: 0px;
-
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
 }
 
 html, body {
@@ -34,6 +30,12 @@ html, body {
 
 ol {
   margin-left: 20px;
+}
+
+table {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 #wrap {
