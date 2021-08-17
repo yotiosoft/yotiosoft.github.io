@@ -168,7 +168,7 @@ a.anchor{
   height: auto;
 }
 
-.box-1310x390:before {
+.box-1300x390:before {
   content: "";
   display: block;
   padding-top: 30%;
@@ -365,7 +365,7 @@ a.anchor{
 }
 
 #footer_wrap {
-  width: 1320px;
+  width: 1310px;
   max-width: 100%;
   height: 100%;
   display: flex;
