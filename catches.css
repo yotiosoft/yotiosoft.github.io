@@ -1,21 +1,16 @@
 .catches {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 15px;
 }
-.catch_circle-1 {
-  color: #fff;
-  padding: 50px;
-  width: 180px;
-  height: 180px;
-  mix-blend-mode: multiply;
-}
+.catch_circle-1,
 .catch_circle-2,
 .catch_circle-3 {
   color: #fff;
   padding: 50px;
   width: 180px;
   height: 180px;
-  margin: 0 -15px;
+  margin: -15px -15px;
   mix-blend-mode: multiply;
 }
 .catch_circle-1 {
