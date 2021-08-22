@@ -1,15 +1,15 @@
 $(function() {
     $('.slide').each(function() {
       // スライド（画像）の数を取得
-      var $slides = $(this).find('img'),
+      var $slides = $(this).find('p'),
           slideNum = $slides.length,
           currentIdx = 0; // 何番目か
     
       // 最初の画像をフェードイン
       $(".slide p").eq(currentIdx).fadeIn();
     
-      // 3秒後に次のスライドを表示
-      setTimeout(dispNextSlide, 3000);
+      // 5秒後に次のスライドを表示
+      setTimeout(dispNextSlide, 5000);
     
       // 次のスライドを表示するメソッド
       function dispNextSlide() {
@@ -28,6 +28,8 @@ $(function() {
     
         // インデックスを更新
         currentIdx = nextIdx;
+
+        setTimeout(dispNextSlide, 5000);
       }
     });
 });
