@@ -1,0 +1,22 @@
+.column.is-half {
+    width: 100%;
+}
+
+.form-element {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-element input {
+    width: 25%;
+}
+
+.form-element textarea {
+    width: 50%;
+    height: 100px;
+}
+
+.form-element label {
+    display: flex;
+}
+  
