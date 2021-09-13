@@ -1,5 +1,5 @@
 .column.is-half {
-    width: 100%;
+    width: 50%;
 }
 
 .form-element {
@@ -8,11 +8,11 @@
 }
 
 .form-element input {
-    width: 25%;
+    width: 50%;
 }
 
 .form-element textarea {
-    width: 50%;
+    width: 100%;
     height: 100px;
 }
 
