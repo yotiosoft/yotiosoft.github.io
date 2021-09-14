@@ -149,8 +149,9 @@
                 <div class="column is-half">
                   <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
                     <script>
-                      console.log(process.env.ACCESS_KEY);
-                      document.write('<input type="hidden" name="accessKey" value="'+ process.env.ACCESS_KEY +'" required>');
+                      require('dotenv').config();
+                      console.log(rocess.env.ACCESS_KEY);
+                      document.write('<input type="hidden" name="accessKey" value="'+process.env.ACCESS_KEY+'" required>');
                     </script>
                     <div class="form-element">
                       <label class="label">お名前</label>
