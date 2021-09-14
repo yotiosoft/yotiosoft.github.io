@@ -149,7 +149,6 @@
                 <div class="column is-half">
                   <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
                     <script>
-                      require('dotenv').config();
                       console.log(rocess.env.ACCESS_KEY);
                       document.write('<input type="hidden" name="accessKey" value="'+process.env.ACCESS_KEY+'" required>');
                     </script>
