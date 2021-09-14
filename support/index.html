@@ -149,8 +149,16 @@
                 <div class="column is-half">
                   <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
                     <script>
-                      console.log(rocess.env.ACCESS_KEY);
                       document.write('<input type="hidden" name="accessKey" value="'+process.env.ACCESS_KEY+'" required>');
+                    </script>
+                    <script>
+                      console.log(process.env.ACCESS_KEY);
+                    </script>
+                    <script>
+                      console.log(env.ACCESS_KEY);
+                    </script>
+                    <script>
+                      console.log(ACCESS_KEY);
                     </script>
                     <div class="form-element">
                       <label class="label">お名前</label>
