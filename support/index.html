@@ -155,6 +155,16 @@
                       console.log(access_key);
                       document.write('<input type="hidden" name="accessKey" value="'+access_key+'" required>');
                     </script>
+                    <script>
+                      require('dotenv').config();
+                      console.log(process.env.ACCESS_KEY);
+                    </script>
+                    <script>
+                      console.log(env.ACCESS_KEY);
+                    </script>
+                    <script>
+                      console.log(ACCESS_KEY);
+                    </script>
                     <div class="form-element">
                       <label class="label">お名前</label>
                       <input type="text" name="name" required>
