@@ -1,3 +1,3 @@
 var config = {
-    access_key : '381547bc-aaab-4c8f-834a-59eddf2f4776'
+    ACCESS_KEY : '381547bc-aaab-4c8f-834a-59eddf2f4776'
 }
