@@ -33,6 +33,8 @@
     <script src="../js/side.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/staticform.js"></script>
+
+    <script type='text/javascript' src='../js/config.js'></script>
   </head>
 
   <body>
@@ -149,16 +151,9 @@
                 <div class="column is-half">
                   <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
                     <script>
-                      document.write('<input type="hidden" name="accessKey" value="'+process.env.ACCESS_KEY+'" required>');
-                    </script>
-                    <script>
-                      console.log(process.env.ACCESS_KEY);
-                    </script>
-                    <script>
-                      console.log(env.ACCESS_KEY);
-                    </script>
-                    <script>
-                      console.log(ACCESS_KEY);
+                      var access_key = config.ACCESS_KEY;
+                      console.log(access_key);
+                      document.write('<input type="hidden" name="accessKey" value="'+access_key+'" required>');
                     </script>
                     <div class="form-element">
                       <label class="label">お名前</label>
