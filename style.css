@@ -109,6 +109,10 @@ a.anchor{
   width: 100%;
 
   text-shadow: 1px 2px 10px #808080;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pageheader_wrap {
