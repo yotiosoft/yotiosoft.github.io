@@ -11,6 +11,21 @@
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 3px 6px #ccc;
+
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+.blockcard:hover {
+    box-shadow: 0 10px 20px #ccc;
+
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 }
 .blockcard_image_wrap {
     text-align: center;
