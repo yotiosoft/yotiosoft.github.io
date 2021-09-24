@@ -8,8 +8,8 @@ $(function() {
       // 最初の画像をフェードイン
       $(".slide p").eq(currentIdx).fadeIn();
     
-      // 5秒後に次のスライドを表示
-      setTimeout(dispNextSlide, 5000);
+      // 8秒後に次のスライドを表示
+      setTimeout(dispNextSlide, 8000);
     
       // 次のスライドを表示するメソッド
       function dispNextSlide() {
@@ -29,7 +29,7 @@ $(function() {
         // インデックスを更新
         currentIdx = nextIdx;
 
-        setTimeout(dispNextSlide, 5000);
+        setTimeout(dispNextSlide, 8000);
       }
     });
 });
