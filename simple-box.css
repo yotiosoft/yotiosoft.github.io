@@ -1,0 +1,49 @@
+.simple-box-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.simple-box {
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #333333;
+
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.simple-box p {
+    align-items: center;
+    overflow-wrap: break-word;
+}
+.simple-box .img-a {
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 70%;
+}
+.simple-box a {
+    font-size: 14px;
+}
+.simple-box p a {
+    font-size: 14px;
+}
+.simple-box .title {
+    font-size: 22px;
+
+    margin-top: 10px;
+}
+.simple-box .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+}

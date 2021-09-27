@@ -496,3 +496,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .content-img {
   max-width: 50%;
 }
+
+.flex-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
