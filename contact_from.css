@@ -9,10 +9,12 @@
 
 .form-element input {
     width: 50%;
+    min-width: 300px;
 }
 
 .form-element textarea {
     width: 100%;
+    min-width: 300px;
     height: 100px;
 }
 
