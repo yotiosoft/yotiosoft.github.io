@@ -29,7 +29,7 @@ function put_cards(max_articles) {
             e_blockcard_absolute.className = 'blockcard_absolute';
     
             var e_blockcard_title = document.createElement('p');
-            e_blockcard_title.className = 'blockcard_title';
+            e_blockcard_title.className = 'blockcard_small-title';
             e_blockcard_title.id = 'blockcard_title_id';
             e_blockcard_absolute.appendChild(e_blockcard_title);
     

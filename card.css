@@ -77,6 +77,10 @@
     font-size: 120%;
     margin: 10px 10px 0px 10px;
 }
+.blockcard_small-title {
+    font-size: 26px;
+    margin: 10px 10px 0px 10px;
+}
 .blockcard_content {
     padding: 10px 10px 10px 10px;
 }
