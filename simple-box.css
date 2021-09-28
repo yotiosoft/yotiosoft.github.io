@@ -5,15 +5,31 @@
 
 .simple-box {
     border-radius: 8px;
-    border: 1px solid;
-    border-color: #333333;
+    box-shadow: 0 3px 6px #ccc;
+    background-color: #fafafa;
 
     padding: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     display: flex;
     flex-wrap: wrap;
+
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+.simple-box:hover {
+    box-shadow: 0 10px 20px #ccc;
+    background-color: #fff;
+
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 }
 .simple-box p {
     align-items: center;
@@ -37,7 +53,6 @@
 }
 .simple-box .title {
     font-size: 22px;
-
     margin-top: 10px;
 }
 .simple-box .logo {
