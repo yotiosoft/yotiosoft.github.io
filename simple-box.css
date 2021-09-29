@@ -51,11 +51,11 @@
 .simple-box p a {
     font-size: 14px;
 }
-.simple-box .title {
+.simple-box-title {
     font-size: 22px;
     margin-top: 10px;
 }
-.simple-box .logo {
+.simple-box-logo {
     display: flex;
     justify-content: center;
     align-items: center;
