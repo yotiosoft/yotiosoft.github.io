@@ -36,7 +36,7 @@ function put_cards(max_articles) {
             var e_blockcard_tags = document.createElement('p');
             e_blockcard_tags.className = 'blockcard_tags';
             e_blockcard_tags.id = 'blockcard_tags_id';
-            e_blockcard_tags.style = 'display: flex; flex-wrap: wrap; justify-content: center;'
+            e_blockcard_tags.style = 'display: flex; flex-wrap: wrap; align-items: center;'
             e_blockcard_absolute.appendChild(e_blockcard_tags);
     
             var e_blockcard_content = document.createElement('p');
