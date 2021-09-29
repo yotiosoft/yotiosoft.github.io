@@ -87,7 +87,7 @@ function get_data_for_card(data, arg_blockcard_content, arg_blockcard_tags, arg_
     .then((doc) => {
         arg_blockcard_content.innerHTML = doc.getElementById("article_summary").innerText;
         arg_blockcard_tags.innerHTML = doc.getElementById("article_tags").innerHTML +
-            "<p style=\"width: fit-content; margin-left: 10px;\">" + data.year+"."+formatter.format(data.month)+"."+formatter.format(data.day);
+            "<p style=\"width: fit-content; margin-left: 5px;\">" + data.year+"."+formatter.format(data.month)+"."+formatter.format(data.day);
         arg_blockcard_title.innerHTML = doc.getElementById("article_title").innerText;
     }
     );
