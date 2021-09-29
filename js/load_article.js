@@ -36,7 +36,7 @@ function put_cards(max_articles) {
             var e_blockcard_tags = document.createElement('p');
             e_blockcard_tags.className = 'blockcard_tags';
             e_blockcard_tags.id = 'blockcard_tags_id';
-            e_blockcard_tags.style = 'display: flex; flex-wrap: wrap;'
+            e_blockcard_tags.style = 'display: flex; flex-wrap: wrap; justify-content: center; align-items: center;'
             e_blockcard_absolute.appendChild(e_blockcard_tags);
     
             var e_blockcard_content = document.createElement('p');
@@ -86,8 +86,8 @@ function get_data_for_card(data, arg_blockcard_content, arg_blockcard_tags, arg_
         })
     .then((doc) => {
         arg_blockcard_content.innerHTML = doc.getElementById("article_summary").innerText;
-        arg_blockcard_tags.innerHTML = "<p style=\"width: fit-content; margin-right: 10px;\">" + data.year+"."+formatter.format(data.month)+"."+formatter.format(data.day) + 
-            "</p><div style=\"width: 50%;\">" + doc.getElementById("article_tags").innerHTML + "</div>";
+        arg_blockcard_tags.innerHTML = "<div style=\"width: 50%;\">" + doc.getElementById("article_tags").innerHTML + "</div>" +
+            "<p style=\"width: fit-content; margin-right: 10px;\">" + data.year+"."+formatter.format(data.month)+"."+formatter.format(data.day);
         arg_blockcard_title.innerHTML = doc.getElementById("article_title").innerText;
     }
     );
