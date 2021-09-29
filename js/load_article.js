@@ -84,9 +84,8 @@ function get_data_for_card(data, arg_blockcard_content, arg_blockcard_tags, arg_
         return new DOMParser().parseFromString(text, "text/html");
         })
     .then((doc) => {
-        arg_blockcard_content.innerHTML = data.year+"."+formatter.format(data.month)+"."+formatter.format(data.day)+"<br>"
-        +doc.getElementById("article_summary").innerText;
-        arg_blockcard_tags.innerHTML = doc.getElementById("article_tags").innerHTML;
+        arg_blockcard_content.innerHTML = doc.getElementById("article_summary").innerText;
+        arg_blockcard_tags.innerHTML = "<p style=\"margin-right: 10px;\"><b>" + data.year+"/"+formatter.format(data.month)+"/"+formatter.format(data.day) + "</b></p>" + doc.getElementById("article_tags").innerHTML;
         arg_blockcard_title.innerHTML = doc.getElementById("article_title").innerText;
     }
     );
