@@ -1,1 +1,1 @@
-[https://yotiosoft.github.io/](https://yotiosoft.github.io/)
+[https://yotiosoft.com/](https://yotiosoft.com/)

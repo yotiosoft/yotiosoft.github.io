@@ -22,21 +22,5 @@
 		"link": "/articles/2021/08/テスト運用を開始しました.html",
 		"image": "/img/articles/2021/08/screenshot.png",
 		"image_webp": "/img/articles/2021/08/screenshot.webp"
-	},
-	{
-		"year": 2021,
-		"month": 7,
-		"day": 13,
-		"link": "/articles/2021/07/これはテストです2.html",
-		"image": "/img/icons/no_image.png",
-		"image_webp": "/img/icons/no_image.webp"
-	},
-	{
-		"year": 2020,
-		"month": 10,
-		"day": 3,
-		"link": "/articles/2020/10/これはテストです.html",
-		"image": "/img/apps/catches/citiesbox.png",
-		"image_webp": "/img/apps/catches/citiesbox.webp"
 	}
 ]
