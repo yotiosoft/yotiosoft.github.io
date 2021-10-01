@@ -181,7 +181,7 @@
                   </a>
                 </div>
 
-                <div style="text-align: center; width: 95%;">
+                <div style="text-align: center; width: 100%;">
                   <a class="readmore_round_button" style="color: #fff;" href="/softwares/">もっと見る</a>
                 </div>
 
@@ -478,8 +478,11 @@
         }
         let sb_card_width = sb_content_w / sb_row - 10;
         document.getElementById('content-sb1').style.width = sb_card_width;
+        document.getElementById('content-sb1').style.height = sb_card_width;
         document.getElementById('content-sb2').style.width = sb_card_width;
+        document.getElementById('content-sb2').style.height = sb_card_width;
         document.getElementById('content-sb3').style.width = sb_card_width;
+        document.getElementById('content-sb3').style.height = sb_card_width;
           
         window.addEventListener('resize', function(){
           let sb_default_row = 3;
@@ -492,8 +495,11 @@
           }
           let sb_card_width = sb_content_w / sb_row - 10;
           document.getElementById('content-sb1').style.width = sb_card_width;
+          document.getElementById('content-sb1').style.height = sb_card_width;
           document.getElementById('content-sb2').style.width = sb_card_width;
+          document.getElementById('content-sb2').style.height = sb_card_width;
           document.getElementById('content-sb3').style.width = sb_card_width;
+          document.getElementById('content-sb3').style.height = sb_card_width;
         });
       </script>
 
