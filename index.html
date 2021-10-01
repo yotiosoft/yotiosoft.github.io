@@ -124,7 +124,7 @@
             <div id="content_main">
               <div class="simple-box-area">
 
-                <div id="content-sb1" class="simple-box" style="min-height: 320px; height: fit-content;">
+                <div id="content-sb1" class="simple-box" style="width: calc(33% - 10px); min-height: 320px; height: fit-content;">
                   <a href="https://citiesbox.yotiosoft.com" style="color: #000; width: 100%;">
                     <div class="img-a" style="background-color: #ddd;">
                       <picture>
@@ -143,7 +143,7 @@
                   </a>
                 </div>
 
-                <div id="content-sb2" class="simple-box" style="min-height: 320px; height: fit-content;">
+                <div id="content-sb2" class="simple-box" style="width: calc(33% - 10px); min-height: 320px; height: fit-content;">
                   <a href="./softwares/mitsudesmas/" style="color: #000;">
                     <div class="img-a" style="background-color: #ddd;">
                       <picture>
@@ -162,7 +162,7 @@
                   </a>
                 </div>
 
-                <div id="content-sb3" class="simple-box" style="min-height: 320px; height: fit-content;">
+                <div id="content-sb3" class="simple-box" style="width: calc(33% - 10px); min-height: 320px; height: fit-content;">
                   <a href="./softwares/mitsudesmas/" style="color: #000;">
                     <div class="img-a" style="background-color: #ddd;">
                       <picture>
@@ -476,8 +476,7 @@
         while (sb_content_w / sb_row - 10 < sb_card_min_width && sb_row > 1) {
           sb_row -= 1;
         }
-        let sb_card_width = sb_content_w / sb_row - 5;
-        console.log(sb_row);
+        let sb_card_width = sb_content_w / sb_row - 10;
         document.getElementById('content-sb1').style.width = sb_card_width;
         document.getElementById('content-sb2').style.width = sb_card_width;
         document.getElementById('content-sb3').style.width = sb_card_width;
@@ -492,7 +491,6 @@
             sb_row -= 1;
           }
           let sb_card_width = sb_content_w / sb_row - 10;
-          console.log(sb_row);
           document.getElementById('content-sb1').style.width = sb_card_width;
           document.getElementById('content-sb2').style.width = sb_card_width;
           document.getElementById('content-sb3').style.width = sb_card_width;
