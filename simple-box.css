@@ -9,7 +9,8 @@
     background-color: #fafafa;
 
     padding: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 20px;
 
     display: flex;
@@ -35,15 +36,27 @@
     align-items: center;
     overflow-wrap: break-word;
 }
+.simple-box div {
+    align-items: center;
+    overflow-wrap: break-word;
+}
 .simple-box .img-a {
     font-size: 20px;
 
+    width: 100%;
+    min-height: 80%;
+
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.simple-box .text-area {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
-    width: 100%;
-    height: 70%;
+    height: 20%;
+    margin-bottom: 10px;
 }
 .simple-box a {
     font-size: 14px;
@@ -51,9 +64,11 @@
 .simple-box p a {
     font-size: 14px;
 }
+.simple-box div a {
+    font-size: 14px;
+}
 .simple-box-title {
     font-size: 22px;
-    margin-top: 10px;
 }
 .simple-box-logo {
     display: flex;
@@ -61,4 +76,7 @@
     align-items: center;
 
     color: #FFF;
+
+    width: 100%;
+    max-height: 100%;
 }
