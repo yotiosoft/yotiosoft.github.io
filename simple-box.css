@@ -72,6 +72,9 @@
     height: 20%;
     margin-bottom: 10px;
 }
+.simple-box .text-area span {
+    word-break: break-all;
+}
 .simple-box .text-area-inner {
     display: flex;
     flex-wrap: wrap;
