@@ -83,6 +83,9 @@
     height: 30%;
     margin-bottom: 10px;
 }
+.simple-box .text-area-inner span {
+    word-break: break-all;
+}
 .simple-box a {
     font-size: 14px;
 }
