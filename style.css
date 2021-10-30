@@ -17,7 +17,6 @@ html, body {
     "Droid Sans Japanese", "Droid Sans",
     "Takaoゴシック","TakaoGothic",
     "ＭＳ Ｐゴシック", "MS PGothic",
-    "Nunito Sans",
     sans-serif;
 
   width: 100%;
@@ -397,23 +396,30 @@ a.anchor{
   height: 30px;
   font-size: 26px;
   line-height: 30px;
-
-  font-family: 'Nunito Sans', sans-serif;
 }
 
 #footer_logo_catchcopy {
   height: 20px;
   font-size: 12px;
   line-height: 30px;
-
-  font-family: 'Nunito Sans', sans-serif;
 }
 
 #footer_copyright {
   font-size: 12px;
   line-height: 20px;
 
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Arial",
+    "Noto Sans CJK JP",
+    "Segoe UI",
+    Roboto,
+    "YuGothic", YuGothic,
+    "Hiragino Sans",
+    "メイリオ", Meiryo,
+    "VL PGothic",
+    "Droid Sans Japanese", "Droid Sans",
+    "Takaoゴシック","TakaoGothic",
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
 }
 
 #footer_up {
