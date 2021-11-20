@@ -35,8 +35,6 @@ ol {
 
 table {
   display: block;
-  white-space:nowrap;
-  overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
@@ -48,6 +46,9 @@ table {
   position: relative;
   padding-bottom: 120px;
   box-sizing: border-box;
+
+  white-space:nowrap;
+  overflow-x: auto;
 }
 
 a.anchor{
