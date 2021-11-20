@@ -11,7 +11,7 @@ function put_cards(max_articles) {
             var e_blockcard_link = document.createElement('a');
             e_blockcard_link.id = 'blockcard_link';
     
-            var e_blockcard_image_wrap = document.createElement('blockcard_image_wrap');
+            var e_blockcard_image_wrap = document.createElement('div');
             e_blockcard_image_wrap.className = 'blockcard_image_wrap';
 
             var e_blockcard_image = document.createElement('picture');
