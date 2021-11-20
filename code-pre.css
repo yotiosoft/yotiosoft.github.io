@@ -1,0 +1,13 @@
+/* For Google Code Prettiffy */
+
+.prettyprint ol {
+    padding: 10px;
+}
+
+.prettyprint ol li {
+    padding-left: 10px;
+}
+
+.prettyprint ol.linenums > li {
+	list-style-type: decimal; 
+}
