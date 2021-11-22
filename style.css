@@ -201,7 +201,7 @@ a.anchor{
 }
 
 #sidebar {
-  width: 200px;
+  width: 15%;
   margin-left: 10px;
   position: relative;
   padding-top: 10px;
@@ -255,7 +255,7 @@ a.anchor{
 
 #content {
   display: block;
-  width: 1086px;
+  width: 85%;
   max-width: 100%;
   margin: 0px 0px 10px 10px;
 }
