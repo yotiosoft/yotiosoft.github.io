@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../../badges.css">
     <link rel="stylesheet" href="../../cube.css">
     <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
-    <title>「"〇〇.app"は壊れているため開けません。」と表示される - YotioSoft</title>
+    <title>Macで「このソフトウェアは開けません」と表示される - YotioSoft</title>
 
     <script src="../../js/jquery-3.5.1.min.js"></script>
     <script src="../../js/common.js"></script>
@@ -53,7 +53,7 @@
             <span class="arrow">></span>
             <a href="../">サポート</a>
             <span class="arrow">></span>
-            「"〇〇.app"は壊れているため開けません。」と表示される
+            Macで「このソフトウェアは開けません」と表示される
           </div>
         </div>
       </nav>
@@ -79,7 +79,7 @@
           <div id="article_title">
             <div class="icontxt-nomargin">
               <img src="../../img/icons/question.png" style="width: 36px; margin-right: -5px;">
-              「"〇〇.app"は壊れているため開けません。」と表示される
+              Macで「このソフトウェアは開けません」と表示される
             </div>
           </div>
           <div id="article_info">
@@ -88,85 +88,77 @@
                 <span class="badge-gray">macOS</span>
               </span>
             </span>
-            公開日：2021年7月6日　最終更新日：2022年1月31日
+            公開日：2022年1月31日
           </div>
 
           <p id="article_content" style="max-width: 900px;">
             <div class="column">
-              <picture style="width: 500px;">
-                <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked.webp" style="width: 500px; max-width: 100%; margin: 10px 0px 30px 0px;" />
-                <img src="../../img/support/macos-blocked/mac-blocked.png" style="width: 500px; max-width: 100%; margin: 10px 0px 30px 0px;" />
+              <picture style="width: 400px;">
+                <source type="image/webp" srcset="../../img/support/macos_unidentified/mac-unidentified.webp" style="width: 400px; max-width: 100%; margin: 10px 0px 0px 0px;" />
+                <img src="../../img/support/macos_unidentified/mac-unidentified.png" style="width: 400px; max-width: 100%; margin: 10px 0px 0px 0px;" />
               </picture><br>
               
-              macOSでアプリケーションを実行する際に、「"〇〇（アプリ名）.app"は壊れているため開けません。」と表示されることがあります。
+              macOSでアプリケーションを実行する際に、「"〇〇（アプリ名）.app"が悪質なソフトウェアかどうかをAppleでは確認できないため、このソフトウェアは開けません。」と表示されることがあります。
             </div>
 
             <div class="column" id="cause">
               <div id="content_h">原因</div>
               <div id="content_main">
-                「壊れている」と表示されていますが、アプリケーションそのものが壊れているわけではありません。実行自体は可能です。<br>
-                拡張属性に異常があるアプリケーションに対して必ず表示される警告です。
+                macOS 10.15 Catalina以降では、セキュリティの強化に伴いApp Storeからダウンロードされたアプリケーション、
+                およびAppleによって開発元が認証されたアプリケーション以外の、いわゆる「野良アプリ」ではこのような警告が表示されるようになりました。<br>
+                これはGatekeeperのセキュリティ保護機能によるもので、開発元が不明なアプリケーションに対して必ず表示される警告です。<br>
+                一見するとアプリが開けないように見えますが、手順を踏んでアプリを開けば、以降このような警告は表示されなくなります。
               </div>
             </div>
 
             <div class="column" id="solution">
               <div id="content_h">解決手順</div>
               <div id="content_main">
-                ターミナルでxattrコマンドを用いて拡張ファイル属性を削除することで、アプリケーションの実行が可能になります。<br>
+                右クリックメニューからアプリを開くことで実行が可能になります。<br>
                 <br>
-                以下、ミツデスマス（<div class="mini-box">Mitsudesmas.app</div>）を実行する例を示しております。<br>
-                なお、画面はmacOS 10.15 Catalinaですが、macOS Big Sur以降でも同様です。<br>
+                以下、Albus Box（<div class="mini-box">Albus-Box.app</div>）を実行する例を示しております。<br>
                 <br>
                 <ol>
                   <li>
-                    ゴミ箱に入れずに、「キャンセル」を選択します。<br>
-                    <picture style="width: 500px;">
-                      <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked_1.webp" style="width: 500px; max-width: 100%;" />
-                      <img src="../../img/support/macos-blocked/mac-blocked_1.png" style="width: 500px; max-width: 100%;" />
+                    「OK」を選択し警告を閉じます。<br>
+                    <picture style="width: 400px;">
+                      <source type="image/webp" srcset="../../img/support/macos_unidentified/mac-unidentified_1.webp" style="width: 400px; max-width: 100%;" />
+                      <img src="../../img/support/macos_unidentified/mac-unidentified_1.png" style="width: 400px; max-width: 100%;" />
                     </picture><br>
                   </li>
                   <li>
-                    ターミナルを起動します。<br>
+                    ファイルを右クリックしてメニューを表示し、「開く」を選択します。<br>
                     <picture style="width: 500px;">
-                      <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked_2.webp" style="width: 500px; max-width: 100%;" />
-                      <img src="../../img/support/macos-blocked/mac-blocked_2.png" style="width: 500px; max-width: 100%;" />
-                    </picture><br>
-                    ターミナル.appは<span class="mini-box">LaunchPad > その他</span>にあります。<br>
-                    <br>
-                  </li>
-                  <li>
-                    xattrコマンドを実行します。<br>
-                    ターミナルに次のコマンドを入力してください：<br>
-                    <div class="mini-box-black-wide" style="line-height: 50px;">xattr -rc [appファイルのファイルパス]</div><br>
-                    <br>
-                    [appファイルのファイルパス]にはappファイルのファイルパスが入ります。<br>
-                    例）ダウンロードフォルダにある場合<br>
-                    <picture style="width: 500px;">
-                      <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked_3.webp" style="width: 500px; max-width: 100%;" />
-                      <img src="../../img/support/macos-blocked/mac-blocked_3.png" style="width: 500px; max-width: 100%;" />
+                      <source type="image/webp" srcset="../../img/support/macos_unidentified/mac-unidentified_2.webp" style="width: 500px; max-width: 100%;" />
+                      <img src="../../img/support/macos_unidentified/mac-unidentified_2.png" style="width: 500px; max-width: 100%;" />
                     </picture><br>
                     <br>
                   </li>
                   <li>
-                    アプリケーションが起動可能になります。<br>
+                    「開く」という選択肢が追加された同様の警告が表示されます。<br>
+                    <picture style="width: 400px;">
+                      <source type="image/webp" srcset="../../img/support/macos_unidentified/mac-unidentified_3.webp" style="width: 400px; max-width: 100%;" />
+                      <img src="../../img/support/macos_unidentified/mac-unidentified_3.png" style="width: 400px; max-width: 100%;" />
+                    </picture><br>
+                    ここで、「開く」を選択すると起動します。<br>
                     <picture style="width: 500px;">
-                      <source type="image/webp" srcset="../../img/support/macos-blocked/mac-blocked_4.webp" style="width: 500px; max-width: 100%;" />
-                      <img src="../../img/support/macos-blocked/mac-blocked_4.png" style="width: 500px; max-width: 100%;" />
+                      <source type="image/webp" srcset="../../img/support/macos_unidentified/mac-unidentified_4.webp" style="width: 400px; max-width: 100%;" />
+                      <img src="../../img/support/macos_unidentified/mac-unidentified_4.png" style="width: 400px; max-width: 100%;" />
                     </picture><br>
                   </li>
                 </ol>
                 <br>
-                以降、通常通りの手法でアプリケーションの起動が可能になります。
+                以降、通常通りダブルクリックによってアプリを起動した場合でも、警告が表示されることなく利用可能になります。
               </div>
             </div>
 
             <div class="column" id="related">
               <div id="content_h">関連項目</div>
               <div id="content_main">
-                <a href="/support/help/macos-unidentified.html">
+                <a href="/support/help/macos-blocked.html">
                   <div class="round-box" style="width: 100%; min-height: 120px;">
                     <div class="round-box-inner" style="background-color: #888; color: #fff; width: 20%; font-size: 26px;">
-                      <img src="/img/support/macos_unidentified/mac-unidentified_catch.png" style="height: 120px; width: auto;">
+                      <img src="/img/support/macos-blocked/mac-blocked.png" style="max-width: 100%; height: auto;">
                     </div>
                     <div class="round-box-inner-nocenter" style="background-color: #ddd; color: #000; width: 80%;">
                       <p style="margin-left: 20px;">
@@ -174,11 +166,11 @@
                           <span class="badge-group">
                             <span class="badge-gray">macOS</span>
                           </span>
-                          <span style="font-size: 20px; width: 100%;">Macで「このソフトウェアは開けません」と表示される</span>
+                          <span style="font-size: 20px; width: 100%;">「"〇〇.app"は壊れているため開けません。」と表示される</span>
                         </span>
                         <br>
                         <span style="margin-left: 5px; font-size: 14px;">
-                          macOSで警告が表示されappファイルが開けない対処法です。
+                          macOSでappファイルが開けない場合の対処法です。
                         </span>
                       </p>
                     </div>
