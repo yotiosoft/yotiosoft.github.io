@@ -1,990 +1,140 @@
 <!DOCUTYPE HTML>
 <html lang="ja">
+
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174934210-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-174934210-1');
-    </script>
-
-    <script type="text/javascript">
-      if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-        document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
-      }
-    </script>
-
-    <meta charset="utf8">
-    <link rel="stylesheet" href="../style.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="../style_m.css" media="screen and (max-width: 767px)">
-    <link rel="stylesheet" href="../header.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="../header_m.css" media="screen and (max-width: 767px)">
-    <link rel="stylesheet" href="../headings.css">
-    <link rel="stylesheet" href="../card.css">
-    <link rel="stylesheet" href="../badges.css">
-    <link rel="stylesheet" href="../buttons.css">
-    <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
-    <title>ソフトウェア - YotioSoft</title>
-
-    <script src="../js/jquery-3.5.1.min.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/side.js"></script>
-    <script src="../js/jump.js"></script>
+    <link rel="stylesheet" href="/style.css">
   </head>
 
-  <body>
-    <div id="wrap">
-      <header>
-        <div id="headers">
-          <div id="header_fixed">
-            <div id="header"></div>
-          </div>
-        </div>
-      </header>
-
-      <div id="under-header">
-
-      <div class="pageheader" id="pegeheader_id" style="background: #0fb9b1;">
-        <div class="pageheader_wrap">
-          <div class="pageheader_title">ソフトウェア</div>
-          <div class="pageheader_summary">このサイトで公開している作品について紹介します。</div>
-        </div>
-      </div>
-
-      <nav>
-        <div class="navibar_wrap">
-          <div class="navibar">
-            <a href="/">Home</a>
-            <span class="arrow">></span>
-            ソフトウェア
-          </div>
-        </div>
-      </nav>
-
-      <div class="main_wrap">
-        <div id="sidebar">
-          <div id="sticked">
-            <div id="sidebar_menu">
-              <div id="sidebar_h">
-                ソフトウェア
-              </div>
-              <div id="sidebar_links">
-                <li><a href="#summary">概要</a></li>
-                <li><a href="#games">ゲーム</a></li>
-                <li><a href="#tools">ツール</a></li>
-                <li><a href="#web">Webアプリ</a></li>
-                <li><a href="#os-mocks">OS mocks</a></li>
-                <li><a href="#libraries">ライブラリ</a></li>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="content">
-        	<div class="column">
-            <div id="summary"></div>
-            
-            <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">Summary</div>
-              <div class="inline-heading-jp">概要</div>
-            </div>
-
-            <div id="content_main">
-              <h2>ライセンスについて</h2>
-              <div id="content_sub">
-                当サイトで公開しているコンテンツは、<b><u>一部を除き</u></b><a href="https://opensource.org/licenses/MIT" target="_blank">MITライセンス</a>を適用しております。<br>
-                個々のコンテンツのライセンスについては、必ず各配布ページをご覧ください。
-              </div>
-            </div>
-
-            <div id="content_main">
-              <h2>バッジの見かた</h2>
-              <div id="content_sub">
-                <table>
-                  <tr>
-                    <td>
-                      <div class="badge-group">
-                        <div class="badge-blue">Windows</div>
-                      </div>
-                    </td>
-                    <td>
-                      Windowsで動作可能
-                    </td>
-                  </tr>
-  
-                  <tr>
-                    <td>
-                      <div class="badge-group">
-                        <div class="badge-gray">Mac</div>
-                      </div>
-                    </td>
-                    <td>
-                      macOSで動作可能
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <div class="badge-group">
-                        <div class="badge-black">Linux</div>
-                      </div>
-                    </td>
-                    <td>
-                      Linuxで動作可能
-                    </td>
-                  </tr>
-  
-                  <tr>
-                    <td>
-                      <div class="badge-group">
-                        <div class="badge-yellowgreen">Android</div>
-                      </div>
-                    </td>
-                    <td>
-                      Androidで動作可能
-                    </td>
-                  </tr>
-                  
-                  <tr>
-                    <td>
-                      <div class="badge-group">
-                        <div class="badge-green">Web</div>
-                      </div>
-                    </td>
-                    <td>
-                      Webブラウザで動作可能
-                    </td>
-                  </tr>
-  
-                  <tr>
-                    <td>
-                      <div class="badge-group">
-                        <div class="badge-orange">HSP3</div>
-                      </div>
-                    </td>
-                    <td>
-                      HSP(Hot Soup Processor)で開発
-                    </td>
-                  </tr>
-  
-                  <tr>
-                    <td>
-                      <div class="badge-group">
-                        <div class="badge-bleuet">C++</div>
-                      </div>
-                    </td>
-                    <td>
-                      C++で開発、OpenSiv3Dを使用（FakeHSP for C++を除く）
-                    </td>
-                  </tr>
-                  
-                  <tr>
-                    <td>
-                      <div class="badge-group">
-                        <div class="badge-red">WOLF RPG</div>
-                      </div>
-                    </td>
-                    <td>
-                      WOLF RPGエディター（通称ウディタ）で開発
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-        	</div>
-
-        	<div class="column">
-            <div id="games"></div>
-            
-            <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">Games</div>
-              <div class="inline-heading-jp">ゲーム</div>
-            </div>
-            
-            <div id="blockcards_wrap_wrap_games">
-              <div class="blockcards_wrap">
-                <div class="blockcard">
-                  <a href="https://citiesbox.yotiosoft.com/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/citiesbox.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/citiesbox.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">Cities Box</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-gray">Mac</div>
-                          <div class="badge-orange">HSP3</div>
-                          <div class="badge-bleuet">C++</div>
-                        </div>
-                      </div>
-                      
-                      完全無料の都市開発ゲーム！
-                      まだまだ機能は少ないですが、道路の敷設、建物の建設、市民の要求に応えるなど、
-                      必要最低限の機能は揃っています。<br>
-                      機能が揃ったHSP3版※と、現在開発中かつ新しい機能を体感できるC++版があります。
-                      <h6>※HSP3版はWindowsのみ対応。</h6>
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="https://citiesbox.yotiosoft.com/">特設サイトへ</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/santa-gari/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/santa-gari.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/santa-gari.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">サンタ狩りへGO!</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2021年12月24日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-gray">Mac</div>
-                          <div class="badge-bleuet">C++</div>
-                        </div>
-                      </div>
-                      サンタを狙撃するだけのシンプルなシューティングゲームです。戦闘機を操作し、迎撃を躱しつつサンタを狙い撃ちましょう。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/santa-gari/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                
-                <div class="blockcard">
-                  <a href="/products/mitsudesmas/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/mitsudesmas.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/mitsudesmas.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">ミツデスマス</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2020年12月25日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-gray">Mac</div>
-                          <div class="badge-bleuet">C++</div>
-                        </div>
-                      </div>
-                      街なかにいるカップルたちに「密です」といい、密を避けてもらうゲーム。<br>
-                      カップルに目線を向けるとカップルがハイライトになり、「密です」と言う対象になります。
-                      時間内にすべての密になったカップルに「密です」と言うとゲームクリアです。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/mitsudesmas/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/hiria/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/hiria.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/hiria.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">非リアが手を握るのはだめですか</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2019年12月24日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      非リア充を十字キーで操作して、画面左側から流れてくるリア充を蹴飛ばすゲーム。<br>
-                      非リア充に近づくと、その非リア充と仲間になり手を繋ぐことができます。
-                      岩に当たると仲間の非リア充が一人減ります。
-                      最後に、非リア充が残り1人の状態で岩につまづくと、非リア充が0人になりゲームが終了します。
-                      このゲームには制限時間はありません。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/hiria/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/chototsu-moushin/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/chototsu.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/chototsu.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">猪突猛進</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2019年1月1日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      走り狂うイノシシを止めるゲーム。崖から落ちるとゲームオーバーです。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/chototsu-moushin/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/xmas-cancelled/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/xmas_cancelled.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/xmas_cancelled.webp" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">クリスマス中止のお知らせ。</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2018年12月24日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      サンタクロースを大砲で撃つゲーム。<br>
-                      サンタに3回命中したらゲームクリア、サンタが落とすプレゼントに大砲が3回当たったらゲームオーバーです。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/xmas-cancelled/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/chocolate-rush/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/chocolate-rush.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/chocolate-rush.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">Chocolate Rush</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2018年2月14日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      空から降ってくるチョコレートを口の中に入れるゲーム。チョコレートでないものを口に入れるとポイントが減ります。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/chocolate-rush/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/sontaku/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/sontaku.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/sontaku.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">ソンタクロースの軌跡</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2017年12月24日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      子どもたちが欲しがっているプレゼントを忖度して、サンタクロースを操作して、プレゼントを配りましょう。<br>
-                      家から出る吹き出しを見てプレゼントを選び、投下して家に当たれば得点になります。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/sontaku/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/bae/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/bae.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/bae.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">イ○スタ蝿</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2017年12月2日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      画面上に映る蝿（イ○スタ蝿）がなるべく写真に写らないように写真を撮るゲーム。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/bae/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/tamagotori/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/tamagotori.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/tamagotori.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">タマゴトリ</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2017年1月6日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      鶏を操作してマップ上の卵を取りつつ、隠されたメッセージを表示させていくゲーム。<br>
-                      自分でマップを作成することも可能です。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/tamagotori/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/riaju-gari/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/riaju-gari.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/riaju-gari.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">リア充狩り</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2016年12月24日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-red">WOLF RPG</div>
-                        </div>
-                      </div>
-                      リア充を家に帰らせるゲーム。36組のカップルを家に帰らせます。<br>
-                      街でアイテムを買うことも可能です。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/riaju-gari/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/kamitteru/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/kamitteru.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/kamitteru.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">髪ってる</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2016年12月4日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-yellowgreen">Android</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      髪の毛を強風から守るゲーム。抜けた時点でゲームオーバーです。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/kamitteru/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/figures/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/figures.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/figures.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">Figures</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2015年4月11日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      数あてゲーム
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/figures/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-        	</div>
-
-          <div class="column">
-            <div id="tools"></div>
-            
-            <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">Tools</div>
-              <div class="inline-heading-jp">ツール</div>
-            </div>
-
-            <div id="blockcards_wrap_wrap_tools">
-              <div class="blockcards_wrap">
-                <div class="blockcard">
-                  <a href="https://albusbox.yotiosoft.com/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/albus-box.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/albus-box.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">Albus Box</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-gray">Mac</div>
-                          <div class="badge-bleuet">C++</div>
-                        </div>
-                      </div>
-                      
-                      PCのためのプレイヤーアプリ。WindowsとMacで動作可能。
-                      ニューモーフィズムを取り入れた立体的なデザインが特徴で、再生中はスペクトラムも表示できます。
-                      プレイリスト機能も搭載しており、リスト再生が可能です。
-                      mp3、wav、ogg、m4a形式に対応しています。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="https://albusbox.yotiosoft.com/">特設サイトへ</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="https://gamutbox.yotiosoft.com/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/gamutbox.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/gamutbox.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">Gamut Box</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">最新版:ver.2.3.0<br>公開日：2016年11月30日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      
-                      歌詞表示機能がついた音楽プレイヤーアプリ。
-                      歌詞を作成したり、リスト再生したり、背景を変更したりできます。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="https://gamutbox.yotiosoft.com/">特設サイトへ</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/world-timepiece/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/worldtimepiece.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/worldtimepiece.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">World Timepiece</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">最新版:ver.3.3.2<br>公開日：2016年10月30日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      
-                      世界40都市の現地時刻の表示と地名にまつわるゲームを遊ぶことができるアプリ。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="https://worldtimepiece.yotiosoft.com/">特設サイトへ</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/y-tools/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/y-tools.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/y-tools.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">Y-Tools</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2014年9月6日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      
-                      ランチャーソフトです。アプリは6つまでしか登録できません。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/y-tools/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <body style="background-color: #F0F0FF; background-image: url(/img/af/2022/background.png);">
+    <div style="background-color: rgba(255, 255, 255, 0.5); min-height: 100%;">
+      <br>
+      
+      <div style="width: 100%; display: flex; margin-left: auto; justify-content: center;">
+        <div style="width: fit-content; text-align: center; align-items: center; vertical-align: middle;">
+          <h1>配布物</h1>
+    
+          <div style="text-align: left;">
+            <b>
+              ・YotioSoftでは、趣味で開発したプログラムを無料で公開しています。<br>
+              ・公開している作品は主にゲームやツールなどです。<br>
+              ・このサイトで公開しているソフトウェアはすべて無料でお使いいただけます。 広告なども一切ございません。<br>
+              ・このサイトで公開しているソフトウェアは基本的にオープンソースです。ライセンスの条件内で自由な利用を認めております。<br>
+              ・このサイトで公開している多くのソフトウェアは、MITライセンスに準拠しており、改造したものを再配布できます（一部を除く）。
+            </b>
           </div>
 
-          <div class="column">
-            <div id="web"></div>
-            
-            <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">Web Apps</div>
-              <div class="inline-heading-jp">Webアプリ</div>
-            </div>
-
-            <div id="blockcards_wrap_wrap_tools">
-              <div class="blockcards_wrap">
-                <div class="blockcard">
-                  <a href="https://yapps.yotiosoft.com/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/yapps/top.webp" class="blockcard_image" />
-                        <img src="../img/apps/yapps/top.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">Yapps</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-green">Web</div>
-                        </div>
-                      </div>
-                      
-                      インストール不要、今すぐ利用可能なWebブラウザ上で動作する便利ツール集。
-                      利用できるものは音声読み上げやメモ帳など。
-                      随時アプリ追加予定。
-                      Web制作、レポート作成、スケジュール管理など様々な用途での利用を想定しています。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="https://yapps.yotiosoft.com/">Yappsへ</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div id="os-mocks"></div>
-            
-            <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">OS mocks</div>
-              <div class="inline-heading-jp">いわゆる「OSもどき」</div>
-            </div>
-
-            <div id="blockcards_wrap_wrap_os-mocks">
-              <div class="blockcards_wrap">
-                <div class="blockcard">
-                  <a href="/products/walls/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/walls.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/walls.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">Walls</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">最新版:ver.5.2<br>公開日：2016年12月14日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      
-                      初期、当サイトで看板的な存在だったいわゆる「OSもどき」。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="https://yotiosoftarchive.wordpress.com/apps/walls/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/walls-rm/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/walls-rm.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/walls-rm.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">Walls RM</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-orange">HSP3</div>
-                        </div>
-                      </div>
-                      
-                      Wallsのリメイク版。マルチウィンドウ対応。未完成につきアルファ版のみ。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="https://yotiosoftarchive.wordpress.com/apps/walls/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div id="libraries"></div>
-            
-            <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">Libraries</div>
-              <div class="inline-heading-jp">ライブラリ</div>
-            </div>
-            
-            <div id="blockcards_wrap_wrap_libraries">
-              <div class="blockcards_wrap">
-                <div class="blockcard">
-                  <a href="/products/neumorphism-ui/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/neumorphism-ui.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/neumorphism-ui.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">NeumorphismUI</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2020年6月28日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-gray">Mac</div>
-                          <div class="badge-black">Linux</div>
-                          <div class="badge-bleuet">C++</div>
-                        </div>
-                      </div>
-                      
-                      OpenSiv3Dでニューモ―フィズムデザインを再現するライブラリ。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/neumorphism-ui/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="blockcard">
-                  <a href="/products/fakehsp/">
-                    <div class="blockcard_image_wrap">
-                      <picture>
-                        <source type="image/webp" srcset="../img/apps/catches/fakehsp.webp" class="blockcard_image" />
-                        <img src="../img/apps/catches/fakehsp.png" class="blockcard_image"/>
-                      </picture>
-                    </div>
-                  </a>
-                  <div class="blockcard_absolute">
-                    <p class="blockcard_title" id="blockcard_title">FakeHSP for C++</p>
-                    <div class="blockcard_content_product" id="article_summary">
-                      <h6 style="margin-left: 3px;">公開日：2019年6月18日</h6>
-                      <div id="show_requirements">
-                        <div class="badge-group">
-                          <div class="badge-blue">Windows</div>
-                          <div class="badge-gray">Mac</div>
-                          <div class="badge-black">Linux</div>
-                          <div class="badge-bleuet">C++</div>
-                        </div>
-                      </div>
-                      
-                      SDL2を利用し、C++上でHSP風の命令・文法によるGUIアプリの作成を支援するライブラリ。
-                    </div>
-                    
-                    <span class="blockcard_button_wrap">
-                      <span class="blockcard_button">
-                        <a class="readmore_button" style="color:#fff;" href="/products/fakehsp/">詳しく見る</a>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <br>
+          
+          <table border="1" style="width: 100%;">
+            <tr>
+              <td>開発継続中</td>
+              <td><a href="https://citiesbox.yotiosoft.com/" target="_top">Cities Box</a></td>
+              <td>Windows, macOS</td>
+            </tr>
+            <tr>
+              <td>開発継続中</td>
+              <td><a href="https://yapps.yotiosoft.com/" target="_top">Yapps</a></td>
+              <td>Web</td>
+            </tr>
+            <tr>
+              <td>開発継続中</td>
+              <td><a href="https://albusbox.yotiosoft.com/" target="_top">Albus Box</a></td>
+              <td>Windows, macOS</td>
+            </tr>
+            <tr>
+              <td>2021年12月24日公開</td>
+              <td><a href="https://yotiosoft.com/products/santa-gari/" target="_top">サンタ狩りへGO!</a></td>
+              <td>Windows, macOS</td>
+            </tr>
+            <tr>
+              <td>2020年12月25日公開</td>
+              <td><a href="https://yotiosoft.com/products/mitsudesmas/" target="_top">ミツデスマス</a></td>
+              <td>Windows, macOS</td>
+            </tr>
+            <tr>
+              <td>2020年6月28日公開</td>
+              <td><a href="https://yotiosoft.com/products/neumorphism-ui/" target="_top">Neumorphism UI</a></td>
+              <td>Windows, macOS, Linux</td>
+            </tr>
+            <tr>
+              <td>2019年12月24日公開</td>
+              <td><a href="https://yotiosoft.com/products/hiria/" target="_top">非リアが手を握るのはだめですか</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2019年6月18日公開</td>
+              <td><a href="https://yotiosoft.com/products/fakehsp/" target="_top">FakeHSP for C++</a></td>
+              <td>Windows, macOS, Linux</td>
+            </tr>
+            <tr>
+              <td>2019年1月1日公開</td>
+              <td><a href="https://yotiosoft.com/products/chototsu-moushin/" target="_top">猪突猛進</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2018年12月24日公開</td>
+              <td><a href="https://yotiosoft.com/products/xmas-cancelled/" target="_top">クリスマス中止のお知らせ。</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2018年2月14日公開</td>
+              <td><a href="https://yotiosoft.com/products/chocolate-rush/" target="_top">Chocolate Rush</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2017年12月24日公開</td>
+              <td><a href="https://yotiosoft.com/products/sontaku/" target="_top">ソンタクロースの軌跡</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2017年12月2日公開</td>
+              <td><a href="https://yotiosoft.com/products/bae/" target="_top">イ○スタ蝿</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2017年1月6日公開</td>
+              <td><a href="https://yotiosoft.com/products/tamagotori/" target="_top">タマゴトリ</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2016年12月24日公開</td>
+              <td><a href="https://yotiosoft.com/products/riaju-gari/" target="_top">リア充狩り</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2016年12月14日公開</td>
+              <td><a href="https://yotiosoftarchive.wordpress.com/apps/walls/" target="_top">Walls</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2016年11月30日公開</td>
+              <td><a href="https://gamutbox.yotiosoft.com/" target="_top">Gamut Box</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2016年10月30日公開</td>
+              <td><a href="https://worldtimepiece.yotiosoft.com/" target="_top">World Timepiece</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2016年12月4日公開</td>
+              <td><a href="https://yotiosoft.com/products/kamitteru/" target="_top">髪ってる</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2015年4月11日公開</td>
+              <td><a href="https://yotiosoft.com/products/figures/" target="_top">Figures</a></td>
+              <td>Windows</td>
+            </tr>
+            <tr>
+              <td>2014年9月6日公開</td>
+              <td><a href="https://yotiosoft.com/products/y-tools/" target="_top">Y-Tools</a></td>
+              <td>Windows</td>
+            </tr>
+          </table>
+          <br><br>
         </div>
       </div>
-
-      <script>
-        let content_w = document.getElementById('content').clientWidth;
-        let card_w = Math.min(320, parseInt((content_w-25)*0.95)+10);
-        let cards_w = document.getElementById('blockcards_wrap_wrap_games').clientWidth;
-        document.getElementById('blockcards_wrap_wrap_games').style.width = (content_w-25) - (content_w-25) % card_w;
-        document.getElementById('blockcards_wrap_wrap_tools').style.width = (content_w-25) - (content_w-25) % card_w;
-        document.getElementById('blockcards_wrap_wrap_os-mocks').style.width = (content_w-25) - (content_w-25) % card_w;
-        document.getElementById('blockcards_wrap_wrap_libraries').style.width = (content_w-25) - (content_w-25) % card_w;
-
-        window.addEventListener('DOMContentLoaded', function(){
-          window.addEventListener('resize', function(){
-            let content_w = document.getElementById('content').clientWidth;
-            let card_w = Math.min(320, parseInt((content_w-25)*0.95)+10);
-            let cards_w = document.getElementById('blockcards_wrap_wrap_games').clientWidth;
-            document.getElementById('blockcards_wrap_wrap_games').style.width = (content_w-25) - (content_w-25) % card_w;
-            document.getElementById('blockcards_wrap_wrap_tools').style.width = (content_w-25) - (content_w-25) % card_w;
-            document.getElementById('blockcards_wrap_wrap_os-mocks').style.width = (content_w-25) - (content_w-25) % card_w;
-            document.getElementById('blockcards_wrap_wrap_libraries').style.width = (content_w-25) - (content_w-25) % card_w;
-          });
-        });
-      </script>
-
-      <footer class="footer_class">
-        <div id="footer"></div>
-      </footer>
     </div>
   </body>
-
 </html>
