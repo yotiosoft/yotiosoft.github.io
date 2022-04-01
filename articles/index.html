@@ -1,70 +1,162 @@
 <!DOCUTYPE HTML>
 <html lang="ja">
-
   <head>
-    <link rel="stylesheet" href="/af2022_style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174934210-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-174934210-1');
+    </script>
+
+    <script type="text/javascript">
+      if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+        document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+      }
+    </script>
+
+    <meta charset="utf8">
+    <link rel="stylesheet" href="../style.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="../style_m.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="../header.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="../header_m.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="../buttons.css">
+    <link rel="stylesheet" href="../headings.css">
+    <link rel="stylesheet" href="../card.css">
+    <link rel="stylesheet" href="../badges.css">
+    <link rel="icon" type="image/png" href="/img/logo/yotiosoft32.png">
+    <title>お知らせ - YotioSoft</title>
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/side.js"></script>
+    <script src="../js/jump.js"></script>
+    <script src="../js/load_article.js"></script>
   </head>
 
-  <body style="background-color: #F0F0FF; background-image: url(/img/af/2022/background.png);">
-    <div style="background-color: rgba(255, 255, 255, 0.5); min-height: 100%;">
-      <br>
-      
-      <div style="width: 100%; display: flex; margin-left: auto; justify-content: center;">
-        <div style="width: fit-content; text-align: center; align-items: center; vertical-align: middle;">
-          <h1>お知らせ</h1>
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="headers">
+          <div id="header_fixed">
+            <div id="header"></div>
+          </div>
+        </div>
+      </header>
 
-          <br>
-          
-          <table border="1" style="width: 100%;">
-            <tr>
-              <td>Albus Box ver.0.1.2を公開しました</td>
-              <td>2022/02/14</td>
-              <td><a href="./2022/02/Albus-Box-ver.0.1.2%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html">詳しく見る</a></td>
-            </tr>
-            <tr>
-              <td>Albus Boxのβ版を公開しました</td>
-              <td>2021/12/30</td>
-              <td><a href="./2021/12/Albus-Box%E3%81%AE%CE%B2%E7%89%88%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html">詳しく見る</a></td>
-            </tr>
-            <tr>
-              <td>「サンタ狩りへGO!」を公開しました</td>
-              <td>2021/12/24</td>
-              <td><a href="./2021/12/%E3%80%8C%E3%82%B5%E3%83%B3%E3%82%BF%E7%8B%A9%E3%82%8A%E3%81%B8GO!%E3%80%8D%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html">詳しく見る</a></td>
-            </tr>
-            <tr>
-              <td>Webツール集「Yapps」を公開しました</td>
-              <td>2021/12/01</td>
-              <td><a href="./2021/12/Web%E3%83%84%E3%83%BC%E3%83%AB%E9%9B%86%E3%80%8CYapps%E3%80%8D%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html">詳しく見る</a></td>
-            </tr>
-            <tr>
-              <td>NeumorphismUI ver.0.1.1を公開しました</td>
-              <td>2021/11/20</td>
-              <td><a href="./2021/11/NeumorphismUI%20ver.0.1.1%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html">詳しく見る</a></td>
-            </tr>
-            <tr>
-              <td>ホームページの移転が完了しました</td>
-              <td>2021/10/01</td>
-              <td><a href="./2021/10/%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E7%A7%BB%E8%BB%A2%E3%81%8C%E5%AE%8C%E4%BA%86%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html">詳しく見る</a></td>
-            </tr>
-            <tr>
-              <td>アーカイブサイトを公開しました</td>
-              <td>2021/09/29</td>
-              <td><a href="./2021/09/%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html">詳しく見る</a></td>
-            </tr>
-            <tr>
-              <td>スマホ版サイトを公開しました</td>
-              <td>2021/08/17</td>
-              <td><a href="./2021/08/%E3%82%B9%E3%83%9E%E3%83%9B%E7%89%88%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html">詳しく見る</a></td>
-            </tr>
-            <tr>
-              <td>テスト運用を開始しました</td>
-              <td>2021/08/11</td>
-              <td><a href="./2021/08/%E3%83%86%E3%82%B9%E3%83%88%E9%81%8B%E7%94%A8%E3%82%92%E9%96%8B%E5%A7%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html">詳しく見る</a></td>
-            </tr>
-          </table>
-          <br><br>
+      <div id="under-header"></div>
+
+      <div class="pageheader" id="pegeheader_id" style="background: #2574a9;">
+        <div class="pageheader_wrap">
+          <div class="pageheader_title">お知らせ</div>
+          <div class="pageheader_summary">YotioSoftからのお知らせなど。</div>
         </div>
       </div>
+
+      <nav>
+        <div class="navibar_wrap">
+          <div class="navibar">
+            <a href="/">Home</a>
+            <span class="arrow">></span>
+            お知らせ
+          </div>
+        </div>
+      </nav>
+
+      <div class="main_wrap">
+        <div id="sidebar">
+          <div id="sticked">
+            <div id="sidebar_menu">
+              <div id="sidebar_h">
+                お知らせ
+              </div>
+              <div id="sidebar_links">
+                <li><a href="#articles">最近の投稿</a></li>
+                <li><a href="#all_articles">すべての投稿</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content">
+        	<div class="column">
+            <div id="articles"></div>
+            
+            <div class="inline-heading-wrap">
+              <div class="inline-heading-en" style="color:#2574a9;">Recently Posts</div>
+              <div class="inline-heading-jp">最近の投稿</div>
+            </div>
+            
+            <div id="blockcards_wrap_wrap">
+              <div id="articles_wrap" class="blockcards_wrap"></div>
+            </div>
+            <script>
+              let content_w = document.getElementById('content').clientWidth;
+              let card_w = Math.min(320, parseInt((content_w-25)*0.95)+10);
+              let cards_w = document.getElementById('blockcards_wrap_wrap').clientWidth;
+              let row = parseInt((content_w-25) / card_w);
+
+              put_cards(6);
+              
+              document.getElementById('blockcards_wrap_wrap').style.width = (content_w-25) - (content_w-25) % card_w;
+              
+            </script>
+            
+            <!--
+            <div class="blockcard">
+              <a id="blockcard_link">
+                <div class="blockcard_image_wrap">
+                  <img src="../img/articles/2020/58BC5481-3245-477C-98FF-94DAAA00C453.jpeg" class="blockcard_image">
+                </div>
+              </a>
+              <div class="blockcard_absolute">
+                <p class="blockcard_title" id="blockcard_title_id"></p>
+                <p class="blockcard_tags" id="blockcard_tags_id"></p>
+                <p class="blockcard_content" id="blockcard_content_id"></p>
+
+                <span class="blockcard_button_wrap">
+                  <span class="blockcard_button">
+                    <a class="readmore_button" style="color:#fff;" id="blockcard_read_button">詳しく見る</a>
+                  </span>
+                </span>
+              </div>
+            </div>
+            -->
+        	</div>
+
+          <div class="column">
+            <div id="all_articles"></div>
+            
+            <div class="inline-heading-wrap">
+              <div class="inline-heading-en" style="color:#2574a9;">All Posts</div>
+              <div class="inline-heading-jp">すべての投稿</div>
+            </div>
+            
+            <table id="articles_table"></table>
+            <script>
+              make_articles_table(0, 10);
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.addEventListener('DOMContentLoaded', function(){
+          window.addEventListener('resize', function(){
+            let content_w = document.getElementById('content').clientWidth;
+            let card_w = Math.min(320, parseInt((content_w-25)*0.95)+10);
+            let cards_w = document.getElementById('blockcards_wrap_wrap').clientWidth;
+            document.getElementById('blockcards_wrap_wrap').style.width = (content_w-25) - (content_w-25) % card_w;
+          });
+        });
+      </script>
+
+      <footer class="footer_class">
+        <div id="footer"></div>
+      </footer>
     </div>
   </body>
+
 </html>
