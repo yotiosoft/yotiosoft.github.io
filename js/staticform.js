@@ -1,3 +1,11 @@
+function put_input_obj() {
+  fetch('https://evening-savannah-53967.herokuapp.com/static-forms-apikey')
+  .then(response => response.text())
+  .then(function(data) {
+    document.getElementById("form_input").value = data;
+  });
+}
+
 // find elements
 $("#staticform").submit(function(event) {
     event.preventDefault();

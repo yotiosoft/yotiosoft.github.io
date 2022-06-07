@@ -194,9 +194,9 @@
               <div class="columns">
                 <div class="column is-half">
                   <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+                    <input type="hidden" name="accessKey" required id="form_input">
                     <script>
-                      var access_key = config.ACCESS_KEY;
-                      document.write('<input type="hidden" name="accessKey" value="'+access_key+'" required>');
+                      put_input_obj();
                     </script>
                     <div class="form-element">
                       <label class="label">お名前</label>
