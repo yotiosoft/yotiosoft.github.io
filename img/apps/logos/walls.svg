@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="115.29484mm"
+   height="40.559002mm"
+   viewBox="0 0 115.29484 40.559002"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   sodipodi:docname="yotiosoft.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#4b4b4b"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1243229"
+     inkscape:cx="247.70464"
+     inkscape:cy="234.80799"
+     inkscape:window-width="1680"
+     inkscape:window-height="936"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="text1442"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#4b4b4b" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.1120392,-0.64351088)">
+    <rect
+       style="fill:#fff200;fill-opacity:1;stroke-width:0.312513"
+       id="rect846"
+       width="27.479132"
+       height="40.559002"
+       x="1.1120392"
+       y="0.64351088" />
+    <rect
+       style="fill:#23b14b;fill-opacity:1;stroke-width:0.317641"
+       id="rect914"
+       width="25.499613"
+       height="31.727777"
+       x="9.4415646"
+       y="9.452899" />
+    <rect
+       style="fill:#ed2324;fill-opacity:1;stroke-width:0.296348"
+       id="rect982"
+       width="20.916073"
+       height="23.446053"
+       x="18.57011"
+       y="17.756462" />
+    <rect
+       style="fill:#00a2e8;fill-opacity:1;stroke-width:0.289152"
+       id="rect1050"
+       width="16.083439"
+       height="16.325666"
+       x="28.591171"
+       y="24.855011" />
+    <g
+       aria-label="YotioSoft"
+       id="text1442"
+       style="font-weight:bold;font-size:28.2222px;line-height:1.25;font-family:'Nunito Sans';-inkscape-font-specification:'Nunito Sans Bold';fill:#ffffff;stroke-width:0.264583">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.0700042"
+         x="56.243111"
+         y="29.180525"
+         id="text910"><tspan
+           sodipodi:role="line"
+           id="tspan908"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.0700042"
+           x="56.243111"
+           y="29.180525">Walls</tspan></text>
+    </g>
+  </g>
+</svg>
