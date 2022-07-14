@@ -16,6 +16,8 @@ $(function($){
             return;
         }
 
+        sidebar.css({'width': '15%'});
+
         // 現在の位置
         var scrollTop = $(document).scrollTop() + document.getElementById('header_fixed').clientHeight + 30;
         // メインコンテンツ最後尾
@@ -25,15 +27,13 @@ $(function($){
             // 現在位置が、初期位置より下で、メインコンテンツ最後尾より上なら、画面上部にサイドバーを固定
             sticked.css({
                 'position': 'fixed',
-                'width': document.getElementById('sidebar').clientWidth - 10,
                 'top': document.getElementById('header_fixed').clientHeight + 30
             });
         } else if(scrollTop >= content_bottom - sticked_height){
             // 現在位置がメインコンテンツ最後尾より下なら、メインコンテンツ最後尾にサイドバーを位置させる
             sticked.css({
                 'position': 'absolute',
-                'top': content_bottom - sticked_height - sidebar_top,
-                'width': sidebar.width()
+                'top': content_bottom - sticked_height - sidebar_top
             });
         } else {
             // 現在位置が初期位置より上なら、何もしない
