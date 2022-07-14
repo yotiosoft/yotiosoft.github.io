@@ -10,9 +10,14 @@ $(function($){
     // 固定するコンテンツの高さ
     var sticked_height = sticked.height();
 
+    $(window).on('resize', function(){          // リサイズ時
+        sticked_original_top = sticked.offset().top;
+    });
+
     $(window).on('scroll resize', function(){ // スクロールかリサイズ時
         if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
             sidebar.css({'position': 'relative', 'width': '100%'});
+
             return;
         }
 
@@ -24,6 +29,7 @@ $(function($){
         var content_bottom = content.offset().top + content.height();
 
         if ((scrollTop >= sticked_original_top) && (scrollTop < content_bottom - sticked_height)){
+            console.log(`scrollTop: ${scrollTop}, sticked_original_top: ${sticked_original_top}, content_bottom: ${content_bottom}, sticked_height: ${sticked_height}`);
             // 現在位置が、初期位置より下で、メインコンテンツ最後尾より上なら、画面上部にサイドバーを固定
             sticked.css({
                 'position': 'fixed',
