@@ -10,16 +10,29 @@ $(function($){
     // 固定するコンテンツの高さ
     var sticked_height = sticked.height();
 
+    var mode = window.innerWidth > 767 ? "pc" : "mobile";
+
     $(window).on('resize', function(){          // リサイズ時
+        if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+            mode = "mobile";
+            sticked_original_top = sticked.offset().top;
+        }
+        else {
+            mode = "pc";
+        }
+
         sidebar_top = sidebar.offset().top;
-        sticked_original_top = sticked.offset().top;
         sticked_height = sticked.height();
+
+        put_sticked();
     });
 
-    $(window).on('load scroll resize', function(){ // スクロールかリサイズ時
-        if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-            sidebar.css({'position': 'relative', 'max-width': '100%'});
-            sticked.css({'max-width': '100%'});
+    function put_sticked() {
+        if (mode == "mobile") {
+            sidebar.css({'max-width': '100%'});
+            sticked.css({'position': 'block', 'max-width': '100%'});
+
+            console.log(sticked.position);
 
             return;
         }
@@ -50,5 +63,7 @@ $(function($){
             // 現在位置が初期位置より上なら、何もしない
             sticked.css({'position': 'static', 'width': '100%'});
         }
-    });
+    }
+
+    $(window).on('load scroll', put_sticked);
 });
