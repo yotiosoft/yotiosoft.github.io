@@ -1,8 +1,4 @@
 $(function($){
-    if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) { 
-        return;
-    }
-        
     var content = $("#content");
     var sidebar = $("#sidebar");
     var sticked = $("#sticked");
@@ -15,6 +11,11 @@ $(function($){
     var sticked_height = sticked.height();
 
     $(window).on('scroll resize', function(){ // スクロールかリサイズ時
+        if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+            sidebar.css({'position': 'relative', 'width': '100%'});
+            return;
+        }
+
         // 現在の位置
         var scrollTop = $(document).scrollTop() + document.getElementById('header_fixed').clientHeight + 30;
         // メインコンテンツ最後尾
