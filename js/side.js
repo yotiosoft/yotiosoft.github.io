@@ -16,14 +16,15 @@ $(function($){
         sticked_height = sticked.height();
     });
 
-    $(window).on('scroll resize', function(){ // スクロールかリサイズ時
+    $(window).on('load scroll resize', function(){ // スクロールかリサイズ時
         if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-            sidebar.css({'position': 'relative', 'width': '100%'});
+            sidebar.css({'position': 'relative', 'max-width': '100%'});
+            sticked.css({'max-width': '100%'});
 
             return;
         }
 
-        sidebar.css({'width': '15%'});
+        sidebar.css({'max-width': '15%'});
 
         // 現在の位置
         var scrollTop = $(document).scrollTop() + document.getElementById('header_fixed').clientHeight + 30;
@@ -35,17 +36,19 @@ $(function($){
             // 現在位置が、初期位置より下で、メインコンテンツ最後尾より上なら、画面上部にサイドバーを固定
             sticked.css({
                 'position': 'fixed',
-                'top': document.getElementById('header_fixed').clientHeight + 30
+                'top': document.getElementById('header_fixed').clientHeight + 30,
+                'width': '15%'
             });
         } else if(scrollTop >= content_bottom - sticked_height){
             // 現在位置がメインコンテンツ最後尾より下なら、メインコンテンツ最後尾にサイドバーを位置させる
             sticked.css({
                 'position': 'absolute',
-                'top': content_bottom - sticked_height - sidebar_top
+                'top': content_bottom - sticked_height - sidebar_top,
+                'width': '100%'
             });
         } else {
             // 現在位置が初期位置より上なら、何もしない
-            sticked.css({'position': 'static'});
+            sticked.css({'position': 'static', 'width': '100%'});
         }
     });
 });
