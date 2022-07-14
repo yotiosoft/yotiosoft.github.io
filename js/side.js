@@ -1,5 +1,5 @@
 $(function($){
-    if (window.innerWidth <= 767　|| navigator.userAgent.match(/iPhone|Android.+Mobile/)) { 
+    if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) { 
         return;
     }
         
