@@ -15,13 +15,13 @@ $(function($){
     $(window).on('resize', function(){          // リサイズ時
         if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
             mode = "mobile";
-            sticked_original_top = sticked.offset().top;
         }
         else {
             mode = "pc";
         }
 
         sidebar_top = sidebar.offset().top;
+        sticked_original_top = sticked.offset().top;
         sticked_height = sticked.height();
 
         put_sticked();
@@ -30,9 +30,9 @@ $(function($){
     function put_sticked() {
         if (mode == "mobile") {
             sidebar.css({'max-width': '100%'});
-            sticked.css({'position': 'block', 'max-width': '100%'});
+            sticked.css({'position': 'static', 'width': '100%'});
 
-            console.log(sticked.position);
+            console.log("change");
 
             return;
         }
