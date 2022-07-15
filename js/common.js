@@ -11,7 +11,7 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 
 //共通パーツ読み込み
 $(function() {
-    if (window.innerWidth <= 767　|| navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+    if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
         $("#header").load("/header_m.html");
         $("#footer").load("/footer_m.html");
     }
@@ -21,7 +21,7 @@ $(function() {
     }
     
     window.addEventListener('resize', function(){
-        if (window.innerWidth <= 767　|| navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+        if (window.innerWidth <= 767 || navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
             $("#header").load("/header_m.html");
             $("#footer").load("/footer_m.html");
         }
