@@ -1,8 +1,15 @@
 .slide {
+    max-height: 360px;
     position: relative; /* 親要素にrelativeを指定 */
 }
     
 .slide p {
     position: absolute; /* absoluteで画像を重ねる */
     display: none; /* 画像を非表示に非表示 */
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
 }
