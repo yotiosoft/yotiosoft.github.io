@@ -1,6 +1,14 @@
 [
 	{
 		"year": 2022,
+		"month": 10,
+		"day": 14,
+		"link": "/articles/2022/10/albusbox_v0.2.0.html",
+		"image": "/img/articles/2022/10/linux.png",
+		"image_webp": "/img/articles/2022/10/linux.webp"
+	},
+	{
+		"year": 2022,
 		"month": 5,
 		"day": 7,
 		"link": "/articles/2022/05/mac_savedata.html",
