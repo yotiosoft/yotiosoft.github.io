@@ -1,6 +1,14 @@
 [
 	{
 		"year": 2022,
+		"month": 11,
+		"day": 27,
+		"link": "/articles/2022/11/yapps_random.html",
+		"image": "/img/icons/no_image.png",
+		"image_webp": "/img/icons/no_image.webp"
+	},
+	{
+		"year": 2022,
 		"month": 10,
 		"day": 14,
 		"link": "/articles/2022/10/albusbox_v0.2.0.html",
