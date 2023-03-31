@@ -139,3 +139,55 @@ function get_data_for_table(data, e_td1) {
         e_td1.innerHTML = doc.getElementById("article_title").innerText;
     }
 );}
+
+
+/* April Fool for 2022-2023 */
+function put_cards_for_abehiroshi(max_articles) {
+    var articles_wrap = document.getElementById("articles_wrap");
+    
+    const formatter = new Intl.NumberFormat('ja', {
+        minimumIntegerDigits: 2, 
+        useGrouping: false
+    });
+
+    $.getJSON("/articles/articles.json", function(data){
+        for (let i=0; i<Math.min(data.length, max_articles); i++) {
+            /* カードを追加 */
+            var e_blockcard = document.createElement('div');
+            var e_blockcard_link_wrap = document.createElement('span');
+            var e_blockcard_link = document.createElement('a');
+            var e_blockcard_date = document.createElement('p');
+            articles_wrap.appendChild(e_blockcard);
+            e_blockcard_link_wrap.appendChild(e_blockcard_link);
+            e_blockcard.appendChild(e_blockcard_link_wrap);
+            e_blockcard.appendChild(e_blockcard_date);
+
+            if (i == 0) {
+                var e_blockcard_new = document.createElement('inline');
+                e_blockcard_new.innerHTML += "<inline style=\"color: red;\"> <b>New!</b></inline>";
+                e_blockcard_link_wrap.appendChild(e_blockcard_new);
+            }
+    
+            /* データ代入 */
+            e_blockcard.style = "margin-left: 30px; margin-bottom: 20px";
+            e_blockcard_link.href = data[i].link;
+            e_blockcard_link.textContent = "読み込み中..";
+            e_blockcard_date.innerHTML += data[i].year+"年"+data[i].month+"月"+formatter.format(data[i].day)+"日公開<br>";
+            e_blockcard_date.style = "margin: 0px";
+
+            get_data_for_card_for_abehiroshi(data[i], e_blockcard_link, e_blockcard_link_wrap);
+        }
+    });
+}
+
+function get_data_for_card_for_abehiroshi(data, arg_blockcard_link, arg_blockcard_link_wrap) {
+    const doc = fetch(data.link)
+    .then((res) => res.text())
+    .then((text) => {
+        return new DOMParser().parseFromString(text, "text/html");
+        })
+    .then((doc) => {
+        arg_blockcard_link.textContent = doc.getElementById("article_title").innerText;
+    }
+    );
+}

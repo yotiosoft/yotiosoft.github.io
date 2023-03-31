@@ -3,6 +3,20 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174934210-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-174934210-1');
+    </script>
+
+    <script type="text/javascript">
+      if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+        document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+      }
+    </script>
+
     <meta charset="utf8">
     <link rel="stylesheet" href="../../style.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="../../style_m.css" media="screen and (max-width: 767px)">
@@ -34,11 +48,11 @@
 
       <div id="under-header">
 
-        <div class="pageheader" id="pegeheader_id" style="background: #0fb9b1;">
-          <div class="pageheader_logo_wrap">
-            <img src="../../img/apps/logos/fakehsp.png" style="max-height: 150px; max-width: 100%; height: auto;" />
-          </div>
+      <div class="pageheader" id="pegeheader_id" style="background: #0fb9b1;">
+        <div class="pageheader_logo_wrap">
+          <p style="font-size: 6vmin; color: #fff;">FakeHSP for C++</p>
         </div>
+      </div>
 
       <nav>
         <div class="navibar_wrap">
@@ -60,7 +74,7 @@
                 FakeHSP for C++
               </div>
               <div id="sidebar_links">
-                <li><a href="#about">概要</a></li>
+                <li><a href="#summary">概要</a></li>
                 <li><a href="#features">機能</a></li>
                 <li><a href="#howtouse">利用方法</a></li>
                 <li><a href="#license">ライセンスについて</a></li>
@@ -72,31 +86,15 @@
 
         <div id="content">
         	<div class="column">
-            <div id="about"></div>
+            <div id="summary"></div>
             
             <div class="inline-heading-wrap">
-              <div class="inline-heading-en" style="color:#0fb9b1;">About</div>
+              <div class="inline-heading-en" style="color:#0fb9b1;">Sumally</div>
               <div class="inline-heading-jp">概要</div>
             </div>
 
             <div id="content_main">
-              FakeHSP for C++は、SDL2を使用したC++上でHSP3（Hot Soup Processor）となるべく同じ文法で、同じような動作をすることを目的とし、作られた関数群です。<br>
-              <br>
-              FakeHSP.hをC++でincludeすることによって使用できます。<br>
-              <picture>
-                <source type="image/webp" srcset="../../img/apps/fakehsp/53ec3-9f0b1adbb93f5c3a9dc79a0ccc2dc578.webp" style="width: 100%;" />
-                <img src="../../img/apps/fakehsp/53ec3-9f0b1adbb93f5c3a9dc79a0ccc2dc578.png" style="width: 100%;" />
-              </picture><br>
-              <br>
-              関数名はなるべくHSPに似せており、引数の順序等もなるべくHSPに近づけています（一部除く）。<br>
-              オブジェクト指向のC++上で動くので、クラスが使えるHSPとも言えます。<br>
-              <br>
-              SDL2を使用しているため、C++の開発環境に加え、SDL2の導入が必須です。<br>
-              <br>
-              <b>
-                FakeHSPでは、以下のSDL2ライブラリを使用しています :<br>
-                SDL2, SDL2_mixer, SDL2_image, SDL2_ttf, SDL2_net
-              </b>
+              工事中...
             </div>
         	</div>
 
