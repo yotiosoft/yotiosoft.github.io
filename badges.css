@@ -11,7 +11,7 @@
   align-items: flex-start;
 }
 
-.badge-blue {
+.badge-skyblue {
   margin-right: 3px;
   border-radius: 4px;
   background: #4B96F5;
@@ -111,6 +111,18 @@
   margin-right: 3px;
   border-radius: 4px;
   background: #008888;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+  padding: 4px 8px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-blue{
+  margin-right: 3px;
+  border-radius: 4px;
+  background: #0033FF;
   box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
   padding: 4px 8px;
   overflow: hidden;
