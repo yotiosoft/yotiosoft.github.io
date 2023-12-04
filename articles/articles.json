@@ -2,6 +2,14 @@
 	{
 		"year": 2023,
 		"month": 12,
+		"day": 4,
+		"link": "/articles/2023/12/citiesbox_v1.8.1.html",
+		"image": "/img/apps/catches/citiesbox.png",
+		"image_webp": "/img/apps/catches/citiesbox.webp"
+	},
+	{
+		"year": 2023,
+		"month": 12,
 		"day": 1,
 		"link": "/articles/2023/12/dptran.html",
 		"image": "/img/apps/catches/dptran.png",
