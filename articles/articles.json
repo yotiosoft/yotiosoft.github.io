@@ -2,6 +2,14 @@
 	{
 		"year": 2023,
 		"month": 12,
+		"day": 16,
+		"link": "/articles/2023/12/yapps_mosaic_faces.html",
+		"image": "/img/icons/no_image.png",
+		"image_webp": "/img/icons/no_image.webp"
+	},
+	{
+		"year": 2023,
+		"month": 12,
 		"day": 4,
 		"link": "/articles/2023/12/citiesbox_v1.8.1.html",
 		"image": "/img/apps/catches/citiesbox.png",
