@@ -1,6 +1,14 @@
 [
 	{
 		"year": 2024,
+		"month": 3,
+		"day": 3,
+		"link": "/articles/2024/03/dptran.html",
+		"image": "/img/apps/dptran/dptran-2.0.0.png",
+		"image_webp": "/img/apps/dptran/dptran-2.0.0.webp"
+	},
+	{
+		"year": 2024,
 		"month": 1,
 		"day": 6,
 		"link": "/articles/2024/01/10th-aniv.html",
